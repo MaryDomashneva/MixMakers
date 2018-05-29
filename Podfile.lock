@@ -1,3 +1,16 @@
-PODFILE CHECKSUM: 51846437d2aa7436d6621614cfac8e3e793c44bd
+PODS:
+  - Nuke (6.1.1)
+
+DEPENDENCIES:
+  - Nuke (~> 6.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Nuke
+
+SPEC CHECKSUMS:
+  Nuke: bf5d58b2d95ff15cb170c231fe6002d706be77e1
+
+PODFILE CHECKSUM: 6b4c40ba632f988ea66275003001789ca2a408cd
 
 COCOAPODS: 1.5.3

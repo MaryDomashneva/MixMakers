@@ -4,6 +4,8 @@ platform :ios, '9.0'
 target 'MixMakers' do
   use_frameworks!
 
+  pod 'Nuke', '~> 6.0'
+
   target 'MixMakersTests' do
     inherit! :search_paths
   end

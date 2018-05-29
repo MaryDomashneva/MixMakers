@@ -23,7 +23,7 @@ class CocktailService
     }
     
     // Example url https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=Gin
-    func getAllCocktail(with ingredient: String, result: @escaping QueryArrayResult)
+    func getAllCocktails(with ingredient: String, result: @escaping QueryArrayResult)
     {
         let path = "filter.php?i=\(ingredient)"
         guard let getAllCoctailsURL = buildURL(with: cocktailBaseURLString, apiKey: cocktailAPIKey, path: path) else {
@@ -34,14 +34,22 @@ class CocktailService
         let dataTask = session.dataTask(with: getAllCoctailsURL)
         { [weak self] data, response, error in
             if let error = error {
-                result(nil, error.localizedDescription)
+                DispatchQueue.main.async {
+                    result(nil, error.localizedDescription)
+                }
             } else if let data = data,
                       let response = response as? HTTPURLResponse,
                       response.statusCode == 200 {
                 let coctails = self?.parseCoctailsJSON(data: data, rootKey: "drinks")
-                result(coctails, nil)
+                
+                // Call the block on the main thread
+                DispatchQueue.main.async {
+                    result(coctails, nil)
+                }
             } else {
-                result(nil, "Unknown response from the coctails API")
+                DispatchQueue.main.async {
+                    result(nil, "Unknown response from the coctails API")
+                }
             }
         }
         dataTask.resume() //send request to the server
