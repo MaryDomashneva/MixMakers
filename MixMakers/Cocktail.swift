@@ -11,7 +11,7 @@
 
 import Foundation
 
-struct SimpleCoctail: Codable
+struct SimpleCocktail: Codable, Equatable
 {
     let name: String
     let imageURLString: String
@@ -22,5 +22,11 @@ struct SimpleCoctail: Codable
         case name = "strDrink"
         case imageURLString = "strDrinkThumb"
         case id = "idDrink"
+    }
+    
+    public static func == (lhs: SimpleCocktail, rhs: SimpleCocktail) -> Bool {
+        return lhs.name == rhs.name &&
+               lhs.imageURLString == rhs.imageURLString &&
+               lhs.id == rhs.id
     }
 }

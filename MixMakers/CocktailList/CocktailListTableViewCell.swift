@@ -13,7 +13,7 @@ class CocktailListTableViewCell: UITableViewCell {
     @IBOutlet var cocktailNameLabel: UILabel!
     @IBOutlet var cocktailImageView: UIImageView!
     
-    func configure(with simpleCocktail: SimpleCoctail) {
+    func configure(with simpleCocktail: SimpleCocktail) {
         cocktailNameLabel.text = simpleCocktail.name
         if let imageURL = URL(string: simpleCocktail.imageURLString) {
             Manager.shared.loadImage(with: imageURL, into: cocktailImageView)

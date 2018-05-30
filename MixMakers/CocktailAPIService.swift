@@ -10,15 +10,16 @@ import Foundation
 
 class CocktailService
 {
-    typealias QueryArrayResult = ([SimpleCoctail]?, String?) -> Void
+    typealias QueryArrayResult = ([SimpleCocktail]?, String?) -> Void
     
     // Sample url: https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita
     let cocktailAPIKey: String
     let cocktailBaseURLString: String = "https://www.thecocktaildb.com/api/json/v1"
-    let session: URLSession = URLSession(configuration: .default)
+    let session: URLSession
     
-    init(APIKey: String = "1")
+    init(APIKey: String = "1", sessionConfiguration: URLSessionConfiguration = .default)
     {
+        self.session = URLSession(configuration: sessionConfiguration)
         self.cocktailAPIKey = APIKey
     }
     
@@ -26,12 +27,12 @@ class CocktailService
     func getAllCocktails(with ingredient: String, result: @escaping QueryArrayResult)
     {
         let path = "filter.php?i=\(ingredient)"
-        guard let getAllCoctailsURL = buildURL(with: cocktailBaseURLString, apiKey: cocktailAPIKey, path: path) else {
-            result(nil, "Get all coctails URL can not be built")
+        guard let getAllCocktailsURL = buildURL(with: cocktailBaseURLString, apiKey: cocktailAPIKey, path: path) else {
+            result(nil, "Get all cocktails URL can not be built")
             return
         }
         
-        let dataTask = session.dataTask(with: getAllCoctailsURL)
+        let dataTask = session.dataTask(with: getAllCocktailsURL)
         { [weak self] data, response, error in
             if let error = error {
                 DispatchQueue.main.async {
@@ -40,24 +41,24 @@ class CocktailService
             } else if let data = data,
                       let response = response as? HTTPURLResponse,
                       response.statusCode == 200 {
-                let coctails = self?.parseCoctailsJSON(data: data, rootKey: "drinks")
+                let cocktails = self?.parseCocktailsJSON(data: data, rootKey: "drinks")
                 
                 // Call the block on the main thread
                 DispatchQueue.main.async {
-                    result(coctails, nil)
+                    result(cocktails, nil)
                 }
             } else {
                 DispatchQueue.main.async {
-                    result(nil, "Unknown response from the coctails API")
+                    result(nil, "Unknown response from the cocktails API")
                 }
             }
         }
         dataTask.resume() //send request to the server
     }
     
-    private func parseCoctailsJSON(data: Data, rootKey: String) -> [SimpleCoctail] {
+    private func parseCocktailsJSON(data: Data, rootKey: String) -> [SimpleCocktail] {
         do {
-            let result = try JSONDecoder().decode([String: [SimpleCoctail]].self, from: data)
+            let result = try JSONDecoder().decode([String: [SimpleCocktail]].self, from: data)
             return result[rootKey] ?? [] //get array with drinks
         }
         catch {
