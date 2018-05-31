@@ -23,6 +23,8 @@
 		B79401BA20BDFC5E0035C82D /* CocktailListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79401B920BDFC5E0035C82D /* CocktailListTableViewCell.swift */; };
 		B79401BC20BDFCCB0035C82D /* CocktailListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B79401BB20BDFCCB0035C82D /* CocktailListView.xib */; };
 		C584CBDE8B34CEC964BB326B /* Pods_MixMakers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC61156B3C265AC64DA3B165 /* Pods_MixMakers.framework */; };
+		C9ED2F0220C03AF800651FE3 /* recipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9ED2F0120C03AF800651FE3 /* recipeViewController.swift */; };
+		C9ED2F0420C03EDF00651FE3 /* cocktailRecipes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9ED2F0320C03EDF00651FE3 /* cocktailRecipes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +80,8 @@
 		B79401B920BDFC5E0035C82D /* CocktailListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailListTableViewCell.swift; sourceTree = "<group>"; };
 		B79401BB20BDFCCB0035C82D /* CocktailListView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CocktailListView.xib; sourceTree = "<group>"; };
 		C381A6FE886C0805F7EE4BE3 /* Pods-MixMakersUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MixMakersUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MixMakersUITests/Pods-MixMakersUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C9ED2F0120C03AF800651FE3 /* recipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recipeViewController.swift; sourceTree = "<group>"; };
+		C9ED2F0320C03EDF00651FE3 /* cocktailRecipes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cocktailRecipes.swift; sourceTree = "<group>"; };
 		FED1C9C1B1CDAF3A9D094C47 /* Pods_MixMakersUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MixMakersUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -153,6 +157,8 @@
 				B79401B820BDFC2C0035C82D /* CocktailList */,
 				B794018020BD99860035C82D /* AppDelegate.swift */,
 				B794018420BD99860035C82D /* Main.storyboard */,
+				C9ED2F0320C03EDF00651FE3 /* cocktailRecipes.swift */,
+				C9ED2F0120C03AF800651FE3 /* recipeViewController.swift */,
 				B794018720BD99880035C82D /* Assets.xcassets */,
 				B794018920BD99880035C82D /* LaunchScreen.storyboard */,
 				B794018C20BD99880035C82D /* Info.plist */,
@@ -491,7 +497,9 @@
 				067B791F20C00F4F005FDB3D /* HomepageViewController.swift in Sources */,
 				B79401B720BDFC250035C82D /* CocktailListViewController.swift in Sources */,
 				B79401AF20BDAF7B0035C82D /* Cocktail.swift in Sources */,
+				C9ED2F0420C03EDF00651FE3 /* cocktailRecipes.swift in Sources */,
 				B794018120BD99860035C82D /* AppDelegate.swift in Sources */,
+				C9ED2F0220C03AF800651FE3 /* recipeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
