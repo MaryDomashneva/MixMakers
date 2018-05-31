@@ -7,17 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+
 		0637971C20BEFF4600188B68 /* CocktailAPIServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0637971B20BEFF4600188B68 /* CocktailAPIServiceSpec.swift */; };
 		0637971F20BF1F8A00188B68 /* load_cocktails_with_gin.json in Resources */ = {isa = PBXBuildFile; fileRef = 0637971E20BF1F8A00188B68 /* load_cocktails_with_gin.json */; };
 		128167E4B419E44803663B7A /* Pods_MixMakersUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FED1C9C1B1CDAF3A9D094C47 /* Pods_MixMakersUITests.framework */; };
 		89B080831FA50141CE739A49 /* Pods_MixMakersTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07040139A72381AED30050DD /* Pods_MixMakersTests.framework */; };
 		B794018120BD99860035C82D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B794018020BD99860035C82D /* AppDelegate.swift */; };
-		B794018320BD99860035C82D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B794018220BD99860035C82D /* ViewController.swift */; };
 		B794018620BD99860035C82D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B794018420BD99860035C82D /* Main.storyboard */; };
 		B794018820BD99880035C82D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B794018720BD99880035C82D /* Assets.xcassets */; };
 		B794018B20BD99880035C82D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B794018920BD99880035C82D /* LaunchScreen.storyboard */; };
 		B794019620BD99880035C82D /* MixMakersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B794019520BD99880035C82D /* MixMakersTests.swift */; };
-		B79401A120BD99880035C82D /* MixMakersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79401A020BD99880035C82D /* MixMakersUITests.swift */; };
 		B79401AF20BDAF7B0035C82D /* Cocktail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79401AE20BDAF7B0035C82D /* Cocktail.swift */; };
 		B79401B120BDC26A0035C82D /* CocktailAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79401B020BDC26A0035C82D /* CocktailAPIService.swift */; };
 		B79401B720BDFC250035C82D /* CocktailListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79401B620BDFC250035C82D /* CocktailListViewController.swift */; };
@@ -27,6 +26,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		698A019220BF3AE900618203 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B794017520BD99860035C82D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B794017C20BD99860035C82D;
+			remoteInfo = MixMakers;
+		};
 		B794019220BD99880035C82D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B794017520BD99860035C82D /* Project object */;
@@ -44,6 +50,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+
 		0637971B20BEFF4600188B68 /* CocktailAPIServiceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailAPIServiceSpec.swift; sourceTree = "<group>"; };
 		0637971E20BF1F8A00188B68 /* load_cocktails_with_gin.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = load_cocktails_with_gin.json; sourceTree = "<group>"; };
 		07040139A72381AED30050DD /* Pods_MixMakersTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MixMakersTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,7 +62,6 @@
 		AC61156B3C265AC64DA3B165 /* Pods_MixMakers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MixMakers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B794017D20BD99860035C82D /* MixMakers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MixMakers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B794018020BD99860035C82D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B794018220BD99860035C82D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B794018520BD99860035C82D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B794018720BD99880035C82D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B794018A20BD99880035C82D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -73,9 +79,17 @@
 		B79401BB20BDFCCB0035C82D /* CocktailListView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CocktailListView.xib; sourceTree = "<group>"; };
 		C381A6FE886C0805F7EE4BE3 /* Pods-MixMakersUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MixMakersUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MixMakersUITests/Pods-MixMakersUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		FED1C9C1B1CDAF3A9D094C47 /* Pods_MixMakersUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MixMakersUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		69D1AD7C20BF01DA001906AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B794017A20BD99860035C82D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -117,6 +131,7 @@
 				B794017F20BD99860035C82D /* MixMakers */,
 				B794019420BD99880035C82D /* MixMakersTests */,
 				B794019F20BD99880035C82D /* MixMakersUITests */,
+				69D1AD8020BF01DA001906AE /* MixUITests */,
 				B794017E20BD99860035C82D /* Products */,
 				F6532155A33D3408C2BA5BA1 /* Pods */,
 				DBE13AA48FD471EF2F1A4609 /* Frameworks */,
@@ -129,6 +144,7 @@
 				B794017D20BD99860035C82D /* MixMakers.app */,
 				B794019120BD99880035C82D /* MixMakersTests.xctest */,
 				B794019C20BD99880035C82D /* MixMakersUITests.xctest */,
+				69D1AD7F20BF01DA001906AE /* MixUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -138,8 +154,9 @@
 			children = (
 				B79401B820BDFC2C0035C82D /* CocktailList */,
 				B794018020BD99860035C82D /* AppDelegate.swift */,
-				B794018220BD99860035C82D /* ViewController.swift */,
+				6908C42520BF3E19003BC210 /* ViewController.swift */,
 				B794018420BD99860035C82D /* Main.storyboard */,
+				69D1AD6A20BEEC62001906AE /* HomepageViewController.swift */,
 				B794018720BD99880035C82D /* Assets.xcassets */,
 				B794018920BD99880035C82D /* LaunchScreen.storyboard */,
 				B794018C20BD99880035C82D /* Info.plist */,
@@ -163,6 +180,8 @@
 		B794019F20BD99880035C82D /* MixMakersUITests */ = {
 			isa = PBXGroup;
 			children = (
+				69D1AD6F20BEF1CC001906AE /* HomepageTests.swift */,
+				69D1AD6C20BEECA7001906AE /* HomepageUITests.swift */,
 				B79401A020BD99880035C82D /* MixMakersUITests.swift */,
 				B79401A220BD99880035C82D /* Info.plist */,
 			);
@@ -179,6 +198,7 @@
 			path = CocktailList;
 			sourceTree = "<group>";
 		};
+
 		DBE13AA48FD471EF2F1A4609 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -205,6 +225,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		69D1AD7E20BF01DA001906AE /* MixUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69D1AD8620BF01DA001906AE /* Build configuration list for PBXNativeTarget "MixUITests" */;
+			buildPhases = (
+				69D1AD7B20BF01DA001906AE /* Sources */,
+				69D1AD7C20BF01DA001906AE /* Frameworks */,
+				69D1AD7D20BF01DA001906AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				698A019320BF3AE900618203 /* PBXTargetDependency */,
+			);
+			name = MixUITests;
+			productName = MixUITests;
+			productReference = 69D1AD7F20BF01DA001906AE /* MixUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		B794017C20BD99860035C82D /* MixMakers */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B79401A520BD99880035C82D /* Build configuration list for PBXNativeTarget "MixMakers" */;
@@ -273,6 +311,10 @@
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = MixMakers;
 				TargetAttributes = {
+					69D1AD7E20BF01DA001906AE = {
+						CreatedOnToolsVersion = 9.3.1;
+						TestTargetID = B794017C20BD99860035C82D;
+					};
 					B794017C20BD99860035C82D = {
 						CreatedOnToolsVersion = 9.3.1;
 					};
@@ -302,11 +344,19 @@
 				B794017C20BD99860035C82D /* MixMakers */,
 				B794019020BD99880035C82D /* MixMakersTests */,
 				B794019B20BD99880035C82D /* MixMakersUITests */,
+				69D1AD7E20BF01DA001906AE /* MixUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		69D1AD7D20BF01DA001906AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B794017B20BD99860035C82D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -433,6 +483,13 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		69D1AD7B20BF01DA001906AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B794017920BD99860035C82D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -440,8 +497,9 @@
 				B79401B120BDC26A0035C82D /* CocktailAPIService.swift in Sources */,
 				B79401BA20BDFC5E0035C82D /* CocktailListTableViewCell.swift in Sources */,
 				B79401B720BDFC250035C82D /* CocktailListViewController.swift in Sources */,
+				69D1AD6B20BEEC62001906AE /* HomepageViewController.swift in Sources */,
+				6908C42620BF3E19003BC210 /* ViewController.swift in Sources */,
 				B79401AF20BDAF7B0035C82D /* Cocktail.swift in Sources */,
-				B794018320BD99860035C82D /* ViewController.swift in Sources */,
 				B794018120BD99860035C82D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -459,13 +517,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B79401A120BD99880035C82D /* MixMakersUITests.swift in Sources */,
+				6908C42420BF3BC5003BC210 /* HomepageUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		698A019320BF3AE900618203 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B794017C20BD99860035C82D /* MixMakers */;
+			targetProxy = 698A019220BF3AE900618203 /* PBXContainerItemProxy */;
+		};
 		B794019320BD99880035C82D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = B794017C20BD99860035C82D /* MixMakers */;
@@ -498,6 +561,42 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		69D1AD8720BF01DA001906AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MixUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = makers.MixUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MixMakers;
+			};
+			name = Debug;
+		};
+		69D1AD8820BF01DA001906AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MixUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = makers.MixUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MixMakers;
+			};
+			name = Release;
+		};
 		B79401A320BD99880035C82D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -618,6 +717,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 545UKC23KK;
 				INFOPLIST_FILE = MixMakers/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -636,6 +736,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 545UKC23KK;
 				INFOPLIST_FILE = MixMakers/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -733,6 +834,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		69D1AD8620BF01DA001906AE /* Build configuration list for PBXNativeTarget "MixUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69D1AD8720BF01DA001906AE /* Debug */,
+				69D1AD8820BF01DA001906AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B794017820BD99860035C82D /* Build configuration list for PBXProject "MixMakers" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
