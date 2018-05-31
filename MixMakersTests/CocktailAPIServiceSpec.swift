@@ -58,16 +58,16 @@ class CocktailServiceSpec: QuickSpec {
                 }
                 
                 it("doesnt return cocktails array in the result") {
-                    var loadedCocktains: [SimpleCocktail]? = nil
+                    var loadedCocktails: [SimpleCocktail]? = nil
                     
                     waitUntil { done in
                         cocktailService.getAllCocktails(with: ingredient) { (cocktails, error) in
-                            loadedCocktains = cocktails
+                            loadedCocktails = cocktails
                             done()
                         }
                     }
                     
-                    expect(loadedCocktains).to(beNil())
+                    expect(loadedCocktails).to(beNil())
                 }
             }
             
@@ -103,16 +103,16 @@ class CocktailServiceSpec: QuickSpec {
                 }
                 
                 it("returns cocktails array in the result") {
-                    var loadedCocktains: [SimpleCocktail]? = nil
+                    var loadedCocktails: [SimpleCocktail]? = nil
                     
                     waitUntil { done in
                         cocktailService.getAllCocktails(with: ingredient) { (cocktails, error) in
-                            loadedCocktains = cocktails
+                            loadedCocktails = cocktails
                             done()
                         }
                     }
                     
-                    expect(loadedCocktains).to(equal(expectedCocktails))
+                    expect(loadedCocktails).to(equal(expectedCocktails))
                 }
             }
             
@@ -140,16 +140,16 @@ class CocktailServiceSpec: QuickSpec {
                 }
                 
                 it("doesnt return cocktails array in the result") {
-                    var loadedCocktains: [SimpleCocktail]? = nil
+                    var loadedCocktails: [SimpleCocktail]? = nil
                    
                     waitUntil { done in
                         cocktailService.getAllCocktails(with: ingredient) { (cocktails, error) in
-                            loadedCocktains = cocktails
+                            loadedCocktails = cocktails
                             done()
                         }
                     }
                     
-                    expect(loadedCocktains).to(beNil())
+                    expect(loadedCocktails).to(beNil())
                 }
             }
         }

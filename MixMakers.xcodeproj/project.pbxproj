@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0637971C20BEFF4600188B68 /* CocktailAPIServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0637971B20BEFF4600188B68 /* CocktailAPIServiceSpec.swift */; };
-		0637971F20BF1F8A00188B68 /* load_coctails_with_gin.json in Resources */ = {isa = PBXBuildFile; fileRef = 0637971E20BF1F8A00188B68 /* load_coctails_with_gin.json */; };
+		0637971F20BF1F8A00188B68 /* load_cocktails_with_gin.json in Resources */ = {isa = PBXBuildFile; fileRef = 0637971E20BF1F8A00188B68 /* load_cocktails_with_gin.json */; };
 		128167E4B419E44803663B7A /* Pods_MixMakersUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FED1C9C1B1CDAF3A9D094C47 /* Pods_MixMakersUITests.framework */; };
 		89B080831FA50141CE739A49 /* Pods_MixMakersTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07040139A72381AED30050DD /* Pods_MixMakersTests.framework */; };
 		B794018120BD99860035C82D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B794018020BD99860035C82D /* AppDelegate.swift */; };
@@ -45,7 +45,7 @@
 
 /* Begin PBXFileReference section */
 		0637971B20BEFF4600188B68 /* CocktailAPIServiceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailAPIServiceSpec.swift; sourceTree = "<group>"; };
-		0637971E20BF1F8A00188B68 /* load_coctails_with_gin.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = load_coctails_with_gin.json; sourceTree = "<group>"; };
+		0637971E20BF1F8A00188B68 /* load_cocktails_with_gin.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = load_cocktails_with_gin.json; sourceTree = "<group>"; };
 		07040139A72381AED30050DD /* Pods_MixMakersTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MixMakersTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1148732BA0B63914194508E5 /* Pods-MixMakersTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MixMakersTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MixMakersTests/Pods-MixMakersTests.release.xcconfig"; sourceTree = "<group>"; };
 		373277F4F5F1C50B98032D1A /* Pods-MixMakersUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MixMakersUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MixMakersUITests/Pods-MixMakersUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -106,7 +106,7 @@
 		0637971D20BF1F4900188B68 /* Fixtures */ = {
 			isa = PBXGroup;
 			children = (
-				0637971E20BF1F8A00188B68 /* load_coctails_with_gin.json */,
+				0637971E20BF1F8A00188B68 /* load_cocktails_with_gin.json */,
 			);
 			path = Fixtures;
 			sourceTree = "<group>";
@@ -322,7 +322,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0637971F20BF1F8A00188B68 /* load_coctails_with_gin.json in Resources */,
+				0637971F20BF1F8A00188B68 /* load_cocktails_with_gin.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
