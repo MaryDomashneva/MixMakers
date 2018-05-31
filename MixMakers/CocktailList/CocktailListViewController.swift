@@ -26,6 +26,10 @@ class CocktailListViewController: UIViewController, UITableViewDelegate, UITable
     
     // MARK: - Helpers
     
+    func getSearchTerm() -> String {
+        return searchTerm
+    }
+    
     func loadCocktails(with ingredient: String) {
         cocktailAPIService.getAllCocktails(with: ingredient)
         { [weak self] loadedCocktails, error in
