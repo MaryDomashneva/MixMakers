@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CocktailListTableViewCell" rowHeight="44" id="vyj-iC-WV0" customClass="CocktailListTableViewCell" customModule="MixMakers" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="417" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vyj-iC-WV0" id="Yn9-OT-Sye">
+                <rect key="frame" x="0.0" y="0.0" width="417" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3dY-fq-JZl">
+                        <rect key="frame" x="12" y="11" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aTB-KD-quy">
+                        <rect key="frame" x="374" y="0.0" width="43" height="43"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="aTB-KD-quy" secondAttribute="height" multiplier="1:1" id="aoO-LA-qH5"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="aTB-KD-quy" firstAttribute="top" secondItem="Yn9-OT-Sye" secondAttribute="top" id="064-Mn-IdA"/>
+                    <constraint firstAttribute="trailing" secondItem="aTB-KD-quy" secondAttribute="trailing" id="DuS-Zc-IdV"/>
+                    <constraint firstItem="3dY-fq-JZl" firstAttribute="leading" secondItem="Yn9-OT-Sye" secondAttribute="leading" constant="12" id="anQ-u7-jrc"/>
+                    <constraint firstItem="3dY-fq-JZl" firstAttribute="centerY" secondItem="Yn9-OT-Sye" secondAttribute="centerY" id="cmS-RL-WSW"/>
+                    <constraint firstAttribute="bottom" secondItem="aTB-KD-quy" secondAttribute="bottom" id="dgV-q2-UPx"/>
+                    <constraint firstItem="aTB-KD-quy" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="3dY-fq-JZl" secondAttribute="trailing" constant="12" id="wEc-Bd-8nJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cocktailImageView" destination="aTB-KD-quy" id="Oa2-Mc-Xmg"/>
+                <outlet property="cocktailNameLabel" destination="3dY-fq-JZl" id="1k9-dU-PKa"/>
+            </connections>
+            <point key="canvasLocation" x="-168" y="-162"/>
+        </tableViewCell>
+    </objects>
+</document>
