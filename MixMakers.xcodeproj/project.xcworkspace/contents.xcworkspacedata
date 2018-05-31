@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:MixMakers.xcodeproj">
+      location = "group:/Users/jd/makers/MixMakers/MixMakers/HomepageViewController.swift">
+   </FileRef>
+   <FileRef
+      location = "self:">
    </FileRef>
 </Workspace>
