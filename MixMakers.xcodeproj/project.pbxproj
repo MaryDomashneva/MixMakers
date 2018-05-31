@@ -82,7 +82,6 @@
 		B794019520BD99880035C82D /* MixMakersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MixMakersTests.swift; sourceTree = "<group>"; };
 		B794019720BD99880035C82D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B794019C20BD99880035C82D /* MixMakersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MixMakersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B79401A020BD99880035C82D /* MixMakersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MixMakersUITests.swift; sourceTree = "<group>"; };
 		B79401A220BD99880035C82D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B79401AE20BDAF7B0035C82D /* SimpleCocktail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCocktail.swift; sourceTree = "<group>"; };
 		B79401B020BDC26A0035C82D /* CocktailAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailAPIService.swift; sourceTree = "<group>"; };
@@ -145,6 +144,39 @@
 			path = Fixtures;
 			sourceTree = "<group>";
 		};
+		B7047E2520C0978B005AD9C5 /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				067B791E20C00F4F005FDB3D /* HomepageViewController.swift */,
+			);
+			path = HomePage;
+			sourceTree = "<group>";
+		};
+		B7047E2620C097A9005AD9C5 /* Recipe */ = {
+			isa = PBXGroup;
+			children = (
+				C9ED2F0120C03AF800651FE3 /* recipeViewController.swift */,
+			);
+			path = Recipe;
+			sourceTree = "<group>";
+		};
+		B7047E2720C097C9005AD9C5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B79401AE20BDAF7B0035C82D /* SimpleCocktail.swift */,
+				C9ED2F0320C03EDF00651FE3 /* cocktailRecipes.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B7047E2820C097EB005AD9C5 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B79401B020BDC26A0035C82D /* CocktailAPIService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		B794017420BD99860035C82D = {
 			isa = PBXGroup;
 			children = (
@@ -171,17 +203,16 @@
 		B794017F20BD99860035C82D /* MixMakers */ = {
 			isa = PBXGroup;
 			children = (
-				067B791E20C00F4F005FDB3D /* HomepageViewController.swift */,
+				B7047E2820C097EB005AD9C5 /* Services */,
+				B7047E2720C097C9005AD9C5 /* Models */,
+				B7047E2620C097A9005AD9C5 /* Recipe */,
+				B7047E2520C0978B005AD9C5 /* HomePage */,
 				B79401B820BDFC2C0035C82D /* CocktailList */,
 				B794018020BD99860035C82D /* AppDelegate.swift */,
 				B794018420BD99860035C82D /* Main.storyboard */,
-				C9ED2F0320C03EDF00651FE3 /* cocktailRecipes.swift */,
-				C9ED2F0120C03AF800651FE3 /* recipeViewController.swift */,
 				B794018720BD99880035C82D /* Assets.xcassets */,
 				B794018920BD99880035C82D /* LaunchScreen.storyboard */,
 				B794018C20BD99880035C82D /* Info.plist */,
-				B79401AE20BDAF7B0035C82D /* SimpleCocktail.swift */,
-				B79401B020BDC26A0035C82D /* CocktailAPIService.swift */,
 			);
 			path = MixMakers;
 			sourceTree = "<group>";
@@ -201,7 +232,6 @@
 			isa = PBXGroup;
 			children = (
 				6921D78620C053AD00E4583B /* HomepageUITests.swift */,
-				B79401A020BD99880035C82D /* MixMakersUITests.swift */,
 				B79401A220BD99880035C82D /* Info.plist */,
 			);
 			path = MixMakersUITests;
