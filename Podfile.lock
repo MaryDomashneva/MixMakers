@@ -1,6 +1,9 @@
 PODS:
   - Nimble (7.1.1)
   - Nuke (6.1.1)
+  - NVActivityIndicatorView (4.2.1):
+    - NVActivityIndicatorView/Presenter (= 4.2.1)
+  - NVActivityIndicatorView/Presenter (4.2.1)
   - OHHTTPStubs/Core (6.1.0)
   - OHHTTPStubs/Default (6.1.0):
     - OHHTTPStubs/Core
@@ -19,6 +22,7 @@ PODS:
 DEPENDENCIES:
   - Nimble
   - Nuke (~> 6.0)
+  - NVActivityIndicatorView
   - OHHTTPStubs/Swift
   - Quick
 
@@ -26,15 +30,17 @@ SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Nimble
     - Nuke
+    - NVActivityIndicatorView
     - OHHTTPStubs
     - Quick
 
 SPEC CHECKSUMS:
   Nimble: 391f07782af4b37914f9bd7b2ffbb952731b8202
   Nuke: bf5d58b2d95ff15cb170c231fe6002d706be77e1
+  NVActivityIndicatorView: 8068ba3ad39cb44cbaab25d89ff2546b3f092681
   OHHTTPStubs: 1e21c7d2c084b8153fc53d48400d8919d2d432d0
   Quick: 03278013f71aa05fe9ecabc94fbcc6835f1ee76f
 
-PODFILE CHECKSUM: 5200f2b39f392184b3dc7c2f03e4438d8947c43f
+PODFILE CHECKSUM: d776964d748d1eceb3697a9ecae63f3c0f2a043d
 
 COCOAPODS: 1.5.3

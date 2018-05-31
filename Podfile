@@ -11,6 +11,7 @@ target 'MixMakers' do
   use_frameworks!
 
   pod 'Nuke', '~> 6.0'
+  pod 'NVActivityIndicatorView'
 
   target 'MixMakersTests' do
     inherit! :search_paths
