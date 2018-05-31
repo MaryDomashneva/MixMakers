@@ -20,6 +20,19 @@ class CocktailListViewController: UIViewController, UITableViewDelegate, UITable
     override func viewDidLoad() {
         
         super.viewDidLoad()
+    
+        if cocktails.count == 0 {
+            let alert = UIAlertController(title: nil, message: "Loading \(searchTerm) cocktails...", preferredStyle: .alert)
+            
+            let loadingIndicator = UIActivityIndicatorView(frame: CGRect(x: 10, y: 5, width: 50, height: 50))
+            loadingIndicator.hidesWhenStopped = true
+            loadingIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.gray
+            loadingIndicator.startAnimating();
+            
+            alert.view.addSubview(loadingIndicator)
+            present(alert, animated: true, completion: nil)
+        }
+        
         tableView.register(UINib(nibName: "CocktailListView", bundle: nil), forCellReuseIdentifier: "CocktailListTableViewCell")
         loadCocktails(with: searchTerm)
     }
@@ -44,6 +57,7 @@ class CocktailListViewController: UIViewController, UITableViewDelegate, UITable
     }
     
     func update(with newCocktails: [SimpleCocktail]) {
+        dismiss(animated: false, completion: nil)
         cocktails = newCocktails
         tableView.reloadData()
     }
