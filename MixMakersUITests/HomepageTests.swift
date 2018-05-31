@@ -1,15 +1,14 @@
 //
-//  MixMakersTests.swift
-//  MixMakersTests
+//  HomepageTests.swift
+//  MixMakers
 //
-//  Created by Maria Getmanova on 29/05/2018.
+//  Created by Jack Dewinter on 30/05/2018.
 //  Copyright © 2018 MixMakers. All rights reserved.
 //
 
 import XCTest
-@testable import MixMakers
 
-class MixMakersTests: XCTestCase {
+class HomepageTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
@@ -21,9 +20,7 @@ class MixMakersTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
 
-    }
     
     func testPerformanceExample() {
         // This is an example of a performance test case.

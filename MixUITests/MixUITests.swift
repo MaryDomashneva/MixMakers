@@ -1,14 +1,15 @@
 //
-//  MixMakersUITests.swift
-//  MixMakersUITests
+//  MixUITests.swift
+//  MixUITests
 //
-//  Created by Maria Getmanova on 29/05/2018.
+//  Created by Jack Dewinter on 30/05/2018.
 //  Copyright © 2018 MixMakers. All rights reserved.
 //
 
 import XCTest
+@testable import MixMakers
 
-class MixMakersUITests: XCTestCase {
+class MixUITests: XCTestCase {
         
     override func setUp() {
         super.setUp()
@@ -29,8 +30,13 @@ class MixMakersUITests: XCTestCase {
     }
     
     func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct 
+        let app = XCUIApplication()
+        app.launch()
+        let searchTextField = app.textFields["searchTerm"]
+        searchTextField.tap()
+        searchTextField.typeText("vodka")
+        app.buttons["Search"].tap()
+        
     }
     
 }

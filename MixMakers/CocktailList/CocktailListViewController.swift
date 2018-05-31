@@ -10,15 +10,18 @@ import UIKit
 
 class CocktailListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource
 {
+    var searchTerm = ""
+    
     @IBOutlet var tableView: UITableView! //link code and view
     
     var cocktails: [SimpleCoctail] = []
     let cocktailAPIService = CocktailService()
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         tableView.register(UINib(nibName: "CocktailListView", bundle: nil), forCellReuseIdentifier: "CocktailListTableViewCell")
-        loadCocktails(with: "Gin")
+        loadCocktails(with: searchTerm)
     }
     
     // MARK: - Helpers
