@@ -7,17 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-
 		0637971C20BEFF4600188B68 /* CocktailAPIServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0637971B20BEFF4600188B68 /* CocktailAPIServiceSpec.swift */; };
 		0637971F20BF1F8A00188B68 /* load_cocktails_with_gin.json in Resources */ = {isa = PBXBuildFile; fileRef = 0637971E20BF1F8A00188B68 /* load_cocktails_with_gin.json */; };
 		128167E4B419E44803663B7A /* Pods_MixMakersUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FED1C9C1B1CDAF3A9D094C47 /* Pods_MixMakersUITests.framework */; };
+		694A4F9120C00EC100D14E7B /* HomepageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694A4F9020C00EC100D14E7B /* HomepageViewController.swift */; };
 		89B080831FA50141CE739A49 /* Pods_MixMakersTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07040139A72381AED30050DD /* Pods_MixMakersTests.framework */; };
 		B794018120BD99860035C82D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B794018020BD99860035C82D /* AppDelegate.swift */; };
 		B794018620BD99860035C82D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B794018420BD99860035C82D /* Main.storyboard */; };
 		B794018820BD99880035C82D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B794018720BD99880035C82D /* Assets.xcassets */; };
 		B794018B20BD99880035C82D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B794018920BD99880035C82D /* LaunchScreen.storyboard */; };
 		B794019620BD99880035C82D /* MixMakersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B794019520BD99880035C82D /* MixMakersTests.swift */; };
-		B79401AF20BDAF7B0035C82D /* Cocktail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79401AE20BDAF7B0035C82D /* Cocktail.swift */; };
+		B79401AF20BDAF7B0035C82D /* SimpleCocktail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79401AE20BDAF7B0035C82D /* SimpleCocktail.swift */; };
 		B79401B120BDC26A0035C82D /* CocktailAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79401B020BDC26A0035C82D /* CocktailAPIService.swift */; };
 		B79401B720BDFC250035C82D /* CocktailListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79401B620BDFC250035C82D /* CocktailListViewController.swift */; };
 		B79401BA20BDFC5E0035C82D /* CocktailListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79401B920BDFC5E0035C82D /* CocktailListTableViewCell.swift */; };
@@ -50,12 +50,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-
 		0637971B20BEFF4600188B68 /* CocktailAPIServiceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailAPIServiceSpec.swift; sourceTree = "<group>"; };
 		0637971E20BF1F8A00188B68 /* load_cocktails_with_gin.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = load_cocktails_with_gin.json; sourceTree = "<group>"; };
 		07040139A72381AED30050DD /* Pods_MixMakersTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MixMakersTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1148732BA0B63914194508E5 /* Pods-MixMakersTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MixMakersTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MixMakersTests/Pods-MixMakersTests.release.xcconfig"; sourceTree = "<group>"; };
 		373277F4F5F1C50B98032D1A /* Pods-MixMakersUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MixMakersUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MixMakersUITests/Pods-MixMakersUITests.release.xcconfig"; sourceTree = "<group>"; };
+		694A4F9020C00EC100D14E7B /* HomepageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomepageViewController.swift; path = /Users/jd/makers/MixMakers/MixMakers/HomepageViewController.swift; sourceTree = "<absolute>"; };
 		75984F83D09A9477373146C3 /* Pods-MixMakersTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MixMakersTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MixMakersTests/Pods-MixMakersTests.debug.xcconfig"; sourceTree = "<group>"; };
 		89D5911133A5D59EB4FF188C /* Pods-MixMakers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MixMakers.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MixMakers/Pods-MixMakers.debug.xcconfig"; sourceTree = "<group>"; };
 		AABB891773FB8C94CFC7ABD9 /* Pods-MixMakers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MixMakers.release.xcconfig"; path = "Pods/Target Support Files/Pods-MixMakers/Pods-MixMakers.release.xcconfig"; sourceTree = "<group>"; };
@@ -72,14 +72,13 @@
 		B794019C20BD99880035C82D /* MixMakersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MixMakersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B79401A020BD99880035C82D /* MixMakersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MixMakersUITests.swift; sourceTree = "<group>"; };
 		B79401A220BD99880035C82D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B79401AE20BDAF7B0035C82D /* Cocktail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cocktail.swift; sourceTree = "<group>"; };
+		B79401AE20BDAF7B0035C82D /* SimpleCocktail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCocktail.swift; sourceTree = "<group>"; };
 		B79401B020BDC26A0035C82D /* CocktailAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailAPIService.swift; sourceTree = "<group>"; };
 		B79401B620BDFC250035C82D /* CocktailListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CocktailListViewController.swift; sourceTree = "<group>"; };
 		B79401B920BDFC5E0035C82D /* CocktailListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailListTableViewCell.swift; sourceTree = "<group>"; };
 		B79401BB20BDFCCB0035C82D /* CocktailListView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CocktailListView.xib; sourceTree = "<group>"; };
 		C381A6FE886C0805F7EE4BE3 /* Pods-MixMakersUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MixMakersUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MixMakersUITests/Pods-MixMakersUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		FED1C9C1B1CDAF3A9D094C47 /* Pods_MixMakersUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MixMakersUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,7 +130,6 @@
 				B794017F20BD99860035C82D /* MixMakers */,
 				B794019420BD99880035C82D /* MixMakersTests */,
 				B794019F20BD99880035C82D /* MixMakersUITests */,
-				69D1AD8020BF01DA001906AE /* MixUITests */,
 				B794017E20BD99860035C82D /* Products */,
 				F6532155A33D3408C2BA5BA1 /* Pods */,
 				DBE13AA48FD471EF2F1A4609 /* Frameworks */,
@@ -144,7 +142,6 @@
 				B794017D20BD99860035C82D /* MixMakers.app */,
 				B794019120BD99880035C82D /* MixMakersTests.xctest */,
 				B794019C20BD99880035C82D /* MixMakersUITests.xctest */,
-				69D1AD7F20BF01DA001906AE /* MixUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -152,15 +149,14 @@
 		B794017F20BD99860035C82D /* MixMakers */ = {
 			isa = PBXGroup;
 			children = (
+				694A4F9020C00EC100D14E7B /* HomepageViewController.swift */,
 				B79401B820BDFC2C0035C82D /* CocktailList */,
 				B794018020BD99860035C82D /* AppDelegate.swift */,
-				6908C42520BF3E19003BC210 /* ViewController.swift */,
 				B794018420BD99860035C82D /* Main.storyboard */,
-				69D1AD6A20BEEC62001906AE /* HomepageViewController.swift */,
 				B794018720BD99880035C82D /* Assets.xcassets */,
 				B794018920BD99880035C82D /* LaunchScreen.storyboard */,
 				B794018C20BD99880035C82D /* Info.plist */,
-				B79401AE20BDAF7B0035C82D /* Cocktail.swift */,
+				B79401AE20BDAF7B0035C82D /* SimpleCocktail.swift */,
 				B79401B020BDC26A0035C82D /* CocktailAPIService.swift */,
 			);
 			path = MixMakers;
@@ -180,8 +176,6 @@
 		B794019F20BD99880035C82D /* MixMakersUITests */ = {
 			isa = PBXGroup;
 			children = (
-				69D1AD6F20BEF1CC001906AE /* HomepageTests.swift */,
-				69D1AD6C20BEECA7001906AE /* HomepageUITests.swift */,
 				B79401A020BD99880035C82D /* MixMakersUITests.swift */,
 				B79401A220BD99880035C82D /* Info.plist */,
 			);
@@ -198,7 +192,6 @@
 			path = CocktailList;
 			sourceTree = "<group>";
 		};
-
 		DBE13AA48FD471EF2F1A4609 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -240,7 +233,6 @@
 			);
 			name = MixUITests;
 			productName = MixUITests;
-			productReference = 69D1AD7F20BF01DA001906AE /* MixUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 		B794017C20BD99860035C82D /* MixMakers */ = {
@@ -496,10 +488,9 @@
 			files = (
 				B79401B120BDC26A0035C82D /* CocktailAPIService.swift in Sources */,
 				B79401BA20BDFC5E0035C82D /* CocktailListTableViewCell.swift in Sources */,
+				694A4F9120C00EC100D14E7B /* HomepageViewController.swift in Sources */,
 				B79401B720BDFC250035C82D /* CocktailListViewController.swift in Sources */,
-				69D1AD6B20BEEC62001906AE /* HomepageViewController.swift in Sources */,
-				6908C42620BF3E19003BC210 /* ViewController.swift in Sources */,
-				B79401AF20BDAF7B0035C82D /* Cocktail.swift in Sources */,
+				B79401AF20BDAF7B0035C82D /* SimpleCocktail.swift in Sources */,
 				B794018120BD99860035C82D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -517,7 +508,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6908C42420BF3BC5003BC210 /* HomepageUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
