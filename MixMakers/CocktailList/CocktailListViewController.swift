@@ -51,9 +51,14 @@ class CocktailListViewController: UIViewController, UITableViewDelegate, UITable
             if let error = error {
                 // Show error
             } else if let loadedCocktails = loadedCocktails {
-                self?.tableView.isHidden = false
-                self?.loadingContainerView.isHidden = true
-                self?.update(with: loadedCocktails)
+                if loadedCocktails.isEmpty {
+                    self?.loadingLabel.text = "Cocktails not found"
+                } else {
+                    self?.tableView.isHidden = false
+                    self?.loadingContainerView.isHidden = true
+                    self?.update(with: loadedCocktails)
+                }
+                
             } else {
                 // Show unknown error
             }

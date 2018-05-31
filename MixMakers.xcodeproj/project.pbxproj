@@ -14,6 +14,7 @@
 		6921D79D20C0558500E4583B /* HomepageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6921D78620C053AD00E4583B /* HomepageUITests.swift */; };
 		6921D79E20C055F500E4583B /* HomepageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6921D78620C053AD00E4583B /* HomepageUITests.swift */; };
 		89B080831FA50141CE739A49 /* Pods_MixMakersTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07040139A72381AED30050DD /* Pods_MixMakersTests.framework */; };
+		B7047E2A20C099B3005AD9C5 /* Ingredients.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7047E2920C099B3005AD9C5 /* Ingredients.swift */; };
 		B794018120BD99860035C82D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B794018020BD99860035C82D /* AppDelegate.swift */; };
 		B794018620BD99860035C82D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B794018420BD99860035C82D /* Main.storyboard */; };
 		B794018820BD99880035C82D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B794018720BD99880035C82D /* Assets.xcassets */; };
@@ -72,6 +73,7 @@
 		89D5911133A5D59EB4FF188C /* Pods-MixMakers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MixMakers.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MixMakers/Pods-MixMakers.debug.xcconfig"; sourceTree = "<group>"; };
 		AABB891773FB8C94CFC7ABD9 /* Pods-MixMakers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MixMakers.release.xcconfig"; path = "Pods/Target Support Files/Pods-MixMakers/Pods-MixMakers.release.xcconfig"; sourceTree = "<group>"; };
 		AC61156B3C265AC64DA3B165 /* Pods_MixMakers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MixMakers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7047E2920C099B3005AD9C5 /* Ingredients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredients.swift; sourceTree = "<group>"; };
 		B794017D20BD99860035C82D /* MixMakers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MixMakers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B794018020BD99860035C82D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B794018520BD99860035C82D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 			children = (
 				B79401AE20BDAF7B0035C82D /* SimpleCocktail.swift */,
 				C9ED2F0320C03EDF00651FE3 /* cocktailRecipes.swift */,
+				B7047E2920C099B3005AD9C5 /* Ingredients.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -530,11 +533,13 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-MixMakers/Pods-MixMakers-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
 				"${BUILT_PRODUCTS_DIR}/Nuke/Nuke.framework",
+				"${BUILT_PRODUCTS_DIR}/TTGTagCollectionView/TTGTagCollectionView.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nuke.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TTGTagCollectionView.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -583,6 +588,7 @@
 			files = (
 				B79401B120BDC26A0035C82D /* CocktailAPIService.swift in Sources */,
 				B79401BA20BDFC5E0035C82D /* CocktailListTableViewCell.swift in Sources */,
+				B7047E2A20C099B3005AD9C5 /* Ingredients.swift in Sources */,
 				067B791F20C00F4F005FDB3D /* HomepageViewController.swift in Sources */,
 				B79401B720BDFC250035C82D /* CocktailListViewController.swift in Sources */,
 				B79401AF20BDAF7B0035C82D /* SimpleCocktail.swift in Sources */,

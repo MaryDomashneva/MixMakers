@@ -18,24 +18,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="Search" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0er-H5-QTd">
-                                <rect key="frame" x="230" y="139" width="48" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="Search" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0er-H5-QTd">
+                                <rect key="frame" x="311" y="80" width="48" height="30"/>
                                 <accessibility key="accessibilityConfiguration" identifier="Search"/>
                                 <state key="normal" title="Search"/>
                                 <connections>
                                     <action selector="searchPressed:" destination="qIz-6t-7E5" eventType="touchUpInside" id="epV-Vl-NSF"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="searchTerm" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3Aw-91-Oj4" userLabel="searchTerm">
-                                <rect key="frame" x="95" y="139" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" restorationIdentifier="searchTerm" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3Aw-91-Oj4" userLabel="searchTerm">
+                                <rect key="frame" x="16" y="80" width="283" height="30"/>
                                 <accessibility key="accessibilityConfiguration" identifier="searchTerm"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yPv-lF-VOn">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mlt-P6-CpY">
+                                <rect key="frame" x="12" y="126" width="351" height="497"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yPv-lF-VOn">
                                 <rect key="frame" x="43" y="224" width="96" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Vodka"/>
@@ -43,7 +45,7 @@
                                     <action selector="vodkaPressed:" destination="qIz-6t-7E5" eventType="touchUpInside" id="O9Y-mv-JOf"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pn4-4j-cOX">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pn4-4j-cOX">
                                 <rect key="frame" x="172" y="229" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Gin"/>
@@ -51,7 +53,7 @@
                                     <action selector="ginPressed:" destination="qIz-6t-7E5" eventType="touchUpInside" id="hA4-jE-9ae"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="juJ-Lc-goG">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="juJ-Lc-goG">
                                 <rect key="frame" x="260" y="229" width="49" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Tequila"/>
@@ -59,7 +61,7 @@
                                     <action selector="tequilaPressed:" destination="qIz-6t-7E5" eventType="touchUpInside" id="UMc-bk-Lj8"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H2j-Uf-F9I">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H2j-Uf-F9I">
                                 <rect key="frame" x="119" y="278" width="49" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Brandy"/>
@@ -67,7 +69,7 @@
                                     <action selector="brandyPressed:" destination="qIz-6t-7E5" eventType="touchUpInside" id="83v-oU-WmP"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NZW-lP-I59">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NZW-lP-I59">
                                 <rect key="frame" x="223" y="278" width="31" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Rum"/>
@@ -77,11 +79,23 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="mlt-P6-CpY" firstAttribute="top" secondItem="3Aw-91-Oj4" secondAttribute="bottom" constant="16" id="7Ku-KO-d6w"/>
+                            <constraint firstItem="0er-H5-QTd" firstAttribute="leading" secondItem="3Aw-91-Oj4" secondAttribute="trailing" constant="12" id="AM8-uU-UWV"/>
+                            <constraint firstItem="3Aw-91-Oj4" firstAttribute="leading" secondItem="K4Y-7P-iPv" secondAttribute="leading" constant="16" id="Alu-RW-dM8"/>
+                            <constraint firstItem="3Aw-91-Oj4" firstAttribute="centerY" secondItem="0er-H5-QTd" secondAttribute="centerY" id="IX7-ti-1qD"/>
+                            <constraint firstItem="0er-H5-QTd" firstAttribute="top" secondItem="K4Y-7P-iPv" secondAttribute="top" constant="16" id="PKo-kT-F3h"/>
+                            <constraint firstItem="K4Y-7P-iPv" firstAttribute="trailing" secondItem="0er-H5-QTd" secondAttribute="trailing" constant="16" id="apY-tr-WzG"/>
+                            <constraint firstItem="mlt-P6-CpY" firstAttribute="leading" secondItem="K4Y-7P-iPv" secondAttribute="leading" constant="12" id="eoI-2a-rRM"/>
+                            <constraint firstItem="K4Y-7P-iPv" firstAttribute="trailing" secondItem="mlt-P6-CpY" secondAttribute="trailing" constant="12" id="gh9-fW-an8"/>
+                            <constraint firstItem="K4Y-7P-iPv" firstAttribute="bottom" secondItem="mlt-P6-CpY" secondAttribute="bottom" id="tN8-fL-tIb"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="K4Y-7P-iPv"/>
                     </view>
                     <navigationItem key="navigationItem" title="Search Cocktails" id="2ze-eB-IQk"/>
                     <connections>
                         <outlet property="searchTerm" destination="3Aw-91-Oj4" id="c4z-vH-ADv"/>
+                        <outlet property="tagsContainerView" destination="mlt-P6-CpY" id="PsI-vw-oab"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DlC-tR-5hf" userLabel="First Responder" sceneMemberID="firstResponder"/>
