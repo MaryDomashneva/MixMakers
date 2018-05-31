@@ -14,7 +14,7 @@ class CocktailListViewController: UIViewController, UITableViewDelegate, UITable
     
     @IBOutlet var tableView: UITableView! //link code and view
     
-    var cocktails: [SimpleCoctail] = []
+    var cocktails: [SimpleCocktail] = []
     let cocktailAPIService = CocktailService()
     
     override func viewDidLoad() {
@@ -39,7 +39,7 @@ class CocktailListViewController: UIViewController, UITableViewDelegate, UITable
         }
     }
     
-    func update(with newCocktails: [SimpleCoctail]) {
+    func update(with newCocktails: [SimpleCocktail]) {
         cocktails = newCocktails
         tableView.reloadData()
     }
