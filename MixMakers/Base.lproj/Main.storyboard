@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="X5E-ca-D3i">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="X5E-ca-D3i">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -96,6 +96,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NX2-xa-sdu">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2zq-3F-Goh" customClass="NVActivityIndicatorView" customModule="NVActivityIndicatorView">
+                                        <rect key="frame" x="157.5" y="277.5" width="60" height="60"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="BM5-7H-bfy"/>
+                                            <constraint firstAttribute="width" constant="60" id="aiC-oh-SOt"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                <color key="value" red="0.79607843137254897" green="0.79607843137254897" blue="0.79607843137254897" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lRj-vx-5R0">
+                                        <rect key="frame" x="167" y="349.5" width="42" height="20.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <color key="textColor" red="0.090196078431372548" green="0.090196078431372548" blue="0.090196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="2zq-3F-Goh" firstAttribute="centerX" secondItem="NX2-xa-sdu" secondAttribute="centerX" id="6sG-as-95E"/>
+                                    <constraint firstItem="lRj-vx-5R0" firstAttribute="centerX" secondItem="NX2-xa-sdu" secondAttribute="centerX" id="SX6-QL-Ncp"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="lRj-vx-5R0" secondAttribute="trailing" constant="16" id="c6w-Fj-MJF"/>
+                                    <constraint firstItem="lRj-vx-5R0" firstAttribute="top" secondItem="2zq-3F-Goh" secondAttribute="bottom" constant="12" id="erD-pS-cHh"/>
+                                    <constraint firstItem="lRj-vx-5R0" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="NX2-xa-sdu" secondAttribute="leading" constant="16" id="iYU-uD-VJs"/>
+                                    <constraint firstItem="2zq-3F-Goh" firstAttribute="centerY" secondItem="NX2-xa-sdu" secondAttribute="centerY" constant="-16" id="llD-mQ-ynL"/>
+                                </constraints>
+                            </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="QCI-0P-myp">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -107,22 +140,29 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="84d-zm-PnN" firstAttribute="bottom" secondItem="NX2-xa-sdu" secondAttribute="bottom" id="4M2-DM-HFd"/>
                             <constraint firstItem="QCI-0P-myp" firstAttribute="top" secondItem="84d-zm-PnN" secondAttribute="top" id="Ea1-u7-HOb"/>
+                            <constraint firstItem="84d-zm-PnN" firstAttribute="trailing" secondItem="NX2-xa-sdu" secondAttribute="trailing" id="NKj-Oc-Ia4"/>
                             <constraint firstItem="QCI-0P-myp" firstAttribute="leading" secondItem="84d-zm-PnN" secondAttribute="leading" id="P1w-SE-g30"/>
                             <constraint firstItem="84d-zm-PnN" firstAttribute="trailing" secondItem="QCI-0P-myp" secondAttribute="trailing" id="Rkn-50-Lhq"/>
+                            <constraint firstItem="NX2-xa-sdu" firstAttribute="leading" secondItem="84d-zm-PnN" secondAttribute="leading" id="ajT-6m-T0D"/>
                             <constraint firstItem="84d-zm-PnN" firstAttribute="bottom" secondItem="QCI-0P-myp" secondAttribute="bottom" id="jBi-jT-GQw"/>
+                            <constraint firstItem="NX2-xa-sdu" firstAttribute="top" secondItem="84d-zm-PnN" secondAttribute="top" id="tLv-9G-fQe"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="84d-zm-PnN"/>
                     </view>
                     <navigationItem key="navigationItem" title="Cocktails" id="Zdg-LL-3N3"/>
                     <connections>
+                        <outlet property="loadingContainerView" destination="NX2-xa-sdu" id="Qz9-Fz-kgU"/>
+                        <outlet property="loadingLabel" destination="lRj-vx-5R0" id="dAg-Om-7cv"/>
+                        <outlet property="nvActivityIndicatorView" destination="2zq-3F-Goh" id="7S3-Np-LLU"/>
                         <outlet property="tableView" destination="QCI-0P-myp" id="Wzy-i6-Db1"/>
                         <segue destination="fQi-CD-biS" kind="show" identifier="showRecipe" id="rDn-7T-fWb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="umS-6c-NSs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2252" y="131.78410794602701"/>
+            <point key="canvasLocation" x="2050" y="121"/>
         </scene>
         <!--Recipe View Controller-->
         <scene sceneID="gRQ-RP-yWi">

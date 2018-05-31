@@ -7,12 +7,16 @@
 //
 
 import UIKit
+import NVActivityIndicatorView
 
 class CocktailListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource
 {
     var searchTerm = ""
     
     @IBOutlet var tableView: UITableView! //link code and view
+    @IBOutlet var nvActivityIndicatorView: NVActivityIndicatorView! //link code and view
+    @IBOutlet var loadingLabel: UILabel! //link code and view
+    @IBOutlet var loadingContainerView: UIView! //link code and view
     
     var cocktails: [SimpleCocktail] = []
     let cocktailAPIService = CocktailService()
@@ -20,17 +24,14 @@ class CocktailListViewController: UIViewController, UITableViewDelegate, UITable
     override func viewDidLoad() {
         
         super.viewDidLoad()
-    
         if cocktails.count == 0 {
-            let alert = UIAlertController(title: nil, message: "Loading \(searchTerm) cocktails...", preferredStyle: .alert)
-            
-            let loadingIndicator = UIActivityIndicatorView(frame: CGRect(x: 10, y: 5, width: 50, height: 50))
-            loadingIndicator.hidesWhenStopped = true
-            loadingIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.gray
-            loadingIndicator.startAnimating();
-            
-            alert.view.addSubview(loadingIndicator)
-            present(alert, animated: true, completion: nil)
+            tableView.isHidden = true
+            loadingContainerView.isHidden = false
+            loadingLabel.text = "Loading \(searchTerm) cocktails..."
+            nvActivityIndicatorView.startAnimating()
+        } else {
+            tableView.isHidden = false
+            loadingContainerView.isHidden = true
         }
         
         tableView.register(UINib(nibName: "CocktailListView", bundle: nil), forCellReuseIdentifier: "CocktailListTableViewCell")
@@ -46,9 +47,12 @@ class CocktailListViewController: UIViewController, UITableViewDelegate, UITable
     func loadCocktails(with ingredient: String) {
         cocktailAPIService.getAllCocktails(with: ingredient)
         { [weak self] loadedCocktails, error in
+            self?.nvActivityIndicatorView.stopAnimating()
             if let error = error {
                 // Show error
             } else if let loadedCocktails = loadedCocktails {
+                self?.tableView.isHidden = false
+                self?.loadingContainerView.isHidden = true
                 self?.update(with: loadedCocktails)
             } else {
                 // Show unknown error
@@ -57,7 +61,6 @@ class CocktailListViewController: UIViewController, UITableViewDelegate, UITable
     }
     
     func update(with newCocktails: [SimpleCocktail]) {
-        dismiss(animated: false, completion: nil)
         cocktails = newCocktails
         tableView.reloadData()
     }
