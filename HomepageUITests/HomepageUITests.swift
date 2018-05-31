@@ -14,7 +14,7 @@ class HomepageUITests: XCTestCase {
         
     override func setUp() {
         super.setUp()
-        
+        let 
         // Put setup code here. This method is called before the invocation of each test method in the class.
         
         // In UI tests it is usually best to stop immediately when a failure occurs.
@@ -38,7 +38,9 @@ class HomepageUITests: XCTestCase {
     }
     
     func testSendSearchTerm() {
-        
+        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        let cocktailController = storyboard.instantiateViewController(withIdentifier: "Cocktails") as! CocktailListViewController
+        let cocktail = CocktailService()
         let app = XCUIApplication()
         app.launch()
         let searchButton = app.buttons["Search"]
@@ -46,7 +48,7 @@ class HomepageUITests: XCTestCase {
         searchField.tap()
         searchField.typeText("gin")
         searchButton.tap()
-        
+        XCTAssertTrue(cocktailController.searchTerm == "gin")
     }
     
 }

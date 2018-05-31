@@ -16,6 +16,7 @@ class HomepageViewController: UIViewController {
         let resultView = storyboard?.instantiateViewController(withIdentifier: "Cocktails") as! CocktailListViewController
         resultView.searchTerm = searchTerm.text!
         navigationController?.pushViewController(resultView, animated: true)
+        let cocktail = CocktailService()
     }
     override func viewDidLoad() {
         super.viewDidLoad()
