@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-
 		0637971C20BEFF4600188B68 /* CocktailAPIServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0637971B20BEFF4600188B68 /* CocktailAPIServiceSpec.swift */; };
 		0637971F20BF1F8A00188B68 /* load_cocktails_with_gin.json in Resources */ = {isa = PBXBuildFile; fileRef = 0637971E20BF1F8A00188B68 /* load_cocktails_with_gin.json */; };
+		067B791F20C00F4F005FDB3D /* HomepageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067B791E20C00F4F005FDB3D /* HomepageViewController.swift */; };
 		128167E4B419E44803663B7A /* Pods_MixMakersUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FED1C9C1B1CDAF3A9D094C47 /* Pods_MixMakersUITests.framework */; };
 		89B080831FA50141CE739A49 /* Pods_MixMakersTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07040139A72381AED30050DD /* Pods_MixMakersTests.framework */; };
 		B794018120BD99860035C82D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B794018020BD99860035C82D /* AppDelegate.swift */; };
@@ -23,6 +23,8 @@
 		B79401BA20BDFC5E0035C82D /* CocktailListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79401B920BDFC5E0035C82D /* CocktailListTableViewCell.swift */; };
 		B79401BC20BDFCCB0035C82D /* CocktailListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B79401BB20BDFCCB0035C82D /* CocktailListView.xib */; };
 		C584CBDE8B34CEC964BB326B /* Pods_MixMakers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC61156B3C265AC64DA3B165 /* Pods_MixMakers.framework */; };
+		C9ED2F0220C03AF800651FE3 /* recipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9ED2F0120C03AF800651FE3 /* recipeViewController.swift */; };
+		C9ED2F0420C03EDF00651FE3 /* cocktailRecipes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9ED2F0320C03EDF00651FE3 /* cocktailRecipes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,9 +52,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-
 		0637971B20BEFF4600188B68 /* CocktailAPIServiceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailAPIServiceSpec.swift; sourceTree = "<group>"; };
 		0637971E20BF1F8A00188B68 /* load_cocktails_with_gin.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = load_cocktails_with_gin.json; sourceTree = "<group>"; };
+		067B791E20C00F4F005FDB3D /* HomepageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomepageViewController.swift; sourceTree = "<group>"; };
 		07040139A72381AED30050DD /* Pods_MixMakersTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MixMakersTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1148732BA0B63914194508E5 /* Pods-MixMakersTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MixMakersTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MixMakersTests/Pods-MixMakersTests.release.xcconfig"; sourceTree = "<group>"; };
 		373277F4F5F1C50B98032D1A /* Pods-MixMakersUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MixMakersUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MixMakersUITests/Pods-MixMakersUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -78,8 +80,9 @@
 		B79401B920BDFC5E0035C82D /* CocktailListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailListTableViewCell.swift; sourceTree = "<group>"; };
 		B79401BB20BDFCCB0035C82D /* CocktailListView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CocktailListView.xib; sourceTree = "<group>"; };
 		C381A6FE886C0805F7EE4BE3 /* Pods-MixMakersUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MixMakersUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MixMakersUITests/Pods-MixMakersUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C9ED2F0120C03AF800651FE3 /* recipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recipeViewController.swift; sourceTree = "<group>"; };
+		C9ED2F0320C03EDF00651FE3 /* cocktailRecipes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cocktailRecipes.swift; sourceTree = "<group>"; };
 		FED1C9C1B1CDAF3A9D094C47 /* Pods_MixMakersUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MixMakersUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,7 +134,6 @@
 				B794017F20BD99860035C82D /* MixMakers */,
 				B794019420BD99880035C82D /* MixMakersTests */,
 				B794019F20BD99880035C82D /* MixMakersUITests */,
-				69D1AD8020BF01DA001906AE /* MixUITests */,
 				B794017E20BD99860035C82D /* Products */,
 				F6532155A33D3408C2BA5BA1 /* Pods */,
 				DBE13AA48FD471EF2F1A4609 /* Frameworks */,
@@ -144,7 +146,6 @@
 				B794017D20BD99860035C82D /* MixMakers.app */,
 				B794019120BD99880035C82D /* MixMakersTests.xctest */,
 				B794019C20BD99880035C82D /* MixMakersUITests.xctest */,
-				69D1AD7F20BF01DA001906AE /* MixUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -152,11 +153,12 @@
 		B794017F20BD99860035C82D /* MixMakers */ = {
 			isa = PBXGroup;
 			children = (
+				067B791E20C00F4F005FDB3D /* HomepageViewController.swift */,
 				B79401B820BDFC2C0035C82D /* CocktailList */,
 				B794018020BD99860035C82D /* AppDelegate.swift */,
-				6908C42520BF3E19003BC210 /* ViewController.swift */,
 				B794018420BD99860035C82D /* Main.storyboard */,
-				69D1AD6A20BEEC62001906AE /* HomepageViewController.swift */,
+				C9ED2F0320C03EDF00651FE3 /* cocktailRecipes.swift */,
+				C9ED2F0120C03AF800651FE3 /* recipeViewController.swift */,
 				B794018720BD99880035C82D /* Assets.xcassets */,
 				B794018920BD99880035C82D /* LaunchScreen.storyboard */,
 				B794018C20BD99880035C82D /* Info.plist */,
@@ -180,8 +182,6 @@
 		B794019F20BD99880035C82D /* MixMakersUITests */ = {
 			isa = PBXGroup;
 			children = (
-				69D1AD6F20BEF1CC001906AE /* HomepageTests.swift */,
-				69D1AD6C20BEECA7001906AE /* HomepageUITests.swift */,
 				B79401A020BD99880035C82D /* MixMakersUITests.swift */,
 				B79401A220BD99880035C82D /* Info.plist */,
 			);
@@ -198,7 +198,6 @@
 			path = CocktailList;
 			sourceTree = "<group>";
 		};
-
 		DBE13AA48FD471EF2F1A4609 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -240,7 +239,6 @@
 			);
 			name = MixUITests;
 			productName = MixUITests;
-			productReference = 69D1AD7F20BF01DA001906AE /* MixUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 		B794017C20BD99860035C82D /* MixMakers */ = {
@@ -496,11 +494,12 @@
 			files = (
 				B79401B120BDC26A0035C82D /* CocktailAPIService.swift in Sources */,
 				B79401BA20BDFC5E0035C82D /* CocktailListTableViewCell.swift in Sources */,
+				067B791F20C00F4F005FDB3D /* HomepageViewController.swift in Sources */,
 				B79401B720BDFC250035C82D /* CocktailListViewController.swift in Sources */,
-				69D1AD6B20BEEC62001906AE /* HomepageViewController.swift in Sources */,
-				6908C42620BF3E19003BC210 /* ViewController.swift in Sources */,
 				B79401AF20BDAF7B0035C82D /* Cocktail.swift in Sources */,
+				C9ED2F0420C03EDF00651FE3 /* cocktailRecipes.swift in Sources */,
 				B794018120BD99860035C82D /* AppDelegate.swift in Sources */,
+				C9ED2F0220C03AF800651FE3 /* recipeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -517,7 +516,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6908C42420BF3BC5003BC210 /* HomepageUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -717,13 +715,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 545UKC23KK;
+				DEVELOPMENT_TEAM = 6GL6GLH3DL;
 				INFOPLIST_FILE = MixMakers/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = MixMakers.MixMakers;
+				PRODUCT_BUNDLE_IDENTIFIER = LMAKMixMakers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -736,13 +734,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 545UKC23KK;
+				DEVELOPMENT_TEAM = 6GL6GLH3DL;
 				INFOPLIST_FILE = MixMakers/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = MixMakers.MixMakers;
+				PRODUCT_BUNDLE_IDENTIFIER = LMAKMixMakers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -17,6 +17,40 @@ class HomepageViewController: UIViewController {
         resultView.searchTerm = searchTerm.text!
         navigationController?.pushViewController(resultView, animated: true)
     }
+    
+    
+    @IBAction func vodkaPressed(_ sender: Any) {
+        let resultView = storyboard?.instantiateViewController(withIdentifier: "Cocktails") as! CocktailListViewController
+        resultView.searchTerm = "Vodka"
+        navigationController?.pushViewController(resultView, animated: true)
+    }
+    
+    @IBAction func ginPressed(_ sender: Any) {
+        let resultView = storyboard?.instantiateViewController(withIdentifier: "Cocktails") as! CocktailListViewController
+        resultView.searchTerm = "Gin"
+        navigationController?.pushViewController(resultView, animated: true)
+    }
+    
+    @IBAction func tequilaPressed(_ sender: Any) {
+        let resultView = storyboard?.instantiateViewController(withIdentifier: "Cocktails") as! CocktailListViewController
+        resultView.searchTerm = "Tequila"
+        navigationController?.pushViewController(resultView, animated: true)
+    }
+    
+    @IBAction func brandyPressed(_ sender: Any) {
+        let resultView = storyboard?.instantiateViewController(withIdentifier: "Cocktails") as! CocktailListViewController
+        resultView.searchTerm = "Brandy"
+        navigationController?.pushViewController(resultView, animated: true)
+    }
+    
+    @IBAction func rumPressed(_ sender: Any) {
+        let resultView = storyboard?.instantiateViewController(withIdentifier: "Cocktails") as! CocktailListViewController
+        resultView.searchTerm = "Rum"
+        navigationController?.pushViewController(resultView, animated: true)
+    }
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
