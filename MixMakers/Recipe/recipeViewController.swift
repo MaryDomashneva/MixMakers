@@ -14,8 +14,12 @@ class recipeViewController: UIViewController {
     @IBOutlet weak var ingredients: UILabel!
     @IBOutlet weak var instructions: UILabel!
     
+    var cocktail:SimpleCocktail?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        ingredients.text = cocktail?.id
 
         // Do any additional setup after loading the view.
     }

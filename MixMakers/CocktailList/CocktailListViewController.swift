@@ -92,7 +92,12 @@ class CocktailListViewController: UIViewController, UITableViewDelegate, UITable
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
-        // Implement row selection logic
+        performSegue(withIdentifier: "showRecipe", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? recipeViewController {
+            destination.cocktail = cocktails[(tableView.indexPathForSelectedRow?.row)!]
+        }
     }
 }

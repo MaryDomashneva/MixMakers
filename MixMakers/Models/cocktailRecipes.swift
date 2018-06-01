@@ -18,4 +18,5 @@ struct cocktailRecipes:Decodable {
     let strMeasure1: String
     let strMeasure2: String
     let strMeasure3: String
+    let strMeasure4: String
 }
