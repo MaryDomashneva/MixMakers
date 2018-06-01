@@ -8,11 +8,14 @@
 
 import UIKit
 import TTGTagCollectionView
+import SwiftGifOrigin
 
 class HomepageViewController: UIViewController, TTGTextTagCollectionViewDelegate {
 
     @IBOutlet weak var searchTerm: UITextField!
     @IBOutlet weak var tagsContainerView: UIView!
+    @IBOutlet weak var gifImageView: UIImageView!
+    
     var tagsCollectionView: TTGTextTagCollectionView!
     
     @IBAction func searchPressed(_ sender: Any) {
@@ -63,6 +66,10 @@ class HomepageViewController: UIViewController, TTGTextTagCollectionViewDelegate
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let gif = UIImage.gif(url: "https://mattsko.files.wordpress.com/2013/07/dancing-cocktail-shaker.gif")
+        
+        self.gifImageView.image = gif
+
         tagsCollectionView = TTGTextTagCollectionView(frame: tagsContainerView.bounds)
         
         // Add tags to the container view
