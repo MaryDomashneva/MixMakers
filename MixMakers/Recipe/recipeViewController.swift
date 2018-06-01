@@ -16,17 +16,42 @@ class recipeViewController: UIViewController {
     
     var cocktail:SimpleCocktail?
     
+    var recipe: [CocktailRecipes] = []
+    let recipeAPIService = RecipeService()
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        ingredients.text = cocktail?.id
+        
+        loadRecipe(with: (cocktail?.id)!)
+        
+        ingredients.text = recipe.strIngredient1
 
         // Do any additional setup after loading the view.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func loadRecipe(with ingredient: String) {
+        recipeAPIService.getRecipe(with: (cocktail?.id)!)
+        { [weak self] loadedRecipe, error in
+            if let error = error {
+                // Show error
+            } else if let loadedRecipe = loadedRecipe {
+                if loadedRecipe.isEmpty {
+//                    self?.loadingLabel.text = "Recipe not found"
+                } else {
+                    self?.update(with: loadedRecipe)
+                }
+                
+            } else {
+                // Show unknown error
+            }
+        }
+    }
+    
+    func update(with newRecipe: [CocktailRecipes]) {
+        recipe = newRecipe
     }
     
     
