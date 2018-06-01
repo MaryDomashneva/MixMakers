@@ -34,31 +34,31 @@ class HomepageViewController: UIViewController, TTGTextTagCollectionViewDelegate
     
     @IBAction func vodkaPressed(_ sender: Any) {
         let resultView = storyboard?.instantiateViewController(withIdentifier: "Cocktails") as! CocktailListViewController
-        resultView.searchTerm = "Vodka"
+        resultView.searchTerm.append("Vodka")
         navigationController?.pushViewController(resultView, animated: true)
     }
     
     @IBAction func ginPressed(_ sender: Any) {
         let resultView = storyboard?.instantiateViewController(withIdentifier: "Cocktails") as! CocktailListViewController
-        resultView.searchTerm = "Gin"
+        resultView.searchTerm.append("Gin")
         navigationController?.pushViewController(resultView, animated: true)
     }
     
     @IBAction func tequilaPressed(_ sender: Any) {
         let resultView = storyboard?.instantiateViewController(withIdentifier: "Cocktails") as! CocktailListViewController
-        resultView.searchTerm = "Tequila"
+        resultView.searchTerm.append("Tequila")
         navigationController?.pushViewController(resultView, animated: true)
     }
     
     @IBAction func brandyPressed(_ sender: Any) {
         let resultView = storyboard?.instantiateViewController(withIdentifier: "Cocktails") as! CocktailListViewController
-        resultView.searchTerm = "Brandy"
+        resultView.searchTerm.append("Brandy")
         navigationController?.pushViewController(resultView, animated: true)
     }
     
     @IBAction func rumPressed(_ sender: Any) {
         let resultView = storyboard?.instantiateViewController(withIdentifier: "Cocktails") as! CocktailListViewController
-        resultView.searchTerm = "Rum"
+        resultView.searchTerm.append("Rum")
         navigationController?.pushViewController(resultView, animated: true)
     }
     

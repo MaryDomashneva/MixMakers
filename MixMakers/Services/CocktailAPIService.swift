@@ -13,6 +13,7 @@ class CocktailService
     typealias QueryArrayResult = ([SimpleCocktail]?, String?) -> Void
     
     // Sample url: https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita
+    
     let cocktailAPIKey: String
     let cocktailBaseURLString: String = "https://www.thecocktaildb.com/api/json/v1"
     let session: URLSession
