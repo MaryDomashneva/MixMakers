@@ -18,6 +18,7 @@ PODS:
   - OHHTTPStubs/Swift (6.1.0):
     - OHHTTPStubs/Default
   - Quick (1.3.0)
+  - SwiftGifOrigin (1.6.1)
   - TTGTagCollectionView (1.9.0)
 
 DEPENDENCIES:
@@ -26,6 +27,7 @@ DEPENDENCIES:
   - NVActivityIndicatorView
   - OHHTTPStubs/Swift
   - Quick
+  - SwiftGifOrigin
   - TTGTagCollectionView
 
 SPEC REPOS:
@@ -35,6 +37,7 @@ SPEC REPOS:
     - NVActivityIndicatorView
     - OHHTTPStubs
     - Quick
+    - SwiftGifOrigin
     - TTGTagCollectionView
 
 SPEC CHECKSUMS:
@@ -43,8 +46,9 @@ SPEC CHECKSUMS:
   NVActivityIndicatorView: 8068ba3ad39cb44cbaab25d89ff2546b3f092681
   OHHTTPStubs: 1e21c7d2c084b8153fc53d48400d8919d2d432d0
   Quick: 03278013f71aa05fe9ecabc94fbcc6835f1ee76f
+  SwiftGifOrigin: d6679d3ebe9df2e049a84bc52582635107b581f6
   TTGTagCollectionView: 958f20b946dee92a8ba20dc37d10a06737641ae9
 
-PODFILE CHECKSUM: c0a5a9eb33f9a43d6a795ceb3fc1cf62de95cfe3
+PODFILE CHECKSUM: 991eb16c4f176afeafb2a6691c36321c58cec065
 
 COCOAPODS: 1.5.3
