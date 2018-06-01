@@ -10,6 +10,16 @@
 		0637971C20BEFF4600188B68 /* CocktailAPIServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0637971B20BEFF4600188B68 /* CocktailAPIServiceSpec.swift */; };
 		0637971F20BF1F8A00188B68 /* load_cocktails_with_gin.json in Resources */ = {isa = PBXBuildFile; fileRef = 0637971E20BF1F8A00188B68 /* load_cocktails_with_gin.json */; };
 		067B791F20C00F4F005FDB3D /* HomepageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067B791E20C00F4F005FDB3D /* HomepageViewController.swift */; };
+		06AAE1DE20C150BE0047A484 /* vodkaFirstScreenJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = 06AAE1DD20C150BE0047A484 /* vodkaFirstScreenJSON.json */; };
+		06AAE1E020C1516D0047A484 /* ginFirstScreenJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = 06AAE1DF20C1516D0047A484 /* ginFirstScreenJSON.json */; };
+		06AAE1E220C1518F0047A484 /* tequilaFirstScreenJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = 06AAE1E120C1518F0047A484 /* tequilaFirstScreenJSON.json */; };
+		06AAE1E420C151A90047A484 /* brandyFirstScreenJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = 06AAE1E320C151A90047A484 /* brandyFirstScreenJSON.json */; };
+		06AAE1E620C151C50047A484 /* rumFIrstScreenJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = 06AAE1E520C151C50047A484 /* rumFIrstScreenJSON.json */; };
+		06AAE1E820C153490047A484 /* rumRecipeJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = 06AAE1E720C153490047A484 /* rumRecipeJSON.json */; };
+		06AAE1EA20C153A00047A484 /* vodkaRecipeJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = 06AAE1E920C153A00047A484 /* vodkaRecipeJSON.json */; };
+		06AAE1EC20C153B60047A484 /* ginRecipeJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = 06AAE1EB20C153B60047A484 /* ginRecipeJSON.json */; };
+		06AAE1EE20C153CA0047A484 /* tequilaRecipeJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = 06AAE1ED20C153CA0047A484 /* tequilaRecipeJSON.json */; };
+		06AAE1F020C153DF0047A484 /* brandyRecipeJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = 06AAE1EF20C153DF0047A484 /* brandyRecipeJSON.json */; };
 		128167E4B419E44803663B7A /* Pods_MixMakersUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FED1C9C1B1CDAF3A9D094C47 /* Pods_MixMakersUITests.framework */; };
 		6921D79D20C0558500E4583B /* HomepageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6921D78620C053AD00E4583B /* HomepageUITests.swift */; };
 		6921D79E20C055F500E4583B /* HomepageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6921D78620C053AD00E4583B /* HomepageUITests.swift */; };
@@ -64,6 +74,16 @@
 		0637971B20BEFF4600188B68 /* CocktailAPIServiceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailAPIServiceSpec.swift; sourceTree = "<group>"; };
 		0637971E20BF1F8A00188B68 /* load_cocktails_with_gin.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = load_cocktails_with_gin.json; sourceTree = "<group>"; };
 		067B791E20C00F4F005FDB3D /* HomepageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomepageViewController.swift; sourceTree = "<group>"; };
+		06AAE1DD20C150BE0047A484 /* vodkaFirstScreenJSON.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = vodkaFirstScreenJSON.json; sourceTree = "<group>"; };
+		06AAE1DF20C1516D0047A484 /* ginFirstScreenJSON.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ginFirstScreenJSON.json; sourceTree = "<group>"; };
+		06AAE1E120C1518F0047A484 /* tequilaFirstScreenJSON.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = tequilaFirstScreenJSON.json; sourceTree = "<group>"; };
+		06AAE1E320C151A90047A484 /* brandyFirstScreenJSON.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = brandyFirstScreenJSON.json; sourceTree = "<group>"; };
+		06AAE1E520C151C50047A484 /* rumFIrstScreenJSON.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = rumFIrstScreenJSON.json; sourceTree = "<group>"; };
+		06AAE1E720C153490047A484 /* rumRecipeJSON.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = rumRecipeJSON.json; sourceTree = "<group>"; };
+		06AAE1E920C153A00047A484 /* vodkaRecipeJSON.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = vodkaRecipeJSON.json; sourceTree = "<group>"; };
+		06AAE1EB20C153B60047A484 /* ginRecipeJSON.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ginRecipeJSON.json; sourceTree = "<group>"; };
+		06AAE1ED20C153CA0047A484 /* tequilaRecipeJSON.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = tequilaRecipeJSON.json; sourceTree = "<group>"; };
+		06AAE1EF20C153DF0047A484 /* brandyRecipeJSON.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = brandyRecipeJSON.json; sourceTree = "<group>"; };
 		07040139A72381AED30050DD /* Pods_MixMakersTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MixMakersTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1148732BA0B63914194508E5 /* Pods-MixMakersTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MixMakersTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MixMakersTests/Pods-MixMakersTests.release.xcconfig"; sourceTree = "<group>"; };
 		373277F4F5F1C50B98032D1A /* Pods-MixMakersUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MixMakersUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MixMakersUITests/Pods-MixMakersUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -146,6 +166,23 @@
 			path = Fixtures;
 			sourceTree = "<group>";
 		};
+		06AAE1DC20C1507D0047A484 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				06AAE1DD20C150BE0047A484 /* vodkaFirstScreenJSON.json */,
+				06AAE1DF20C1516D0047A484 /* ginFirstScreenJSON.json */,
+				06AAE1E120C1518F0047A484 /* tequilaFirstScreenJSON.json */,
+				06AAE1E320C151A90047A484 /* brandyFirstScreenJSON.json */,
+				06AAE1E520C151C50047A484 /* rumFIrstScreenJSON.json */,
+				06AAE1E720C153490047A484 /* rumRecipeJSON.json */,
+				06AAE1E920C153A00047A484 /* vodkaRecipeJSON.json */,
+				06AAE1EB20C153B60047A484 /* ginRecipeJSON.json */,
+				06AAE1ED20C153CA0047A484 /* tequilaRecipeJSON.json */,
+				06AAE1EF20C153DF0047A484 /* brandyRecipeJSON.json */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
 		B7047E2520C0978B005AD9C5 /* HomePage */ = {
 			isa = PBXGroup;
 			children = (
@@ -206,6 +243,7 @@
 		B794017F20BD99860035C82D /* MixMakers */ = {
 			isa = PBXGroup;
 			children = (
+				06AAE1DC20C1507D0047A484 /* JSON */,
 				B7047E2820C097EB005AD9C5 /* Services */,
 				B7047E2720C097C9005AD9C5 /* Models */,
 				B7047E2620C097A9005AD9C5 /* Recipe */,
@@ -442,9 +480,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				B794018B20BD99880035C82D /* LaunchScreen.storyboard in Resources */,
+				06AAE1E620C151C50047A484 /* rumFIrstScreenJSON.json in Resources */,
 				B794018820BD99880035C82D /* Assets.xcassets in Resources */,
 				B79401BC20BDFCCB0035C82D /* CocktailListView.xib in Resources */,
+				06AAE1EA20C153A00047A484 /* vodkaRecipeJSON.json in Resources */,
 				B794018620BD99860035C82D /* Main.storyboard in Resources */,
+				06AAE1E420C151A90047A484 /* brandyFirstScreenJSON.json in Resources */,
+				06AAE1F020C153DF0047A484 /* brandyRecipeJSON.json in Resources */,
+				06AAE1E820C153490047A484 /* rumRecipeJSON.json in Resources */,
+				06AAE1EE20C153CA0047A484 /* tequilaRecipeJSON.json in Resources */,
+				06AAE1DE20C150BE0047A484 /* vodkaFirstScreenJSON.json in Resources */,
+				06AAE1E220C1518F0047A484 /* tequilaFirstScreenJSON.json in Resources */,
+				06AAE1EC20C153B60047A484 /* ginRecipeJSON.json in Resources */,
+				06AAE1E020C1516D0047A484 /* ginFirstScreenJSON.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
