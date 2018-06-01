@@ -21,7 +21,7 @@ class HomepageViewController: UIViewController, TTGTextTagCollectionViewDelegate
     @IBAction func searchPressed(_ sender: Any) {
         if let searchText = searchTerm.text, !searchText.isEmpty {
             let resultView = storyboard?.instantiateViewController(withIdentifier: "Cocktails") as! CocktailListViewController
-            resultView.searchTerm = searchTerm.text!
+            resultView.searchTerm.append(searchTerm.text!)
             navigationController?.pushViewController(resultView, animated: true)
         } else {
             let emptySearchAlert = UIAlertController(title: "Please, enter ingredient!", message: nil, preferredStyle: UIAlertControllerStyle.alert)
@@ -100,7 +100,7 @@ class HomepageViewController: UIViewController, TTGTextTagCollectionViewDelegate
     func textTagCollectionView(_ textTagCollectionView: TTGTextTagCollectionView!, didTapTag tagText: String!, at index: UInt, selected: Bool, tagConfig config: TTGTextTagConfig!) {
         if selected {
             let resultView = storyboard?.instantiateViewController(withIdentifier: "Cocktails") as! CocktailListViewController
-            resultView.searchTerm = tagText
+            resultView.searchTerm.append(tagText)
             navigationController?.pushViewController(resultView, animated: true)
             DispatchQueue.main.asyncAfter(deadline: DispatchTime(uptimeNanoseconds: 10000000)) {
                 textTagCollectionView.setTagAt(index, selected: false)
