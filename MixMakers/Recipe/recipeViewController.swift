@@ -13,6 +13,7 @@ class recipeViewController: UIViewController {
     @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var ingredients: UILabel!
     @IBOutlet weak var instructions: UILabel!
+    @IBOutlet weak var measure: UILabel!
     
     var cocktail:SimpleCocktail?
     
@@ -26,8 +27,7 @@ class recipeViewController: UIViewController {
         
         
         loadRecipe(with: (cocktail?.id)!)
-        
-        ingredients.text = recipe.strIngredient1
+
 
         // Do any additional setup after loading the view.
     }
@@ -52,6 +52,9 @@ class recipeViewController: UIViewController {
     
     func update(with newRecipe: [CocktailRecipes]) {
         recipe = newRecipe
+        ingredients.text = recipe[0].strIngredient1
+        instructions.text = recipe[0].strInstructions
+        measure.text = recipe[0].strMeasure1
     }
     
     
