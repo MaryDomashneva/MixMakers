@@ -77,17 +77,34 @@ class CocktailListViewController: UIViewController, UITableViewDelegate, UITable
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return cocktails.count
+        return Int(ceilf(Float(cocktails.count / 2)))
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 44
+        return 230
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CocktailListTableViewCell", for: indexPath) as! CocktailListTableViewCell
-        let simpleCocktail = cocktails[indexPath.row]
-        cell.configure(with: simpleCocktail)
+        let row = indexPath.row * 2
+        let simpleCocktail = cocktails[row]
+        var anotherSimpleCocktail: SimpleCocktail? = nil
+        if cocktails.count > row + 1 {
+            anotherSimpleCocktail = cocktails[row + 1]
+        }
+        cell.configure(with: simpleCocktail, and: anotherSimpleCocktail)
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let firstContentVC = storyboard.instantiateViewController(withIdentifier: "RecipeViewController") as! recipeViewController
+        firstContentVC.cocktail = simpleCocktail
+        cell.cocktailOneCard.shouldPresent(firstContentVC, from: self, fullscreen: false)
+        
+        if let anotherSimpleCocktail = anotherSimpleCocktail {
+            let secondContentVC = storyboard.instantiateViewController(withIdentifier: "RecipeViewController") as! recipeViewController
+            secondContentVC.cocktail = anotherSimpleCocktail
+            cell.cocktailTwoCard.shouldPresent(secondContentVC, from: self, fullscreen: false)
+        }
+        
         return cell
     }
     

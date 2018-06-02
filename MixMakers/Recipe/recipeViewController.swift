@@ -32,9 +32,7 @@ class recipeViewController: UIViewController, UITableViewDelegate, UITableViewDa
             return 2
         }
     }
-    
-    @IBOutlet weak var cocktailImageViewHeight: NSLayoutConstraint!
-    @IBOutlet weak var cocktailImage: UIImageView!
+
     @IBOutlet weak var recipeTableView: UITableView!
     
     var cocktail:SimpleCocktail?
@@ -78,9 +76,6 @@ class recipeViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     func update(with newRecipe: [CocktailRecipes]) {
         recipe = newRecipe.first
-        if let strDrinkThumb = recipe?.strDrinkThumb, let imageURL = URL(string: strDrinkThumb) {
-            Manager.shared.loadImage(with: imageURL, into: cocktailImage)
-        }
         recipeTableView.reloadData()
     }
     
@@ -130,23 +125,4 @@ class recipeViewController: UIViewController, UITableViewDelegate, UITableViewDa
         }
     }
     
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        let offsetY = scrollView.contentOffset.y
-        if offsetY >= 0 {
-            cocktailImageViewHeight.constant = 150
-        } else {
-            cocktailImageViewHeight.constant = 150 - offsetY
-        }
-    }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

@@ -10,7 +10,7 @@ end
 target 'MixMakers' do
   use_frameworks!
 
-  pod 'Cards', 
+  pod 'Cards', :git => 'https://github.com/andyk144/Cards.git'
   pod 'Nuke', '~> 6.0'
   pod 'NVActivityIndicatorView'
   pod 'TTGTagCollectionView'
