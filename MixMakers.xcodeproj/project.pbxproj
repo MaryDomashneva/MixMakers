@@ -21,6 +21,11 @@
 		06AAE1EE20C153CA0047A484 /* tequilaRecipeJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = 06AAE1ED20C153CA0047A484 /* tequilaRecipeJSON.json */; };
 		06AAE1F020C153DF0047A484 /* brandyRecipeJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = 06AAE1EF20C153DF0047A484 /* brandyRecipeJSON.json */; };
 		128167E4B419E44803663B7A /* Pods_MixMakersUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FED1C9C1B1CDAF3A9D094C47 /* Pods_MixMakersUITests.framework */; };
+		691607BA20C1B1360001D6F3 /* Ingredient.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 691607B820C1B1360001D6F3 /* Ingredient.xcdatamodeld */; };
+		691607BC20C1B2AF0001D6F3 /* ImportData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691607BB20C1B2AF0001D6F3 /* ImportData.swift */; };
+		691607BE20C2A2D20001D6F3 /* CocktailListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691607BD20C2A2D20001D6F3 /* CocktailListTests.swift */; };
+		691607C020C2A75A0001D6F3 /* chocolateCocktails.json in Resources */ = {isa = PBXBuildFile; fileRef = 691607BF20C2A75A0001D6F3 /* chocolateCocktails.json */; };
+		691607C220C2B7020001D6F3 /* CombineSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691607C120C2B7020001D6F3 /* CombineSearch.swift */; };
 		6921D79D20C0558500E4583B /* HomepageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6921D78620C053AD00E4583B /* HomepageUITests.swift */; };
 		6921D79E20C055F500E4583B /* HomepageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6921D78620C053AD00E4583B /* HomepageUITests.swift */; };
 		89B080831FA50141CE739A49 /* Pods_MixMakersTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07040139A72381AED30050DD /* Pods_MixMakersTests.framework */; };
@@ -87,6 +92,11 @@
 		07040139A72381AED30050DD /* Pods_MixMakersTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MixMakersTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1148732BA0B63914194508E5 /* Pods-MixMakersTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MixMakersTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MixMakersTests/Pods-MixMakersTests.release.xcconfig"; sourceTree = "<group>"; };
 		373277F4F5F1C50B98032D1A /* Pods-MixMakersUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MixMakersUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MixMakersUITests/Pods-MixMakersUITests.release.xcconfig"; sourceTree = "<group>"; };
+		691607B920C1B1360001D6F3 /* Ingredient.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Ingredient.xcdatamodel; sourceTree = "<group>"; };
+		691607BB20C1B2AF0001D6F3 /* ImportData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportData.swift; sourceTree = "<group>"; };
+		691607BD20C2A2D20001D6F3 /* CocktailListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailListTests.swift; sourceTree = "<group>"; };
+		691607BF20C2A75A0001D6F3 /* chocolateCocktails.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = chocolateCocktails.json; sourceTree = "<group>"; };
+		691607C120C2B7020001D6F3 /* CombineSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineSearch.swift; sourceTree = "<group>"; };
 		6921D78620C053AD00E4583B /* HomepageUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomepageUITests.swift; path = ../HomepageTests/HomepageUITests.swift; sourceTree = "<group>"; };
 		6921D79320C0557200E4583B /* HomepageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HomepageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		75984F83D09A9477373146C3 /* Pods-MixMakersTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MixMakersTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MixMakersTests/Pods-MixMakersTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -162,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				0637971E20BF1F8A00188B68 /* load_cocktails_with_gin.json */,
+				691607BF20C2A75A0001D6F3 /* chocolateCocktails.json */,
 			);
 			path = Fixtures;
 			sourceTree = "<group>";
@@ -251,9 +262,11 @@
 				B79401B820BDFC2C0035C82D /* CocktailList */,
 				B794018020BD99860035C82D /* AppDelegate.swift */,
 				B794018420BD99860035C82D /* Main.storyboard */,
+				691607B820C1B1360001D6F3 /* Ingredient.xcdatamodeld */,
 				B794018720BD99880035C82D /* Assets.xcassets */,
 				B794018920BD99880035C82D /* LaunchScreen.storyboard */,
 				B794018C20BD99880035C82D /* Info.plist */,
+				691607BB20C1B2AF0001D6F3 /* ImportData.swift */,
 			);
 			path = MixMakers;
 			sourceTree = "<group>";
@@ -263,6 +276,7 @@
 			children = (
 				0637971D20BF1F4900188B68 /* Fixtures */,
 				B794019520BD99880035C82D /* MixMakersTests.swift */,
+				691607BD20C2A2D20001D6F3 /* CocktailListTests.swift */,
 				B794019720BD99880035C82D /* Info.plist */,
 				0637971B20BEFF4600188B68 /* CocktailAPIServiceSpec.swift */,
 			);
@@ -284,6 +298,7 @@
 				B79401B620BDFC250035C82D /* CocktailListViewController.swift */,
 				B79401B920BDFC5E0035C82D /* CocktailListTableViewCell.swift */,
 				B79401BB20BDFCCB0035C82D /* CocktailListView.xib */,
+				691607C120C2B7020001D6F3 /* CombineSearch.swift */,
 			);
 			path = CocktailList;
 			sourceTree = "<group>";
@@ -500,6 +515,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				691607C020C2A75A0001D6F3 /* chocolateCocktails.json in Resources */,
 				0637971F20BF1F8A00188B68 /* load_cocktails_with_gin.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -636,10 +652,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				691607BA20C1B1360001D6F3 /* Ingredient.xcdatamodeld in Sources */,
 				B79401B120BDC26A0035C82D /* CocktailAPIService.swift in Sources */,
 				B79401BA20BDFC5E0035C82D /* CocktailListTableViewCell.swift in Sources */,
 				B7047E2A20C099B3005AD9C5 /* Ingredients.swift in Sources */,
 				067B791F20C00F4F005FDB3D /* HomepageViewController.swift in Sources */,
+				691607C220C2B7020001D6F3 /* CombineSearch.swift in Sources */,
+				691607BC20C1B2AF0001D6F3 /* ImportData.swift in Sources */,
 				B79401B720BDFC250035C82D /* CocktailListViewController.swift in Sources */,
 				B79401AF20BDAF7B0035C82D /* SimpleCocktail.swift in Sources */,
 				C9ED2F0420C03EDF00651FE3 /* cocktailRecipes.swift in Sources */,
@@ -653,6 +672,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0637971C20BEFF4600188B68 /* CocktailAPIServiceSpec.swift in Sources */,
+				691607BE20C2A2D20001D6F3 /* CocktailListTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1077,6 +1097,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		691607B820C1B1360001D6F3 /* Ingredient.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				691607B920C1B1360001D6F3 /* Ingredient.xcdatamodel */,
+			);
+			currentVersion = 691607B920C1B1360001D6F3 /* Ingredient.xcdatamodel */;
+			path = Ingredient.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = B794017520BD99860035C82D /* Project object */;
 }

@@ -22,6 +22,7 @@ class CocktailListViewController: UIViewController, UITableViewDelegate, UITable
     var manyCocktails: [[SimpleCocktail]] = []
     let cocktailAPIService = CocktailService()
     var currentTerm = 0
+    let combineSearch = CombineSearch()
     
     override func viewDidLoad() {
         
@@ -55,46 +56,21 @@ class CocktailListViewController: UIViewController, UITableViewDelegate, UITable
                         let currentTerm = current + 1
                         self?.loadCocktails(with: ingredients, current: currentTerm)
                     }
-                    else{
+                    else {
                         self?.manyCocktails.append(loadedCocktails)
-                        let cocktails = self?.combine(with: (self?.manyCocktails)!)
-                        
-                        
-                        
-                        
+                        let cocktails = self?.combineSearch.combine(with: (self?.manyCocktails)!)
                         self?.tableView.isHidden = false
                         self?.loadingContainerView.isHidden = true
-                        self?.update(with: Array(cocktails!))
+                        self?.update(with: cocktails!)
                     }
                     // recursively call this until all ingredients in search term array are satisfied. Then only update the view with the common cocktails. An error or empty result will cancel the whole search as there will be no common cocktails
-                    
                 }
-                
             } else {
                 // Show unknown error
             }
         }
     }
     
-    func combine(with manyCocktails: [[SimpleCocktail]]) -> Set<SimpleCocktail>{
-        var combined:[Set<SimpleCocktail>] = []
-        var intersection: Set<SimpleCocktail> = []
-        for cocktailList in manyCocktails {
-            combined.append(Set(cocktailList))
-        }
-        
-        for i in 1...combined.count {
-            intersection = combined[i - 1].intersection(combined[1])
-        }
-
-        return intersection
-    }
-    
-    func union(cocktails: [SimpleCocktail]) -> [SimpleCocktail] {
-        var unionArray: [SimpleCocktail] = []
-        
-        return unionArray
-    }
     
     func update(with newCocktails: [SimpleCocktail]) {
         cocktails = newCocktails
