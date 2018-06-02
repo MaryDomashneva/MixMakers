@@ -1,4 +1,6 @@
 PODS:
+  - Cards (1.3.2):
+    - Player
   - Nimble (7.1.1)
   - Nuke (6.1.1)
   - NVActivityIndicatorView (4.2.1):
@@ -17,10 +19,12 @@ PODS:
   - OHHTTPStubs/OHPathHelpers (6.1.0)
   - OHHTTPStubs/Swift (6.1.0):
     - OHHTTPStubs/Default
+  - Player (0.8.4)
   - Quick (1.3.0)
   - TTGTagCollectionView (1.9.0)
 
 DEPENDENCIES:
+  - Cards
   - Nimble
   - Nuke (~> 6.0)
   - NVActivityIndicatorView
@@ -30,21 +34,25 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Cards
     - Nimble
     - Nuke
     - NVActivityIndicatorView
     - OHHTTPStubs
+    - Player
     - Quick
     - TTGTagCollectionView
 
 SPEC CHECKSUMS:
+  Cards: 69e8c83deebd5ed5bad7062dba603ce76992f712
   Nimble: 391f07782af4b37914f9bd7b2ffbb952731b8202
   Nuke: bf5d58b2d95ff15cb170c231fe6002d706be77e1
   NVActivityIndicatorView: 8068ba3ad39cb44cbaab25d89ff2546b3f092681
   OHHTTPStubs: 1e21c7d2c084b8153fc53d48400d8919d2d432d0
+  Player: e45514e9e5fb8ff18f50eb2ba6f84dac9b6a0024
   Quick: 03278013f71aa05fe9ecabc94fbcc6835f1ee76f
   TTGTagCollectionView: 958f20b946dee92a8ba20dc37d10a06737641ae9
 
-PODFILE CHECKSUM: c0a5a9eb33f9a43d6a795ceb3fc1cf62de95cfe3
+PODFILE CHECKSUM: 57354922fa5131d1f8ebc2793e380d42413b6005
 
 COCOAPODS: 1.5.3
