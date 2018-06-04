@@ -1,4 +1,6 @@
 PODS:
+  - Cards (1.3.1):
+    - Player
   - Nimble (7.1.1)
   - Nuke (6.1.1)
   - NVActivityIndicatorView (4.2.1):
@@ -17,11 +19,13 @@ PODS:
   - OHHTTPStubs/OHPathHelpers (6.1.0)
   - OHHTTPStubs/Swift (6.1.0):
     - OHHTTPStubs/Default
+  - Player (0.8.4)
   - Quick (1.3.0)
   - SwiftGifOrigin (1.6.1)
   - TTGTagCollectionView (1.9.0)
 
 DEPENDENCIES:
+  - Cards (from `https://github.com/andyk144/Cards.git`)
   - Nimble
   - Nuke (~> 6.0)
   - NVActivityIndicatorView
@@ -36,19 +40,30 @@ SPEC REPOS:
     - Nuke
     - NVActivityIndicatorView
     - OHHTTPStubs
+    - Player
     - Quick
     - SwiftGifOrigin
     - TTGTagCollectionView
 
+EXTERNAL SOURCES:
+  Cards:
+    :git: https://github.com/andyk144/Cards.git
+
+CHECKOUT OPTIONS:
+  Cards:
+    :commit: 916225f9ecb6b6506ab97dda05125ef3365ea7df
+    :git: https://github.com/andyk144/Cards.git
+
 SPEC CHECKSUMS:
+  Cards: 3a0bc53aa35b680d0baf0ff9d21b67ba916844e5
   Nimble: 391f07782af4b37914f9bd7b2ffbb952731b8202
   Nuke: bf5d58b2d95ff15cb170c231fe6002d706be77e1
   NVActivityIndicatorView: 8068ba3ad39cb44cbaab25d89ff2546b3f092681
   OHHTTPStubs: 1e21c7d2c084b8153fc53d48400d8919d2d432d0
+  Player: e45514e9e5fb8ff18f50eb2ba6f84dac9b6a0024
   Quick: 03278013f71aa05fe9ecabc94fbcc6835f1ee76f
   SwiftGifOrigin: d6679d3ebe9df2e049a84bc52582635107b581f6
   TTGTagCollectionView: 958f20b946dee92a8ba20dc37d10a06737641ae9
-
-PODFILE CHECKSUM: 991eb16c4f176afeafb2a6691c36321c58cec065
+PODFILE CHECKSUM: 8df035a2b56bbf6d84c7498354025c89b11ca7e6
 
 COCOAPODS: 1.5.3

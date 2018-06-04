@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0603F5F820C2B6F0002760B0 /* RecipeIngredientTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0603F5F720C2B6F0002760B0 /* RecipeIngredientTableViewCell.xib */; };
+		0603F5FA20C2B801002760B0 /* RecipeInstructionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0603F5F920C2B801002760B0 /* RecipeInstructionTableViewCell.xib */; };
+		0603F5FC20C2B8DA002760B0 /* RecipeIngredientTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0603F5FB20C2B8DA002760B0 /* RecipeIngredientTableViewCell.swift */; };
+		0603F5FE20C2B8ED002760B0 /* RecipeInstructionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0603F5FD20C2B8ED002760B0 /* RecipeInstructionTableViewCell.swift */; };
+		0603F60020C2DF97002760B0 /* RecipeHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0603F5FF20C2DF97002760B0 /* RecipeHeaderView.xib */; };
+		0603F60220C2E051002760B0 /* RecipeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0603F60120C2E051002760B0 /* RecipeHeaderView.swift */; };
 		0637971C20BEFF4600188B68 /* CocktailAPIServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0637971B20BEFF4600188B68 /* CocktailAPIServiceSpec.swift */; };
 		0637971F20BF1F8A00188B68 /* load_cocktails_with_gin.json in Resources */ = {isa = PBXBuildFile; fileRef = 0637971E20BF1F8A00188B68 /* load_cocktails_with_gin.json */; };
 		067B791F20C00F4F005FDB3D /* HomepageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067B791E20C00F4F005FDB3D /* HomepageViewController.swift */; };
@@ -41,7 +47,8 @@
 		B79401BC20BDFCCB0035C82D /* CocktailListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B79401BB20BDFCCB0035C82D /* CocktailListView.xib */; };
 		C584CBDE8B34CEC964BB326B /* Pods_MixMakers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC61156B3C265AC64DA3B165 /* Pods_MixMakers.framework */; };
 		C9ED2F0220C03AF800651FE3 /* recipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9ED2F0120C03AF800651FE3 /* recipeViewController.swift */; };
-		C9ED2F0420C03EDF00651FE3 /* cocktailRecipes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9ED2F0320C03EDF00651FE3 /* cocktailRecipes.swift */; };
+		C9ED2F0420C03EDF00651FE3 /* CocktailRecipes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9ED2F0320C03EDF00651FE3 /* CocktailRecipes.swift */; };
+		C9ED2F0820C18B3600651FE3 /* RecipeAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9ED2F0720C18B3600651FE3 /* RecipeAPIService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +83,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0603F5F720C2B6F0002760B0 /* RecipeIngredientTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecipeIngredientTableViewCell.xib; sourceTree = "<group>"; };
+		0603F5F920C2B801002760B0 /* RecipeInstructionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecipeInstructionTableViewCell.xib; sourceTree = "<group>"; };
+		0603F5FB20C2B8DA002760B0 /* RecipeIngredientTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeIngredientTableViewCell.swift; sourceTree = "<group>"; };
+		0603F5FD20C2B8ED002760B0 /* RecipeInstructionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeInstructionTableViewCell.swift; sourceTree = "<group>"; };
+		0603F5FF20C2DF97002760B0 /* RecipeHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecipeHeaderView.xib; sourceTree = "<group>"; };
+		0603F60120C2E051002760B0 /* RecipeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeHeaderView.swift; sourceTree = "<group>"; };
 		0637971B20BEFF4600188B68 /* CocktailAPIServiceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailAPIServiceSpec.swift; sourceTree = "<group>"; };
 		0637971E20BF1F8A00188B68 /* load_cocktails_with_gin.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = load_cocktails_with_gin.json; sourceTree = "<group>"; };
 		067B791E20C00F4F005FDB3D /* HomepageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomepageViewController.swift; sourceTree = "<group>"; };
@@ -122,7 +135,8 @@
 		B79401BB20BDFCCB0035C82D /* CocktailListView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CocktailListView.xib; sourceTree = "<group>"; };
 		C381A6FE886C0805F7EE4BE3 /* Pods-MixMakersUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MixMakersUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MixMakersUITests/Pods-MixMakersUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C9ED2F0120C03AF800651FE3 /* recipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recipeViewController.swift; sourceTree = "<group>"; };
-		C9ED2F0320C03EDF00651FE3 /* cocktailRecipes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cocktailRecipes.swift; sourceTree = "<group>"; };
+		C9ED2F0320C03EDF00651FE3 /* CocktailRecipes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailRecipes.swift; sourceTree = "<group>"; };
+		C9ED2F0720C18B3600651FE3 /* RecipeAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeAPIService.swift; sourceTree = "<group>"; };
 		FED1C9C1B1CDAF3A9D094C47 /* Pods_MixMakersUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MixMakersUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -206,6 +220,12 @@
 			isa = PBXGroup;
 			children = (
 				C9ED2F0120C03AF800651FE3 /* recipeViewController.swift */,
+				0603F5F720C2B6F0002760B0 /* RecipeIngredientTableViewCell.xib */,
+				0603F5F920C2B801002760B0 /* RecipeInstructionTableViewCell.xib */,
+				0603F5FB20C2B8DA002760B0 /* RecipeIngredientTableViewCell.swift */,
+				0603F5FD20C2B8ED002760B0 /* RecipeInstructionTableViewCell.swift */,
+				0603F5FF20C2DF97002760B0 /* RecipeHeaderView.xib */,
+				0603F60120C2E051002760B0 /* RecipeHeaderView.swift */,
 			);
 			path = Recipe;
 			sourceTree = "<group>";
@@ -214,7 +234,7 @@
 			isa = PBXGroup;
 			children = (
 				B79401AE20BDAF7B0035C82D /* SimpleCocktail.swift */,
-				C9ED2F0320C03EDF00651FE3 /* cocktailRecipes.swift */,
+				C9ED2F0320C03EDF00651FE3 /* CocktailRecipes.swift */,
 				B7047E2920C099B3005AD9C5 /* Ingredients.swift */,
 			);
 			path = Models;
@@ -224,6 +244,7 @@
 			isa = PBXGroup;
 			children = (
 				B79401B020BDC26A0035C82D /* CocktailAPIService.swift */,
+				C9ED2F0720C18B3600651FE3 /* RecipeAPIService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -496,10 +517,13 @@
 			files = (
 				B794018B20BD99880035C82D /* LaunchScreen.storyboard in Resources */,
 				06AAE1E620C151C50047A484 /* rumFIrstScreenJSON.json in Resources */,
+				0603F5FA20C2B801002760B0 /* RecipeInstructionTableViewCell.xib in Resources */,
+				0603F5F820C2B6F0002760B0 /* RecipeIngredientTableViewCell.xib in Resources */,
 				B794018820BD99880035C82D /* Assets.xcassets in Resources */,
 				B79401BC20BDFCCB0035C82D /* CocktailListView.xib in Resources */,
 				06AAE1EA20C153A00047A484 /* vodkaRecipeJSON.json in Resources */,
 				B794018620BD99860035C82D /* Main.storyboard in Resources */,
+				0603F60020C2DF97002760B0 /* RecipeHeaderView.xib in Resources */,
 				06AAE1E420C151A90047A484 /* brandyFirstScreenJSON.json in Resources */,
 				06AAE1F020C153DF0047A484 /* brandyRecipeJSON.json in Resources */,
 				06AAE1E820C153490047A484 /* rumRecipeJSON.json in Resources */,
@@ -595,16 +619,18 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-MixMakers/Pods-MixMakers-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Cards/Cards.framework",
 				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
 				"${BUILT_PRODUCTS_DIR}/Nuke/Nuke.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftGifOrigin/SwiftGifOrigin.framework",
+				"${BUILT_PRODUCTS_DIR}/Player/Player.framework",
 				"${BUILT_PRODUCTS_DIR}/TTGTagCollectionView/TTGTagCollectionView.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cards.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nuke.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftGifOrigin.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Player.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TTGTagCollectionView.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -661,8 +687,12 @@
 				691607BC20C1B2AF0001D6F3 /* ImportData.swift in Sources */,
 				B79401B720BDFC250035C82D /* CocktailListViewController.swift in Sources */,
 				B79401AF20BDAF7B0035C82D /* SimpleCocktail.swift in Sources */,
-				C9ED2F0420C03EDF00651FE3 /* cocktailRecipes.swift in Sources */,
+				C9ED2F0420C03EDF00651FE3 /* CocktailRecipes.swift in Sources */,
 				B794018120BD99860035C82D /* AppDelegate.swift in Sources */,
+				0603F5FE20C2B8ED002760B0 /* RecipeInstructionTableViewCell.swift in Sources */,
+				0603F60220C2E051002760B0 /* RecipeHeaderView.swift in Sources */,
+				C9ED2F0820C18B3600651FE3 /* RecipeAPIService.swift in Sources */,
+				0603F5FC20C2B8DA002760B0 /* RecipeIngredientTableViewCell.swift in Sources */,
 				C9ED2F0220C03AF800651FE3 /* recipeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -925,7 +955,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6GL6GLH3DL;
+				DEVELOPMENT_TEAM = M2W4XFXLYT;
 				INFOPLIST_FILE = MixMakers/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -944,7 +974,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6GL6GLH3DL;
+				DEVELOPMENT_TEAM = M2W4XFXLYT;
 				INFOPLIST_FILE = MixMakers/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
