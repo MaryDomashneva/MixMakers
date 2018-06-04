@@ -13,28 +13,22 @@ class HomepageViewController: UIViewController {
     @IBOutlet weak var ingredient3: UIButton!
     
     @IBAction func addPressed(_ sender: Any) {
-        if !(searchIngredientsText.text?.isEmpty)! {
-            let searchString = searchIngredientsText.text?.capitalized
-            if searchTerm.count == 0 {
-                searchTerm.append(searchString!)
-                ingredient1.setTitle(searchString, for: .normal)
-                ingredient1.isEnabled = true
-            }
-            else if searchTerm.count == 1 {
-                searchTerm.append(searchString!)
-                ingredient2.setTitle(searchString, for: .normal)
-                ingredient2.isEnabled = true
-            }
-                
-            else if searchTerm.count == 2 {
-                searchTerm.append(searchString!)
-                ingredient3.setTitle(searchString, for: .normal)
-                ingredient3.isEnabled = true
-                
+        let buttons = [ingredient1, ingredient2, ingredient3]
+        guard let searchText = searchIngredientsText.text else {
+            searchIngredientsText.text = ""
+            return
+        }
+        if searchText.isEmpty {
+            searchIngredientsText.text = ""
+        } else {
+            searchTerm.append(searchText)
+            if searchTerm.count >= buttons.count {
+                return
+            } else {
+                buttons[searchTerm.count]?.setTitle(searchText, for: .normal)
+                buttons[searchTerm.count]?.isEnabled = true
             }
         }
-        searchIngredientsText.text = ""
-        
     }
     
     @IBAction func searchPressed(_ sender: Any) {

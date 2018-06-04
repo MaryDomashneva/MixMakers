@@ -82,7 +82,7 @@ class CocktailListViewController: UIViewController, UITableViewDelegate, UITable
     
     
     func update(with newCocktails: [SimpleCocktail]) {
-        self.cocktails = newCocktails
+        self.cocktails = newCocktails.sorted(by: { $0.name < $1.name })
         tableView.reloadData()
     }
     
