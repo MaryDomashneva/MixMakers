@@ -21,12 +21,12 @@ class HomepageViewController: UIViewController {
         if searchText.isEmpty {
             searchIngredientsText.text = ""
         } else {
-            searchTerm.append(searchText)
             if searchTerm.count >= buttons.count {
                 return
             } else {
                 buttons[searchTerm.count]?.setTitle(searchText, for: .normal)
                 buttons[searchTerm.count]?.isEnabled = true
+                searchTerm.append(searchText)
             }
         }
     }
