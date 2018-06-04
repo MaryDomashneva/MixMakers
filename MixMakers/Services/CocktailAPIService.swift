@@ -27,7 +27,8 @@ class CocktailService
     // Example url https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=Gin
     func getAllCocktails(with ingredient: String, result: @escaping QueryArrayResult)
     {
-        let path = "filter.php?i=\(ingredient)"
+        let newIngredient = ingredient.replacingOccurrences(of: " ", with: "%20")
+        let path = "filter.php?i=\(newIngredient)"
         guard let getAllCocktailsURL = buildURL(with: cocktailBaseURLString, apiKey: cocktailAPIKey, path: path) else {
             result(nil, "Get all cocktails URL can not be built")
             return
