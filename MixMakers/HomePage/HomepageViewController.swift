@@ -66,9 +66,6 @@ class HomepageViewController: UIViewController, TTGTextTagCollectionViewDelegate
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let gif = UIImage.gif(url: "https://mattsko.files.wordpress.com/2013/07/dancing-cocktail-shaker.gif")
-        
-        self.gifImageView.image = gif
 
         tagsCollectionView = TTGTextTagCollectionView(frame: tagsContainerView.bounds)
         

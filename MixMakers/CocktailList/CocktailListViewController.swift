@@ -38,7 +38,7 @@ class CocktailListViewController: UIViewController, UITableViewDelegate, UITable
         }
         
         tableView.register(UINib(nibName: "CocktailListView", bundle: nil), forCellReuseIdentifier: "CocktailListTableViewCell")
-        loadCocktails(with: ["Milk", "Chocolate"], current: currentTerm)
+        loadCocktails(with: searchTerm, current: currentTerm)
     }
     
     func loadCocktails(with ingredients: Array<String>, current: Int) {

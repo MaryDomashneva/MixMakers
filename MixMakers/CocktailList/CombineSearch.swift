@@ -17,7 +17,7 @@ class CombineSearch {
             combined.append(Set(cocktailList))
         }
         for i in 1...combined.count {
-            intersection = combined[i - 1].intersection(combined[1])
+            intersection = combined[i - 1].intersection(combined[0])
         }
         return Array(intersection)
     }

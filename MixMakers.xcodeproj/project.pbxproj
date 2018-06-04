@@ -124,7 +124,6 @@
 		B794018A20BD99880035C82D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B794018C20BD99880035C82D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B794019120BD99880035C82D /* MixMakersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MixMakersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B794019520BD99880035C82D /* MixMakersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MixMakersTests.swift; sourceTree = "<group>"; };
 		B794019720BD99880035C82D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B794019C20BD99880035C82D /* MixMakersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MixMakersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B79401A220BD99880035C82D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -296,7 +295,6 @@
 			isa = PBXGroup;
 			children = (
 				0637971D20BF1F4900188B68 /* Fixtures */,
-				B794019520BD99880035C82D /* MixMakersTests.swift */,
 				691607BD20C2A2D20001D6F3 /* CocktailListTests.swift */,
 				B794019720BD99880035C82D /* Info.plist */,
 				0637971B20BEFF4600188B68 /* CocktailAPIServiceSpec.swift */,
@@ -623,6 +621,7 @@
 				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
 				"${BUILT_PRODUCTS_DIR}/Nuke/Nuke.framework",
 				"${BUILT_PRODUCTS_DIR}/Player/Player.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftGifOrigin/SwiftGifOrigin.framework",
 				"${BUILT_PRODUCTS_DIR}/TTGTagCollectionView/TTGTagCollectionView.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -631,6 +630,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nuke.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Player.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftGifOrigin.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TTGTagCollectionView.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
