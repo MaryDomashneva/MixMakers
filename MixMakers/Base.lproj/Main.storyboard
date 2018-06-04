@@ -26,19 +26,42 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ci-RB-015">
-                                <rect key="frame" x="249" y="317" width="48" height="30"/>
+                                <rect key="frame" x="152" y="436" width="48" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Search"/>
                                 <connections>
                                     <action selector="searchPressed:" destination="qIz-6t-7E5" eventType="touchUpInside" id="dSf-ye-8FW"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bxD-jI-UPv">
+                                <rect key="frame" x="267" y="318" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="addPressed:" destination="qIz-6t-7E5" eventType="touchUpInside" id="KhH-Hu-KiW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zFA-IB-VMW">
+                                <rect key="frame" x="16" y="383" width="93" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ueg-4G-Jgs">
+                                <rect key="frame" x="243" y="383" width="116" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kSa-rE-SvU">
+                                <rect key="frame" x="126" y="383" width="103" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="K4Y-7P-iPv"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Search Ingredients" largeTitleDisplayMode="never" id="2ze-eB-IQk"/>
+                    <navigationItem key="navigationItem" title="Search" largeTitleDisplayMode="never" id="2ze-eB-IQk"/>
                     <connections>
+                        <outlet property="ingredient1" destination="zFA-IB-VMW" id="9Es-WG-m5M"/>
+                        <outlet property="ingredient2" destination="kSa-rE-SvU" id="b7d-sF-uLy"/>
+                        <outlet property="ingredient3" destination="ueg-4G-Jgs" id="qgI-kC-MAQ"/>
                         <outlet property="searchIngredientsText" destination="s5V-uF-sQ8" id="ocY-Cg-B9a"/>
                     </connections>
                 </viewController>
