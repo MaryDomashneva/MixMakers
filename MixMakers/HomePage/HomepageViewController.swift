@@ -18,15 +18,18 @@ class HomepageViewController: UIViewController {
             if searchTerm.count == 0 {
                 searchTerm.append(searchString!)
                 ingredient1.setTitle(searchString, for: .normal)
+                ingredient1.isEnabled = true
             }
             else if searchTerm.count == 1 {
                 searchTerm.append(searchString!)
                 ingredient2.setTitle(searchString, for: .normal)
+                ingredient2.isEnabled = true
             }
                 
             else if searchTerm.count == 2 {
                 searchTerm.append(searchString!)
                 ingredient3.setTitle(searchString, for: .normal)
+                ingredient3.isEnabled = true
                 
             }
         }
@@ -52,15 +55,18 @@ class HomepageViewController: UIViewController {
         searchTerm.remove(at: searchTerm.index(of: ingredient1.title(for: .normal)!)!)
         if ingredient2.title(for: .normal) == "" {
             ingredient1.setTitle("", for: .normal)
+            ingredient1.isEnabled = false
         }
         else {
             ingredient1.setTitle(ingredient2.title(for: .normal), for: .normal)
             if ingredient3.title(for: .normal) == "" {
                 ingredient2.setTitle("", for: .normal)
+                ingredient2.isEnabled = false
             }
             else {
                 ingredient2.setTitle(ingredient3.title(for: .normal), for: .normal)
                 ingredient3.setTitle("", for: .normal)
+                ingredient3.isEnabled = false
             }
         }
     }
@@ -69,16 +75,19 @@ class HomepageViewController: UIViewController {
         searchTerm.remove(at: searchTerm.index(of: ingredient2.title(for: .normal)!)!)
         if ingredient3.title(for: .normal) == "" {
             ingredient2.setTitle("", for: .normal)
+            ingredient2.isEnabled = false
         }
         else {
             ingredient2.setTitle(ingredient3.title(for: .normal), for: .normal)
             ingredient3.setTitle("", for: .normal)
+            ingredient3.isEnabled = false
         }
     }
     
     @IBAction func ingredient3Pressed(_ sender: Any) {
         searchTerm.remove(at: searchTerm.index(of: ingredient3.title(for: .normal)!)!)
         ingredient3.setTitle("", for: .normal)
+        ingredient3.isEnabled = false
     }
     
     override func viewDidLoad() {
@@ -87,6 +96,7 @@ class HomepageViewController: UIViewController {
     }
     
     func configureSearchField() {
+        searchIngredientsText.inlineMode = true
         searchIngredientsText.filterStrings(ingredientsArray)
     }
     
