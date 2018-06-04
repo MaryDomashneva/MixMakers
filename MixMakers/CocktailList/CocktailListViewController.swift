@@ -11,15 +11,18 @@ import NVActivityIndicatorView
 
 class CocktailListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource
 {
-    var searchTerm = ""
     
     @IBOutlet var tableView: UITableView! //link code and view
     @IBOutlet var nvActivityIndicatorView: NVActivityIndicatorView! //link code and view
     @IBOutlet var loadingLabel: UILabel! //link code and view
     @IBOutlet var loadingContainerView: UIView! //link code and view
     
+    var searchTerm: [(String)]  = []
     var cocktails: [SimpleCocktail] = []
+    var manyCocktails: [[SimpleCocktail]] = []
     let cocktailAPIService = CocktailService()
+    var currentTerm = 0
+    let combineSearch = CombineSearch()
     
     override func viewDidLoad() {
         
@@ -27,7 +30,7 @@ class CocktailListViewController: UIViewController, UITableViewDelegate, UITable
         if cocktails.count == 0 {
             tableView.isHidden = true
             loadingContainerView.isHidden = false
-            loadingLabel.text = "Loading \(searchTerm) cocktails..."
+            loadingLabel.text = "Loading \(searchTerm[currentTerm]) cocktails..."
             nvActivityIndicatorView.startAnimating()
         } else {
             tableView.isHidden = false
@@ -35,17 +38,11 @@ class CocktailListViewController: UIViewController, UITableViewDelegate, UITable
         }
         
         tableView.register(UINib(nibName: "CocktailListView", bundle: nil), forCellReuseIdentifier: "CocktailListTableViewCell")
-        loadCocktails(with: searchTerm)
+        loadCocktails(with: ["Milk", "Chocolate"], current: currentTerm)
     }
     
-    // MARK: - Helpers
-    
-    func getSearchTerm() -> String {
-        return searchTerm
-    }
-    
-    func loadCocktails(with ingredient: String) {
-        cocktailAPIService.getAllCocktails(with: ingredient)
+    func loadCocktails(with ingredients: Array<String>, current: Int) {
+        cocktailAPIService.getAllCocktails(with: ingredients[current])
         { [weak self] loadedCocktails, error in
             self?.nvActivityIndicatorView.stopAnimating()
             if let error = error {
@@ -54,16 +51,26 @@ class CocktailListViewController: UIViewController, UITableViewDelegate, UITable
                 if loadedCocktails.isEmpty {
                     self?.loadingLabel.text = "Cocktails not found"
                 } else {
-                    self?.tableView.isHidden = false
-                    self?.loadingContainerView.isHidden = true
-                    self?.update(with: loadedCocktails)
+                    if current != ingredients.count - 1 {
+                        self?.manyCocktails.append(loadedCocktails)
+                        let currentTerm = current + 1
+                        self?.loadCocktails(with: ingredients, current: currentTerm)
+                    }
+                    else {
+                        self?.manyCocktails.append(loadedCocktails)
+                        let cocktails = self?.combineSearch.combine(with: (self?.manyCocktails)!)
+                        self?.tableView.isHidden = false
+                        self?.loadingContainerView.isHidden = true
+                        self?.update(with: cocktails!)
+                    }
+                    // recursively call this until all ingredients in search term array are satisfied. Then only update the view with the common cocktails. An error or empty result will cancel the whole search as there will be no common cocktails
                 }
-                
             } else {
                 // Show unknown error
             }
         }
     }
+    
     
     func update(with newCocktails: [SimpleCocktail]) {
         cocktails = newCocktails

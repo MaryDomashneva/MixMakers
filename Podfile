@@ -14,6 +14,7 @@ target 'MixMakers' do
   pod 'Nuke', '~> 6.0'
   pod 'NVActivityIndicatorView'
   pod 'TTGTagCollectionView'
+  pod 'SwiftGifOrigin'
 
   target 'MixMakersTests' do
     inherit! :search_paths

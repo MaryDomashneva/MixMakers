@@ -11,7 +11,7 @@
 
 import Foundation
 
-struct SimpleCocktail: Codable, Equatable
+struct SimpleCocktail: Codable, Equatable, Hashable
 {
     let name: String
     let imageURLString: String
