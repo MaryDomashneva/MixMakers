@@ -23,7 +23,10 @@ class CocktailListTableViewCell: UITableViewCell {
         cocktailTwo = anotherSimpleCoctail
         configure(card: cocktailOneCard, with: simpleCocktail)
         if let anotherSimpleCoctail = anotherSimpleCoctail {
+            cocktailTwoCard.isHidden = false
             configure(card: cocktailTwoCard, with: anotherSimpleCoctail)
+        } else {
+            cocktailTwoCard.isHidden = true
         }
     }
     

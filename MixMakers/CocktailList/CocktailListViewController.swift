@@ -93,7 +93,11 @@ class CocktailListViewController: UIViewController, UITableViewDelegate, UITable
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return Int(ceilf(Float(cocktails.count / 2)))
+        if cocktails.count == 1 {
+            return 1
+        } else {
+            return Int(ceilf(Float(cocktails.count / 2)))
+        }
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
