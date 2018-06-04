@@ -14,25 +14,27 @@ class HomepageViewController: UIViewController {
     
     @IBAction func addPressed(_ sender: Any) {
         if !(searchIngredientsText.text?.isEmpty)! {
+            let searchString = searchIngredientsText.text?.capitalized
             if searchTerm.count == 0 {
-                searchTerm.append(searchIngredientsText.text!)
-                ingredient1.setTitle(searchIngredientsText.text, for: .normal)
+                searchTerm.append(searchString!)
+                ingredient1.setTitle(searchString, for: .normal)
                 ingredient1.isHidden = false
             }
             else if searchTerm.count == 1 {
-                searchTerm.append(searchIngredientsText.text!)
-                ingredient2.setTitle(searchIngredientsText.text, for: .normal)
+                searchTerm.append(searchString!)
+                ingredient2.setTitle(searchString, for: .normal)
                 ingredient2.isHidden = false
             }
                 
             else if searchTerm.count == 2 {
-                searchTerm.append(searchIngredientsText.text!)
-                ingredient3.setTitle(searchIngredientsText.text, for: .normal)
+                searchTerm.append(searchString!)
+                ingredient3.setTitle(searchString, for: .normal)
                 ingredient3.isHidden = false
+                searchIngredientsText.isEnabled = false
+                
             }
-            
         }
-        
+        searchIngredientsText.text = ""
     }
     
     @IBAction func searchPressed(_ sender: Any) {
@@ -56,7 +58,7 @@ class HomepageViewController: UIViewController {
     }
     
     func configureSearchField() {
-        searchIngredientsText.filterStrings(["Vodka", "Gin", "Tequila"])
+        searchIngredientsText.filterStrings(ingredientsArray)
     }
     
     // Called whenever screen is going to be rendered

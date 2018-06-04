@@ -27,6 +27,7 @@
 		06AAE1EE20C153CA0047A484 /* tequilaRecipeJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = 06AAE1ED20C153CA0047A484 /* tequilaRecipeJSON.json */; };
 		06AAE1F020C153DF0047A484 /* brandyRecipeJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = 06AAE1EF20C153DF0047A484 /* brandyRecipeJSON.json */; };
 		13F64479F5F8CECE1FA9B1B3 /* Pods_MixMakers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F87CC8970C6052BC16D00EBD /* Pods_MixMakers.framework */; };
+		690A383020C5752700AB4443 /* Ingredients.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690A382F20C5752700AB4443 /* Ingredients.swift */; };
 		691607BC20C1B2AF0001D6F3 /* ImportData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691607BB20C1B2AF0001D6F3 /* ImportData.swift */; };
 		691607BE20C2A2D20001D6F3 /* CocktailListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691607BD20C2A2D20001D6F3 /* CocktailListTests.swift */; };
 		691607C020C2A75A0001D6F3 /* chocolateCocktails.json in Resources */ = {isa = PBXBuildFile; fileRef = 691607BF20C2A75A0001D6F3 /* chocolateCocktails.json */; };
@@ -34,7 +35,6 @@
 		6921D79D20C0558500E4583B /* HomepageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6921D78620C053AD00E4583B /* HomepageUITests.swift */; };
 		6921D79E20C055F500E4583B /* HomepageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6921D78620C053AD00E4583B /* HomepageUITests.swift */; };
 		8FE6F6158839D4554FA5EA56 /* Pods_MixMakersUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C38C676F997E4797A393DF5E /* Pods_MixMakersUITests.framework */; };
-		B7047E2A20C099B3005AD9C5 /* Ingredients.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7047E2920C099B3005AD9C5 /* Ingredients.swift */; };
 		B794018120BD99860035C82D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B794018020BD99860035C82D /* AppDelegate.swift */; };
 		B794018620BD99860035C82D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B794018420BD99860035C82D /* Main.storyboard */; };
 		B794018820BD99880035C82D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B794018720BD99880035C82D /* Assets.xcassets */; };
@@ -105,6 +105,7 @@
 		393854ACEC2F095B15F994FA /* Pods_MixMakersTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MixMakersTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B6CC8C6F91670B0934EAC33 /* Pods-MixMakersUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MixMakersUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MixMakersUITests/Pods-MixMakersUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5F528E63ECCE108F4F828795 /* Pods-MixMakersTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MixMakersTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MixMakersTests/Pods-MixMakersTests.release.xcconfig"; sourceTree = "<group>"; };
+		690A382F20C5752700AB4443 /* Ingredients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredients.swift; sourceTree = "<group>"; };
 		691607BB20C1B2AF0001D6F3 /* ImportData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportData.swift; sourceTree = "<group>"; };
 		691607BD20C2A2D20001D6F3 /* CocktailListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailListTests.swift; sourceTree = "<group>"; };
 		691607BF20C2A75A0001D6F3 /* chocolateCocktails.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = chocolateCocktails.json; sourceTree = "<group>"; };
@@ -112,7 +113,6 @@
 		6921D78620C053AD00E4583B /* HomepageUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomepageUITests.swift; path = ../HomepageTests/HomepageUITests.swift; sourceTree = "<group>"; };
 		6921D79320C0557200E4583B /* HomepageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HomepageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D3C654FC3FB1DB947AE7091 /* Pods-MixMakersTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MixMakersTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MixMakersTests/Pods-MixMakersTests.debug.xcconfig"; sourceTree = "<group>"; };
-		B7047E2920C099B3005AD9C5 /* Ingredients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredients.swift; sourceTree = "<group>"; };
 		B794017D20BD99860035C82D /* MixMakers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MixMakers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B794018020BD99860035C82D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B794018520BD99860035C82D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -215,6 +215,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		690A382E20C5750E00AB4443 /* Ingredients */ = {
+			isa = PBXGroup;
+			children = (
+				690A382F20C5752700AB4443 /* Ingredients.swift */,
+			);
+			path = Ingredients;
+			sourceTree = "<group>";
+		};
 		B53EA544FEDF7C79F5F745C2 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -231,6 +239,7 @@
 		B7047E2520C0978B005AD9C5 /* HomePage */ = {
 			isa = PBXGroup;
 			children = (
+				690A382E20C5750E00AB4443 /* Ingredients */,
 				067B791E20C00F4F005FDB3D /* HomepageViewController.swift */,
 			);
 			path = HomePage;
@@ -255,7 +264,6 @@
 			children = (
 				B79401AE20BDAF7B0035C82D /* SimpleCocktail.swift */,
 				C9ED2F0320C03EDF00651FE3 /* CocktailRecipes.swift */,
-				B7047E2920C099B3005AD9C5 /* Ingredients.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -675,12 +683,12 @@
 			files = (
 				B79401B120BDC26A0035C82D /* CocktailAPIService.swift in Sources */,
 				B79401BA20BDFC5E0035C82D /* CocktailListTableViewCell.swift in Sources */,
-				B7047E2A20C099B3005AD9C5 /* Ingredients.swift in Sources */,
 				067B791F20C00F4F005FDB3D /* HomepageViewController.swift in Sources */,
 				691607C220C2B7020001D6F3 /* CombineSearch.swift in Sources */,
 				691607BC20C1B2AF0001D6F3 /* ImportData.swift in Sources */,
 				B79401B720BDFC250035C82D /* CocktailListViewController.swift in Sources */,
 				B79401AF20BDAF7B0035C82D /* SimpleCocktail.swift in Sources */,
+				690A383020C5752700AB4443 /* Ingredients.swift in Sources */,
 				C9ED2F0420C03EDF00651FE3 /* CocktailRecipes.swift in Sources */,
 				B794018120BD99860035C82D /* AppDelegate.swift in Sources */,
 				0603F5FE20C2B8ED002760B0 /* RecipeInstructionTableViewCell.swift in Sources */,
