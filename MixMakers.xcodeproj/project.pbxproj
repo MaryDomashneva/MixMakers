@@ -32,7 +32,6 @@
 		691607BE20C2A2D20001D6F3 /* CocktailListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691607BD20C2A2D20001D6F3 /* CocktailListTests.swift */; };
 		691607C020C2A75A0001D6F3 /* chocolateCocktails.json in Resources */ = {isa = PBXBuildFile; fileRef = 691607BF20C2A75A0001D6F3 /* chocolateCocktails.json */; };
 		691607C220C2B7020001D6F3 /* CombineSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691607C120C2B7020001D6F3 /* CombineSearch.swift */; };
-		6921D79D20C0558500E4583B /* HomepageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6921D78620C053AD00E4583B /* HomepageUITests.swift */; };
 		6921D79E20C055F500E4583B /* HomepageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6921D78620C053AD00E4583B /* HomepageUITests.swift */; };
 		8FE6F6158839D4554FA5EA56 /* Pods_MixMakersUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C38C676F997E4797A393DF5E /* Pods_MixMakersUITests.framework */; };
 		B794018120BD99860035C82D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B794018020BD99860035C82D /* AppDelegate.swift */; };
@@ -54,20 +53,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		6921D79820C0557200E4583B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B794017520BD99860035C82D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B794017C20BD99860035C82D;
-			remoteInfo = MixMakers;
-		};
-		698A019220BF3AE900618203 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B794017520BD99860035C82D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B794017C20BD99860035C82D;
-			remoteInfo = MixMakers;
-		};
 		B794019220BD99880035C82D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B794017520BD99860035C82D /* Project object */;
@@ -114,7 +99,6 @@
 		691607BF20C2A75A0001D6F3 /* chocolateCocktails.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = chocolateCocktails.json; sourceTree = "<group>"; };
 		691607C120C2B7020001D6F3 /* CombineSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineSearch.swift; sourceTree = "<group>"; };
 		6921D78620C053AD00E4583B /* HomepageUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomepageUITests.swift; path = ../HomepageTests/HomepageUITests.swift; sourceTree = "<group>"; };
-		6921D79320C0557200E4583B /* HomepageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HomepageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D3C654FC3FB1DB947AE7091 /* Pods-MixMakersTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MixMakersTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MixMakersTests/Pods-MixMakersTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B794017D20BD99860035C82D /* MixMakers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MixMakers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B794018020BD99860035C82D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -144,20 +128,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		6921D79020C0557200E4583B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		69D1AD7C20BF01DA001906AE /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		B794017A20BD99860035C82D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -302,7 +272,6 @@
 				B794017D20BD99860035C82D /* MixMakers.app */,
 				B794019120BD99880035C82D /* MixMakersTests.xctest */,
 				B794019C20BD99880035C82D /* MixMakersUITests.xctest */,
-				6921D79320C0557200E4583B /* HomepageTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -362,41 +331,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6921D79220C0557200E4583B /* HomepageTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6921D79A20C0557200E4583B /* Build configuration list for PBXNativeTarget "HomepageTests" */;
-			buildPhases = (
-				6921D78F20C0557200E4583B /* Sources */,
-				6921D79020C0557200E4583B /* Frameworks */,
-				6921D79120C0557200E4583B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				6921D79920C0557200E4583B /* PBXTargetDependency */,
-			);
-			name = HomepageTests;
-			productName = HomepageTests;
-			productReference = 6921D79320C0557200E4583B /* HomepageTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		69D1AD7E20BF01DA001906AE /* MixUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 69D1AD8620BF01DA001906AE /* Build configuration list for PBXNativeTarget "MixUITests" */;
-			buildPhases = (
-				69D1AD7B20BF01DA001906AE /* Sources */,
-				69D1AD7C20BF01DA001906AE /* Frameworks */,
-				69D1AD7D20BF01DA001906AE /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				698A019320BF3AE900618203 /* PBXTargetDependency */,
-			);
-			name = MixUITests;
-			productName = MixUITests;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 		B794017C20BD99860035C82D /* MixMakers */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B79401A520BD99880035C82D /* Build configuration list for PBXNativeTarget "MixMakers" */;
@@ -465,14 +399,6 @@
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = MixMakers;
 				TargetAttributes = {
-					6921D79220C0557200E4583B = {
-						CreatedOnToolsVersion = 9.3.1;
-						TestTargetID = B794017C20BD99860035C82D;
-					};
-					69D1AD7E20BF01DA001906AE = {
-						CreatedOnToolsVersion = 9.3.1;
-						TestTargetID = B794017C20BD99860035C82D;
-					};
 					B794017C20BD99860035C82D = {
 						CreatedOnToolsVersion = 9.3.1;
 					};
@@ -502,27 +428,11 @@
 				B794017C20BD99860035C82D /* MixMakers */,
 				B794019020BD99880035C82D /* MixMakersTests */,
 				B794019B20BD99880035C82D /* MixMakersUITests */,
-				69D1AD7E20BF01DA001906AE /* MixUITests */,
-				6921D79220C0557200E4583B /* HomepageTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		6921D79120C0557200E4583B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		69D1AD7D20BF01DA001906AE /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		B794017B20BD99860035C82D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -672,21 +582,6 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		6921D78F20C0557200E4583B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6921D79D20C0558500E4583B /* HomepageUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		69D1AD7B20BF01DA001906AE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		B794017920BD99860035C82D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -731,16 +626,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		6921D79920C0557200E4583B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B794017C20BD99860035C82D /* MixMakers */;
-			targetProxy = 6921D79820C0557200E4583B /* PBXContainerItemProxy */;
-		};
-		698A019320BF3AE900618203 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B794017C20BD99860035C82D /* MixMakers */;
-			targetProxy = 698A019220BF3AE900618203 /* PBXContainerItemProxy */;
-		};
 		B794019320BD99880035C82D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = B794017C20BD99860035C82D /* MixMakers */;
@@ -773,82 +658,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		6921D79B20C0557200E4583B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 545UKC23KK;
-				INFOPLIST_FILE = HomepageTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = makers.HomepageTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MixMakers.app/MixMakers";
-			};
-			name = Debug;
-		};
-		6921D79C20C0557200E4583B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 545UKC23KK;
-				INFOPLIST_FILE = HomepageTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = makers.HomepageTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MixMakers.app/MixMakers";
-			};
-			name = Release;
-		};
-		69D1AD8720BF01DA001906AE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = MixUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = makers.MixUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = MixMakers;
-			};
-			name = Debug;
-		};
-		69D1AD8820BF01DA001906AE /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = MixUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = makers.MixUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = MixMakers;
-			};
-			name = Release;
-		};
 		B79401A320BD99880035C82D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1086,24 +895,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6921D79A20C0557200E4583B /* Build configuration list for PBXNativeTarget "HomepageTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6921D79B20C0557200E4583B /* Debug */,
-				6921D79C20C0557200E4583B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		69D1AD8620BF01DA001906AE /* Build configuration list for PBXNativeTarget "MixUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				69D1AD8720BF01DA001906AE /* Debug */,
-				69D1AD8820BF01DA001906AE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		B794017820BD99860035C82D /* Build configuration list for PBXProject "MixMakers" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
