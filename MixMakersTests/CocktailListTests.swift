@@ -41,6 +41,9 @@ class CocktailListSpec: QuickSpec {
                     SimpleCocktail(name: "Nutty Irishman",
                                    imageURLString: "https://www.thecocktaildb.com/images/media/drink/xspupx1441248014.jpg",
                                    id: "13861"),
+                    SimpleCocktail(name: "Chocolate drink",
+                                   imageURLString: "https://www.thecocktaildb.com/images/media/drink/q7w4xu1487603180.jpg",
+                                   id: "12734")
                 ]
         
                 chocolateCocktails = [

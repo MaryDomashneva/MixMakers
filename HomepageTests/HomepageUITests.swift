@@ -54,6 +54,6 @@ class HomepageUITests: XCTestCase {
         app.launch()
         let searchButton = app.buttons["Search"]
         searchButton.tap()
-        XCTAssertEqual(app.alerts.element.label, "Please, enter ingredient!")
+        XCTAssertEqual(app.alerts.element.label, "Please, enter an ingredient!")
     }
 }

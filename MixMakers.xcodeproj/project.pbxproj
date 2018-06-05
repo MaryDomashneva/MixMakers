@@ -45,6 +45,8 @@
 		B79401BA20BDFC5E0035C82D /* CocktailListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79401B920BDFC5E0035C82D /* CocktailListTableViewCell.swift */; };
 		B79401BC20BDFCCB0035C82D /* CocktailListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B79401BB20BDFCCB0035C82D /* CocktailListView.xib */; };
 		C9A9CE4D20C6C86D000D0FDB /* testfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A9CE4C20C6C86D000D0FDB /* testfile.swift */; };
+		C9A9CE4F20C6D41A000D0FDB /* RecipeAPIServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A9CE4E20C6D41A000D0FDB /* RecipeAPIServiceSpec.swift */; };
+		C9A9CE5120C6DAE8000D0FDB /* margaritaCocktail.json in Resources */ = {isa = PBXBuildFile; fileRef = C9A9CE5020C6DAE8000D0FDB /* margaritaCocktail.json */; };
 		C9ED2F0220C03AF800651FE3 /* recipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9ED2F0120C03AF800651FE3 /* recipeViewController.swift */; };
 		C9ED2F0420C03EDF00651FE3 /* CocktailRecipes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9ED2F0320C03EDF00651FE3 /* CocktailRecipes.swift */; };
 		C9ED2F0820C18B3600651FE3 /* RecipeAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9ED2F0720C18B3600651FE3 /* RecipeAPIService.swift */; };
@@ -131,6 +133,8 @@
 		B79401BB20BDFCCB0035C82D /* CocktailListView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CocktailListView.xib; sourceTree = "<group>"; };
 		C38C676F997E4797A393DF5E /* Pods_MixMakersUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MixMakersUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9A9CE4C20C6C86D000D0FDB /* testfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testfile.swift; sourceTree = "<group>"; };
+		C9A9CE4E20C6D41A000D0FDB /* RecipeAPIServiceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeAPIServiceSpec.swift; sourceTree = "<group>"; };
+		C9A9CE5020C6DAE8000D0FDB /* margaritaCocktail.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = margaritaCocktail.json; sourceTree = "<group>"; };
 		C9ED2F0120C03AF800651FE3 /* recipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recipeViewController.swift; sourceTree = "<group>"; };
 		C9ED2F0320C03EDF00651FE3 /* CocktailRecipes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailRecipes.swift; sourceTree = "<group>"; };
 		C9ED2F0720C18B3600651FE3 /* RecipeAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeAPIService.swift; sourceTree = "<group>"; };
@@ -186,6 +190,7 @@
 			children = (
 				0637971E20BF1F8A00188B68 /* load_cocktails_with_gin.json */,
 				691607BF20C2A75A0001D6F3 /* chocolateCocktails.json */,
+				C9A9CE5020C6DAE8000D0FDB /* margaritaCocktail.json */,
 			);
 			path = Fixtures;
 			sourceTree = "<group>";
@@ -328,6 +333,7 @@
 				691607BD20C2A2D20001D6F3 /* CocktailListTests.swift */,
 				B794019720BD99880035C82D /* Info.plist */,
 				0637971B20BEFF4600188B68 /* CocktailAPIServiceSpec.swift */,
+				C9A9CE4E20C6D41A000D0FDB /* RecipeAPIServiceSpec.swift */,
 				C9A9CE4C20C6C86D000D0FDB /* testfile.swift */,
 			);
 			path = MixMakersTests;
@@ -547,6 +553,7 @@
 			files = (
 				691607C020C2A75A0001D6F3 /* chocolateCocktails.json in Resources */,
 				0637971F20BF1F8A00188B68 /* load_cocktails_with_gin.json in Resources */,
+				C9A9CE5120C6DAE8000D0FDB /* margaritaCocktail.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -709,6 +716,7 @@
 				0637971C20BEFF4600188B68 /* CocktailAPIServiceSpec.swift in Sources */,
 				C9A9CE4D20C6C86D000D0FDB /* testfile.swift in Sources */,
 				691607BE20C2A2D20001D6F3 /* CocktailListTests.swift in Sources */,
+				C9A9CE4F20C6D41A000D0FDB /* RecipeAPIServiceSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

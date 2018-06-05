@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct CocktailRecipes:Decodable {
+struct CocktailRecipes:Decodable, Equatable {
     let strInstructions: String?
     let strIngredient1: String?
     let strIngredient2: String?
@@ -126,5 +126,42 @@ struct CocktailRecipes:Decodable {
         if let value = value, !value.isEmpty {
             array.append(value)
         }
+    }
+    
+    public static func == (lhs: CocktailRecipes, rhs: CocktailRecipes) -> Bool {
+        return lhs.strInstructions == rhs.strInstructions &&
+            lhs.strIngredient1 == rhs.strIngredient1 &&
+            lhs.strIngredient2 == rhs.strIngredient2 &&
+            lhs.strIngredient3 == rhs.strIngredient3 &&
+            lhs.strIngredient4 == rhs.strIngredient4 &&
+            lhs.strIngredient5 == rhs.strIngredient5 &&
+            lhs.strIngredient6 == rhs.strIngredient6 &&
+            lhs.strIngredient7 == rhs.strIngredient7 &&
+            lhs.strIngredient8 == rhs.strIngredient8 &&
+            lhs.strIngredient9 == rhs.strIngredient9 &&
+            lhs.strIngredient10 == rhs.strIngredient10 &&
+            lhs.strIngredient11 == rhs.strIngredient11 &&
+            lhs.strIngredient12 == rhs.strIngredient12 &&
+            lhs.strIngredient13 == rhs.strIngredient13 &&
+            lhs.strIngredient14 == rhs.strIngredient14 &&
+            lhs.strIngredient15 == rhs.strIngredient15 &&
+            lhs.strDrinkThumb == rhs.strDrinkThumb &&
+            lhs.strMeasure1 == rhs.strMeasure1 &&
+            lhs.strMeasure2 == rhs.strMeasure2 &&
+            lhs.strMeasure3 == rhs.strMeasure3 &&
+            lhs.strMeasure4 == rhs.strMeasure4 &&
+            lhs.strMeasure5 == rhs.strMeasure5 &&
+            lhs.strMeasure6 == rhs.strMeasure6 &&
+            lhs.strMeasure7 == rhs.strMeasure7 &&
+            lhs.strMeasure8 == rhs.strMeasure8 &&
+            lhs.strMeasure9 == rhs.strMeasure9 &&
+            lhs.strMeasure10 == rhs.strMeasure10 &&
+            lhs.strMeasure11 == rhs.strMeasure11 &&
+            lhs.strMeasure12 == rhs.strMeasure12 &&
+            lhs.strMeasure13 == rhs.strMeasure13 &&
+            lhs.strMeasure14 == rhs.strMeasure14 &&
+            lhs.strMeasure15 == rhs.strMeasure15 &&
+            lhs.id == rhs.id &&
+            lhs.strDrink == rhs.strDrink
     }
 }
