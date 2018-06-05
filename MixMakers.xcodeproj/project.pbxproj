@@ -38,6 +38,7 @@
 		B7237C3420C727AA0059A65B /* one_cocktail.json in Resources */ = {isa = PBXBuildFile; fileRef = B7237C3320C727AA0059A65B /* one_cocktail.json */; };
 		B7237C3620C7288E0059A65B /* two_cocktails.json in Resources */ = {isa = PBXBuildFile; fileRef = B7237C3520C7288E0059A65B /* two_cocktails.json */; };
 		B7237C3820C7290A0059A65B /* five_cocktails.json in Resources */ = {isa = PBXBuildFile; fileRef = B7237C3720C7290A0059A65B /* five_cocktails.json */; };
+		B7237C3A20C72F0E0059A65B /* RecipeViewControllerSnapshotSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7237C3920C72F0E0059A65B /* RecipeViewControllerSnapshotSpec.swift */; };
 		B794018120BD99860035C82D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B794018020BD99860035C82D /* AppDelegate.swift */; };
 		B794018620BD99860035C82D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B794018420BD99860035C82D /* Main.storyboard */; };
 		B794018820BD99880035C82D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B794018720BD99880035C82D /* Assets.xcassets */; };
@@ -108,6 +109,7 @@
 		B7237C3320C727AA0059A65B /* one_cocktail.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = one_cocktail.json; sourceTree = "<group>"; };
 		B7237C3520C7288E0059A65B /* two_cocktails.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = two_cocktails.json; sourceTree = "<group>"; };
 		B7237C3720C7290A0059A65B /* five_cocktails.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = five_cocktails.json; sourceTree = "<group>"; };
+		B7237C3920C72F0E0059A65B /* RecipeViewControllerSnapshotSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewControllerSnapshotSpec.swift; sourceTree = "<group>"; };
 		B794017D20BD99860035C82D /* MixMakers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MixMakers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B794018020BD99860035C82D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B794018520BD99860035C82D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -316,6 +318,7 @@
 				C9A9CE4E20C6D41A000D0FDB /* RecipeAPIServiceSpec.swift */,
 				C9A9CE4C20C6C86D000D0FDB /* testfile.swift */,
 				B7237C3120C71DFE0059A65B /* CocktailListViewControllerSnapshotSpec.swift */,
+				B7237C3920C72F0E0059A65B /* RecipeViewControllerSnapshotSpec.swift */,
 			);
 			path = MixMakersTests;
 			sourceTree = "<group>";
@@ -632,6 +635,7 @@
 				B7237C3220C71DFE0059A65B /* CocktailListViewControllerSnapshotSpec.swift in Sources */,
 				691607BE20C2A2D20001D6F3 /* CocktailListTests.swift in Sources */,
 				C9A9CE4F20C6D41A000D0FDB /* RecipeAPIServiceSpec.swift in Sources */,
+				B7237C3A20C72F0E0059A65B /* RecipeViewControllerSnapshotSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
