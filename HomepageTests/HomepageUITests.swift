@@ -38,8 +38,22 @@ class HomepageUITests: XCTestCase {
     func testThatRedirectToNextScreen() {
         let app = XCUIApplication()
         app.launch()
+        let textField = app.textFields["searchTextField"]
+        textField.tap()
+        textField.typeText("Rum")
+        let addButton = app.buttons["addButton"]
+        addButton.tap()
         let searchButton = app.buttons["Search"]
         searchButton.tap()
+        
         XCTAssertTrue(app.navigationBars["Cocktails"].exists)
+    }
+    
+    func testAlertMessageShownWhenNoSearchCriteria() {
+        let app = XCUIApplication()
+        app.launch()
+        let searchButton = app.buttons["Search"]
+        searchButton.tap()
+        XCTAssertEqual(app.alerts.element.label, "Please, enter ingredient!")
     }
 }

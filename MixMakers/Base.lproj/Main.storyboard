@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="X5E-ca-D3i">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="X5E-ca-D3i">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -26,15 +26,9 @@
                                     <constraint firstAttribute="height" constant="209" id="KQH-do-0Kf"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ci-RB-015">
-                                <rect key="frame" x="163" y="519" width="48" height="30"/>
-                                <state key="normal" title="Search"/>
-                                <connections>
-                                    <action selector="searchPressed:" destination="qIz-6t-7E5" eventType="touchUpInside" id="dSf-ye-8FW"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bxD-jI-UPv">
                                 <rect key="frame" x="267" y="323" width="22" height="22"/>
+                                <accessibility key="accessibilityConfiguration" identifier="addButton"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="22" id="bWD-Wo-lpu"/>
                                     <constraint firstAttribute="height" constant="22" id="whQ-Hy-mbJ"/>
@@ -97,15 +91,24 @@
                                     <constraint firstAttribute="width" constant="240" id="dXq-K2-VDu"/>
                                 </constraints>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="type an ingredient" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s5V-uF-sQ8" customClass="SearchTextField" customModule="SearchTextField">
+                            <textField opaque="NO" contentMode="scaleToFill" restorationIdentifier="searchTerm" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="type an ingredient" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s5V-uF-sQ8" customClass="SearchTextField" customModule="SearchTextField">
                                 <rect key="frame" x="118" y="319" width="138" height="30"/>
+                                <accessibility key="accessibilityConfiguration" identifier="searchTextField"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ci-RB-015">
+                                <rect key="frame" x="163" y="114" width="48" height="30"/>
+                                <state key="normal" title="Search"/>
+                                <connections>
+                                    <action selector="searchPressed:" destination="qIz-6t-7E5" eventType="touchUpInside" id="dSf-ye-8FW"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="K4Y-7P-iPv" firstAttribute="trailing" secondItem="1Ci-RB-015" secondAttribute="trailing" constant="164" id="0na-fQ-KeI"/>
                             <constraint firstItem="ueg-4G-Jgs" firstAttribute="top" secondItem="s5V-uF-sQ8" secondAttribute="bottom" constant="34" id="1nZ-57-3q8"/>
                             <constraint firstItem="kSa-rE-SvU" firstAttribute="width" secondItem="ueg-4G-Jgs" secondAttribute="width" id="4Gk-b7-Ity"/>
                             <constraint firstItem="0ag-3X-tNq" firstAttribute="centerX" secondItem="K4Y-7P-iPv" secondAttribute="centerX" id="4or-Gf-sTZ"/>
@@ -117,13 +120,15 @@
                             <constraint firstItem="1Ci-RB-015" firstAttribute="centerX" secondItem="K4Y-7P-iPv" secondAttribute="centerX" id="GvJ-T8-WHN"/>
                             <constraint firstItem="0ag-3X-tNq" firstAttribute="top" secondItem="z3O-4l-4fA" secondAttribute="bottom" constant="-38" id="Ieg-KW-iMv"/>
                             <constraint firstItem="ueg-4G-Jgs" firstAttribute="leading" secondItem="kSa-rE-SvU" secondAttribute="trailing" constant="16" id="KvI-lL-IOD"/>
+                            <constraint firstItem="1Ci-RB-015" firstAttribute="top" secondItem="K4Y-7P-iPv" secondAttribute="top" constant="50" id="L1S-3g-Wlv"/>
                             <constraint firstItem="z3O-4l-4fA" firstAttribute="centerX" secondItem="K4Y-7P-iPv" secondAttribute="centerX" id="LQh-jV-26a"/>
-                            <constraint firstItem="1Ci-RB-015" firstAttribute="top" secondItem="k7E-cf-e5L" secondAttribute="bottom" constant="8" id="UKI-MF-34j"/>
+                            <constraint firstItem="1Ci-RB-015" firstAttribute="leading" secondItem="K4Y-7P-iPv" secondAttribute="leading" constant="163" id="T1V-CP-Ncm"/>
                             <constraint firstItem="bxD-jI-UPv" firstAttribute="leading" secondItem="s5V-uF-sQ8" secondAttribute="trailing" constant="11" id="UbA-Ju-BV9"/>
                             <constraint firstItem="k7E-cf-e5L" firstAttribute="top" secondItem="0ag-3X-tNq" secondAttribute="bottom" constant="-99" id="XXA-2H-L5U"/>
                             <constraint firstItem="z3O-4l-4fA" firstAttribute="top" secondItem="K4Y-7P-iPv" secondAttribute="top" constant="119" id="YF9-K8-C4W"/>
                             <constraint firstItem="zFA-IB-VMW" firstAttribute="leading" secondItem="K4Y-7P-iPv" secondAttribute="leading" constant="16" id="aF4-fa-TUl"/>
                             <constraint firstItem="kSa-rE-SvU" firstAttribute="leading" secondItem="zFA-IB-VMW" secondAttribute="trailing" constant="16" id="d2s-Cc-acY"/>
+                            <constraint firstItem="K4Y-7P-iPv" firstAttribute="bottom" secondItem="1Ci-RB-015" secondAttribute="bottom" constant="523" id="i2N-n8-OfV"/>
                             <constraint firstItem="kSa-rE-SvU" firstAttribute="top" secondItem="s5V-uF-sQ8" secondAttribute="bottom" constant="34" id="jVJ-P8-Avm"/>
                             <constraint firstItem="s5V-uF-sQ8" firstAttribute="top" secondItem="K4Y-7P-iPv" secondAttribute="top" constant="255" id="sOD-lJ-Dq1"/>
                             <constraint firstItem="zFA-IB-VMW" firstAttribute="top" secondItem="s5V-uF-sQ8" secondAttribute="bottom" constant="34" id="sw7-ML-Eyf"/>
