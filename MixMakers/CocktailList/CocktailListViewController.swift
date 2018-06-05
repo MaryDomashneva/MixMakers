@@ -19,6 +19,7 @@ class CocktailListViewController: UIViewController, UITableViewDelegate, UITable
     
     var searchTerm: [(String)]  = []
     var cocktails: [SimpleCocktail] = []
+    var finalCocktails: [SimpleCocktail] = []
     var manyCocktails: [[SimpleCocktail]] = []
     let cocktailAPIService = CocktailService()
     var currentTerm = 0
@@ -27,10 +28,10 @@ class CocktailListViewController: UIViewController, UITableViewDelegate, UITable
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        if cocktails.count == 0 {
+        if finalCocktails.count == 0 {
             tableView.isHidden = true
             loadingContainerView.isHidden = false
-            loadingLabel.text = "Loading \(searchTerm[currentTerm]) cocktails..."
+            loadingLabel.text = "Loading cocktails..."
             nvActivityIndicatorView.startAnimating()
         } else {
             tableView.isHidden = false
@@ -44,9 +45,9 @@ class CocktailListViewController: UIViewController, UITableViewDelegate, UITable
     func loadCocktails(with ingredients: Array<String>, current: Int) {
         cocktailAPIService.getAllCocktails(with: ingredients[current])
         { [weak self] loadedCocktails, error in
-            self?.nvActivityIndicatorView.stopAnimating()
+            print(current)
             if let error = error {
-                // Show error
+                print(error)
             } else if let loadedCocktails = loadedCocktails {
                 if loadedCocktails.isEmpty {
                     self?.loadingLabel.text = "Cocktails not found"
@@ -57,11 +58,19 @@ class CocktailListViewController: UIViewController, UITableViewDelegate, UITable
                         self?.loadCocktails(with: ingredients, current: currentTerm)
                     }
                     else {
-                        self?.manyCocktails.append(loadedCocktails)
-                        let cocktails = self?.combineSearch.combine(with: (self?.manyCocktails)!)
-                        self?.tableView.isHidden = false
+                        self?.nvActivityIndicatorView.stopAnimating()
                         self?.loadingContainerView.isHidden = true
-                        self?.update(with: cocktails!)
+                        self?.manyCocktails.append(loadedCocktails)
+                        self?.finalCocktails = (self?.combineSearch.combine(with: (self?.manyCocktails)!))!
+                        if (self?.finalCocktails.isEmpty)! {
+                            self?.loadingLabel.text = "Cocktails not found"
+                        }
+                        else {
+                            
+                            let results = self?.finalCocktails
+                            self?.tableView.isHidden = false
+                            self?.update(with: results!)
+                        }
                     }
                     // recursively call this until all ingredients in search term array are satisfied. Then only update the view with the common cocktails. An error or empty result will cancel the whole search as there will be no common cocktails
                 }
@@ -73,7 +82,7 @@ class CocktailListViewController: UIViewController, UITableViewDelegate, UITable
     
     
     func update(with newCocktails: [SimpleCocktail]) {
-        cocktails = newCocktails
+        self.cocktails = newCocktails.sorted(by: { $0.name < $1.name })
         tableView.reloadData()
     }
     
@@ -84,7 +93,11 @@ class CocktailListViewController: UIViewController, UITableViewDelegate, UITable
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return Int(ceilf(Float(cocktails.count / 2)))
+        if cocktails.count == 1 {
+            return 1
+        } else {
+            return Int(ceilf(Float(cocktails.count / 2)))
+        }
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

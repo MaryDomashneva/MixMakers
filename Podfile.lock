@@ -21,8 +21,7 @@ PODS:
     - OHHTTPStubs/Default
   - Player (0.8.4)
   - Quick (1.3.0)
-  - SwiftGifOrigin (1.6.1)
-  - TTGTagCollectionView (1.9.0)
+  - SearchTextField (1.2.0)
 
 DEPENDENCIES:
   - Cards (from `https://github.com/andyk144/Cards.git`)
@@ -31,8 +30,7 @@ DEPENDENCIES:
   - NVActivityIndicatorView
   - OHHTTPStubs/Swift
   - Quick
-  - SwiftGifOrigin
-  - TTGTagCollectionView
+  - SearchTextField
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -42,8 +40,7 @@ SPEC REPOS:
     - OHHTTPStubs
     - Player
     - Quick
-    - SwiftGifOrigin
-    - TTGTagCollectionView
+    - SearchTextField
 
 EXTERNAL SOURCES:
   Cards:
@@ -62,9 +59,8 @@ SPEC CHECKSUMS:
   OHHTTPStubs: 1e21c7d2c084b8153fc53d48400d8919d2d432d0
   Player: e45514e9e5fb8ff18f50eb2ba6f84dac9b6a0024
   Quick: 03278013f71aa05fe9ecabc94fbcc6835f1ee76f
-  SwiftGifOrigin: d6679d3ebe9df2e049a84bc52582635107b581f6
-  TTGTagCollectionView: 958f20b946dee92a8ba20dc37d10a06737641ae9
+  SearchTextField: a5bb7e4c33affadb115afdbe8100d84ef10a8024
 
-PODFILE CHECKSUM: 384587806bcf3909c0553f2b2eba8af73dbf44d4
+PODFILE CHECKSUM: 460e9b3f28515a66da25c0f43d71b62b91c7556f
 
 COCOAPODS: 1.5.3

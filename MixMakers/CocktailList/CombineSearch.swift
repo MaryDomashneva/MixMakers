@@ -16,9 +16,20 @@ class CombineSearch {
         for cocktailList in manyCocktails {
             combined.append(Set(cocktailList))
         }
-        for i in 1...combined.count {
-            intersection = combined[i - 1].intersection(combined[0])
+        
+        if combined.count == 2 {
+            intersection = combined[0].intersection(combined[1])
         }
+        else if combined.count == 3 {
+            intersection = combined[0].intersection(combined[1])
+            intersection = intersection.intersection(combined[2])
+        }
+        else {
+            intersection = combined[0]
+        }
+        
+
+        print(intersection)
         return Array(intersection)
     }
 }

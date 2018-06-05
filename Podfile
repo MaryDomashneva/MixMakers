@@ -13,8 +13,7 @@ target 'MixMakers' do
   pod 'Cards', :git => 'https://github.com/andyk144/Cards.git'
   pod 'Nuke', '~> 6.0'
   pod 'NVActivityIndicatorView'
-  pod 'TTGTagCollectionView'
-  pod 'SwiftGifOrigin'
+  pod "SearchTextField"
 
   target 'MixMakersTests' do
     inherit! :search_paths
