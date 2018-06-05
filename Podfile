@@ -5,6 +5,8 @@ def test_pods
     pod 'OHHTTPStubs/Swift'
     pod 'Quick'
     pod 'Nimble'
+    pod 'iOSSnapshotTestCase'
+    pod 'Nimble-Snapshots'
 end
 
 target 'MixMakers' do
