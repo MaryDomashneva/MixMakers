@@ -14,18 +14,17 @@ Card Wall:
 Task:
 -------
 
-This is a two-week final project at Makers Academy.
+This is our two-week final project at Makers Academy.
 
-As a cohort, for the final project,  we generated ideas for a product that we want to work on. Then we categorized all ideas into 5 categories:
+As a cohort, we generated ideas for a the final project that we wanted to work on. These ideas were then organised into 5 categories:
 * mobile,
 * product,
 * machine learning,
 * technical,
 * new tech
 
-After that, everyone got two votes and voted for categories they want to work.
-Finally, we got five groups:
-* 2 product groups building music app,
+After that, everyone made two votes and voted for categories they wanted to work on. We were all then placedd in to groups based on our selections. Five groups were formed in the following catagories:
+* 2 product groups building music apps,
 * technical group (blockchain),
 * new tech group (web sockets) and
 * mobile app (swift)
@@ -33,14 +32,14 @@ Finally, we got five groups:
 
 That is how we become a MixMakers team, working on a mobile app.
 
-Our idea for an app is a cocktail search app.
+Our idea was to build a cocktail search app.
 
-We have chosen this idea because it could be easily split into small steps and also it has a large room for adding features.
-Our first idea involved image recognition for cocktail search so that user can take a picture of alcohol that user has and search for available cocktails.
+We chose this idea because it could be easily split into small steps and it gave us a wide variety of choice for adding different features.
+Our original idea involved image recognition so that a user could take a picture of alcohol that they had and search for suitable cocktails they could make.
 
 We decided to start with small steps and first of all defined an MVP (minimum viable product) for our app.
 
-Our MVP is:
+Our MVP was:
 
 ```
 User can open an app and type the name of alcohol
@@ -52,9 +51,9 @@ User can press search and see the list of available cocktails
 User can choose one cocktail and see the instructions
 ```
 
-We used Swift as a language for that project. No one from our team has experience with Swift before.  We got only one week to implement features, the second week we supposed to spend on code refactoring, styling and working on the presentation.
+We used Swift as a language for the project. No one in our team had any experience of using Swift prior to starting the project.  We were given one week to implement features, the second week was used to spend time refactoring code, styling and working on our presentation.
 
-So that, when we start to build our MVP we realized that we would not have enough time to add the image recognition feature and should focus on smaller features that could help our MVP look better and testing.
+When we started to build our MVP we quickly realized that we would not have enough time to add the image recognition feature and should focus on smaller features that could help our MVP look better and testing.
 
 User Story:
 -------
@@ -109,7 +108,7 @@ Contributors:
 Run project:
 -----
 
-Local on your machine lode iPhone simulator:
+Local on your machine load iPhone simulator:
 * clone this project, in your terminal type ```gem install cocoapods```, ```pod repo update```, ```pod install```
 * open MixMakers.xcworkspace
 * press cmd+r
@@ -117,71 +116,84 @@ Local on your machine lode iPhone simulator:
 Result:
 -------
 
-As a result of two weeks, we have managed to build three screens:
-* Search screen, where User can search for ingredients
-*  Cocktails screen, where User can see available cocktails cards
-* Instructions screen, where Users can see the instructions how to prepare cocktail.
+As a result of the two weeks, we have managed to build three screens:
+* Search screen, where a User can search for ingredients
+* Cocktails screen, where a User can see available cocktails cards based on ingredient their search
+* Instructions screen, where a User can see the instructions how to prepare their chosen cocktail
 
 Reflections:
 -------
 
 ### As a result of the two weeks we can state the following:
 
-We had two amazing weeks working on this project we achieved a lot and we are really proud of ourself. But it was not easy all the time.
+We had two amazing weeks working on this project. We achieved a lot and we are really proud of ourselves and our final app. But it was not easy all the time.
 
-#### Inside our team we agreed to have some grounds rules for the two weeks:
+#### Within our team we agreed some grounds rules for the two weeks:
 
 * Stand-up's at 10:00 am every day:
    1. Discuss the scope of work for the day,
-   1. Reallocate tickets if necessary and
+   1. Reallocate tickets, if necessary and
    1. Merge pull requests.
 * Retro at 17:00 every day:
-   1. Discuss worked completed and
-   1. Reflect on what went well and what didn't go so well.
-* Switching PM every day.
-* Work in pairs.
+   1. Discuss worked completed,
+   1. Reflect on what went well and what didn't go so well, and
+   1. Provide each other with feedback, where necessary. 
+   
+* Switching Project Manager every day.
+* Pair programming.
+* Working in two-day sprints.
+
+### Week One
 
 #### Day One
-The first day we have spent exploring a new language and installing Xcode.
+We spent a lot of time during the first day exploring a Swift and Xcode.
 
-We did a small FizzBuzz programme and tried unit tests and UI test. Also, we have found the API that we gonna use. By the end of the day, we managed to have two screens:
-* Serch screen with the search field and
-* Cocktails screen that loaded from API a list of Gin Cocktails
+In our pairs, we started by building a test driven FizzBuzz program, which used both unit tests and UI test. We also found an API that we could use to give us the cocktail information we required. By the end of the day, we ended up with two screens:
+* Search screen with the search field and
+* Cocktails screen that loaded a list of Gin cocktails from the API.
 
-These screens did not talk to each other on that point and the API request was hardcoded.
+At this point, these screens did not communicate with each other, the API request was hard-coded to provide the results.
 
 #### Day Two
-The second day we have spent in pairs:
-* Mary & Andry - working on API tests
-* Jack & Louis - linked together the logic between first and second screen
+The second day we remained in our same pairs:
+* Mary & Andrew - working on API tests
+* Jack & Louis - linked together the logic from first screen and second screen
 
 #### Day Three
-The second day we have spent in pairs:
+We rotated pairs for our second two-day sprint:
 * Jack & Mary - UI tests
-* Andry & Louis - third screen with cocktail ingredients
+* Andrew & Louis - worked on third screen, creating a seperate API request to obtain specific cocktail ingredients
 
 #### Day Four
-* Andry & Louis - third screen with cocktail ingridients, cards imlementation
-* Jack & Mary - trying to realized an idea with tags implementation & gif implementation
+We remained in our same pairs:
+* Andrew & Louis - continued to implement our third screen with cocktail ingredients, card implementation
+* Jack & Mary - trying to implement tags & homescreen gif(later removed)
+
+### Week Two
 
 #### Day Five
-* Jack & Mary - multiple ingredients search feature
-* Andry & Louis - third screen testing
+We commenced our third two-day sprint
+* Jack & Mary - multiple ingredient search feature
+* Andrew & Louis - third screen testing
 
 #### Day Six (feature freeze)
 The second day we have spent in pairs:
-* Andry & Louis - further working on tests and test coverage.
+* Andrew & Louis - working on further tests and test coverage.
 * Jack & Mary - started to work on work documentation, README, and Presentation.
 
 #### Day Seven
 Further working on tests and test coverage.
-Working on first screen styling.
+Working on application styling.
+
+#### Day Eight
+Group work on final presentation
 
 #### Learnings:
-* How to use Xcode and main hshortcuts:
-```ctr + shift + k``` - clean everything,
-```ctr + b``` - build app,
-```ctr + u``` - build tests
+* How to use Xcode and main shortcuts:
+```cmd + shift + k``` - cleans everything,
+```cmd + b``` - build app,
+```cmd + r``` - run app,
+```cmd + u``` - build tests
 
 * Xcode View Controllers
 * Swift & Pods
@@ -190,7 +202,7 @@ Working on first screen styling.
 
 #### Difficulties:
 * Testing in Swift
-* New language Swift
+* Working with a new language - Swift
 * Lack of understanding how Xcode works
 
 
@@ -198,3 +210,5 @@ Working on first screen styling.
 * Cocktails :)
 * Followed XP values
 * Good team working
+* Followed AGILE processes
+* Had Fun
