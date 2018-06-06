@@ -32,6 +32,8 @@
 		691607BE20C2A2D20001D6F3 /* CocktailListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691607BD20C2A2D20001D6F3 /* CocktailListTests.swift */; };
 		691607C020C2A75A0001D6F3 /* chocolateCocktails.json in Resources */ = {isa = PBXBuildFile; fileRef = 691607BF20C2A75A0001D6F3 /* chocolateCocktails.json */; };
 		691607C220C2B7020001D6F3 /* CombineSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691607C120C2B7020001D6F3 /* CombineSearch.swift */; };
+		6918F3E020C83E4B00DB9838 /* BigButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 6918F3DF20C83E4B00DB9838 /* BigButton.png */; };
+		6918F3E220C83FDB00DB9838 /* tagbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 6918F3E120C83FDB00DB9838 /* tagbutton.png */; };
 		6921D79E20C055F500E4583B /* HomepageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6921D78620C053AD00E4583B /* HomepageUITests.swift */; };
 		69C9975B20C8123100D7B37F /* MixMakersLogo1.png in Resources */ = {isa = PBXBuildFile; fileRef = 69C9975A20C8123100D7B37F /* MixMakersLogo1.png */; };
 		8FE6F6158839D4554FA5EA56 /* Pods_MixMakersUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C38C676F997E4797A393DF5E /* Pods_MixMakersUITests.framework */; };
@@ -99,6 +101,8 @@
 		691607BD20C2A2D20001D6F3 /* CocktailListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailListTests.swift; sourceTree = "<group>"; };
 		691607BF20C2A75A0001D6F3 /* chocolateCocktails.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = chocolateCocktails.json; sourceTree = "<group>"; };
 		691607C120C2B7020001D6F3 /* CombineSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineSearch.swift; sourceTree = "<group>"; };
+		6918F3DF20C83E4B00DB9838 /* BigButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BigButton.png; sourceTree = "<group>"; };
+		6918F3E120C83FDB00DB9838 /* tagbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tagbutton.png; sourceTree = "<group>"; };
 		6921D78620C053AD00E4583B /* HomepageUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomepageUITests.swift; path = ../HomepageTests/HomepageUITests.swift; sourceTree = "<group>"; };
 		69C9975A20C8123100D7B37F /* MixMakersLogo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MixMakersLogo1.png; path = ../../Downloads/MixMakersLogo1.png; sourceTree = "<group>"; };
 		6D3C654FC3FB1DB947AE7091 /* Pods-MixMakersTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MixMakersTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MixMakersTests/Pods-MixMakersTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -218,6 +222,8 @@
 		B7047E2520C0978B005AD9C5 /* HomePage */ = {
 			isa = PBXGroup;
 			children = (
+				6918F3E120C83FDB00DB9838 /* tagbutton.png */,
+				6918F3DF20C83E4B00DB9838 /* BigButton.png */,
 				690A382E20C5750E00AB4443 /* Ingredients */,
 				067B791E20C00F4F005FDB3D /* HomepageViewController.swift */,
 			);
@@ -457,7 +463,9 @@
 				06AAE1DE20C150BE0047A484 /* vodkaFirstScreenJSON.json in Resources */,
 				06AAE1E220C1518F0047A484 /* tequilaFirstScreenJSON.json in Resources */,
 				06AAE1EC20C153B60047A484 /* ginRecipeJSON.json in Resources */,
+				6918F3E020C83E4B00DB9838 /* BigButton.png in Resources */,
 				06AAE1E020C1516D0047A484 /* ginFirstScreenJSON.json in Resources */,
+				6918F3E220C83FDB00DB9838 /* tagbutton.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
