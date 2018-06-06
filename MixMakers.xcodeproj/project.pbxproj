@@ -15,6 +15,7 @@
 		0603F60220C2E051002760B0 /* RecipeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0603F60120C2E051002760B0 /* RecipeHeaderView.swift */; };
 		0637971C20BEFF4600188B68 /* CocktailAPIServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0637971B20BEFF4600188B68 /* CocktailAPIServiceSpec.swift */; };
 		0637971F20BF1F8A00188B68 /* load_cocktails_with_gin.json in Resources */ = {isa = PBXBuildFile; fileRef = 0637971E20BF1F8A00188B68 /* load_cocktails_with_gin.json */; };
+		0642CEA520C810C3007E3B3E /* HomepageViewControllerSnapshotSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0642CEA420C810C3007E3B3E /* HomepageViewControllerSnapshotSpec.swift */; };
 		067B791F20C00F4F005FDB3D /* HomepageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067B791E20C00F4F005FDB3D /* HomepageViewController.swift */; };
 		06AAE1DE20C150BE0047A484 /* vodkaFirstScreenJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = 06AAE1DD20C150BE0047A484 /* vodkaFirstScreenJSON.json */; };
 		06AAE1E020C1516D0047A484 /* ginFirstScreenJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = 06AAE1DF20C1516D0047A484 /* ginFirstScreenJSON.json */; };
@@ -48,7 +49,6 @@
 		B79401B720BDFC250035C82D /* CocktailListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79401B620BDFC250035C82D /* CocktailListViewController.swift */; };
 		B79401BA20BDFC5E0035C82D /* CocktailListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79401B920BDFC5E0035C82D /* CocktailListTableViewCell.swift */; };
 		B79401BC20BDFCCB0035C82D /* CocktailListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B79401BB20BDFCCB0035C82D /* CocktailListView.xib */; };
-		C9A9CE4D20C6C86D000D0FDB /* testfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A9CE4C20C6C86D000D0FDB /* testfile.swift */; };
 		C9A9CE4F20C6D41A000D0FDB /* RecipeAPIServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A9CE4E20C6D41A000D0FDB /* RecipeAPIServiceSpec.swift */; };
 		C9A9CE5120C6DAE8000D0FDB /* margaritaCocktail.json in Resources */ = {isa = PBXBuildFile; fileRef = C9A9CE5020C6DAE8000D0FDB /* margaritaCocktail.json */; };
 		C9ED2F0220C03AF800651FE3 /* recipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9ED2F0120C03AF800651FE3 /* recipeViewController.swift */; };
@@ -83,6 +83,7 @@
 		0603F60120C2E051002760B0 /* RecipeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeHeaderView.swift; sourceTree = "<group>"; };
 		0637971B20BEFF4600188B68 /* CocktailAPIServiceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailAPIServiceSpec.swift; sourceTree = "<group>"; };
 		0637971E20BF1F8A00188B68 /* load_cocktails_with_gin.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = load_cocktails_with_gin.json; sourceTree = "<group>"; };
+		0642CEA420C810C3007E3B3E /* HomepageViewControllerSnapshotSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageViewControllerSnapshotSpec.swift; sourceTree = "<group>"; };
 		067B791E20C00F4F005FDB3D /* HomepageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomepageViewController.swift; sourceTree = "<group>"; };
 		06AAE1DD20C150BE0047A484 /* vodkaFirstScreenJSON.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = vodkaFirstScreenJSON.json; sourceTree = "<group>"; };
 		06AAE1DF20C1516D0047A484 /* ginFirstScreenJSON.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ginFirstScreenJSON.json; sourceTree = "<group>"; };
@@ -126,7 +127,6 @@
 		B79401B920BDFC5E0035C82D /* CocktailListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailListTableViewCell.swift; sourceTree = "<group>"; };
 		B79401BB20BDFCCB0035C82D /* CocktailListView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CocktailListView.xib; sourceTree = "<group>"; };
 		C38C676F997E4797A393DF5E /* Pods_MixMakersUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MixMakersUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C9A9CE4C20C6C86D000D0FDB /* testfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testfile.swift; sourceTree = "<group>"; };
 		C9A9CE4E20C6D41A000D0FDB /* RecipeAPIServiceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeAPIServiceSpec.swift; sourceTree = "<group>"; };
 		C9A9CE5020C6DAE8000D0FDB /* margaritaCocktail.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = margaritaCocktail.json; sourceTree = "<group>"; };
 		C9ED2F0120C03AF800651FE3 /* recipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recipeViewController.swift; sourceTree = "<group>"; };
@@ -316,9 +316,9 @@
 				B794019720BD99880035C82D /* Info.plist */,
 				0637971B20BEFF4600188B68 /* CocktailAPIServiceSpec.swift */,
 				C9A9CE4E20C6D41A000D0FDB /* RecipeAPIServiceSpec.swift */,
-				C9A9CE4C20C6C86D000D0FDB /* testfile.swift */,
 				B7237C3120C71DFE0059A65B /* CocktailListViewControllerSnapshotSpec.swift */,
 				B7237C3920C72F0E0059A65B /* RecipeViewControllerSnapshotSpec.swift */,
+				0642CEA420C810C3007E3B3E /* HomepageViewControllerSnapshotSpec.swift */,
 			);
 			path = MixMakersTests;
 			sourceTree = "<group>";
@@ -631,9 +631,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0637971C20BEFF4600188B68 /* CocktailAPIServiceSpec.swift in Sources */,
-				C9A9CE4D20C6C86D000D0FDB /* testfile.swift in Sources */,
 				B7237C3220C71DFE0059A65B /* CocktailListViewControllerSnapshotSpec.swift in Sources */,
 				691607BE20C2A2D20001D6F3 /* CocktailListTests.swift in Sources */,
+				0642CEA520C810C3007E3B3E /* HomepageViewControllerSnapshotSpec.swift in Sources */,
 				C9A9CE4F20C6D41A000D0FDB /* RecipeAPIServiceSpec.swift in Sources */,
 				B7237C3A20C72F0E0059A65B /* RecipeViewControllerSnapshotSpec.swift in Sources */,
 			);
