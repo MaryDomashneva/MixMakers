@@ -16,6 +16,7 @@
 		0637971C20BEFF4600188B68 /* CocktailAPIServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0637971B20BEFF4600188B68 /* CocktailAPIServiceSpec.swift */; };
 		0637971F20BF1F8A00188B68 /* load_cocktails_with_gin.json in Resources */ = {isa = PBXBuildFile; fileRef = 0637971E20BF1F8A00188B68 /* load_cocktails_with_gin.json */; };
 		0642CEA520C810C3007E3B3E /* HomepageViewControllerSnapshotSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0642CEA420C810C3007E3B3E /* HomepageViewControllerSnapshotSpec.swift */; };
+		0642CEA720C831F6007E3B3E /* no_cocktails.json in Resources */ = {isa = PBXBuildFile; fileRef = 0642CEA620C831F6007E3B3E /* no_cocktails.json */; };
 		067B791F20C00F4F005FDB3D /* HomepageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067B791E20C00F4F005FDB3D /* HomepageViewController.swift */; };
 		06AAE1DE20C150BE0047A484 /* vodkaFirstScreenJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = 06AAE1DD20C150BE0047A484 /* vodkaFirstScreenJSON.json */; };
 		06AAE1E020C1516D0047A484 /* ginFirstScreenJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = 06AAE1DF20C1516D0047A484 /* ginFirstScreenJSON.json */; };
@@ -84,6 +85,7 @@
 		0637971B20BEFF4600188B68 /* CocktailAPIServiceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailAPIServiceSpec.swift; sourceTree = "<group>"; };
 		0637971E20BF1F8A00188B68 /* load_cocktails_with_gin.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = load_cocktails_with_gin.json; sourceTree = "<group>"; };
 		0642CEA420C810C3007E3B3E /* HomepageViewControllerSnapshotSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageViewControllerSnapshotSpec.swift; sourceTree = "<group>"; };
+		0642CEA620C831F6007E3B3E /* no_cocktails.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = no_cocktails.json; sourceTree = "<group>"; };
 		067B791E20C00F4F005FDB3D /* HomepageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomepageViewController.swift; sourceTree = "<group>"; };
 		06AAE1DD20C150BE0047A484 /* vodkaFirstScreenJSON.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = vodkaFirstScreenJSON.json; sourceTree = "<group>"; };
 		06AAE1DF20C1516D0047A484 /* ginFirstScreenJSON.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ginFirstScreenJSON.json; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 				0637971E20BF1F8A00188B68 /* load_cocktails_with_gin.json */,
 				691607BF20C2A75A0001D6F3 /* chocolateCocktails.json */,
 				C9A9CE5020C6DAE8000D0FDB /* margaritaCocktail.json */,
+				0642CEA620C831F6007E3B3E /* no_cocktails.json */,
 			);
 			path = Fixtures;
 			sourceTree = "<group>";
@@ -482,6 +485,7 @@
 				B7237C3620C7288E0059A65B /* two_cocktails.json in Resources */,
 				C9A9CE5120C6DAE8000D0FDB /* margaritaCocktail.json in Resources */,
 				B7237C3820C7290A0059A65B /* five_cocktails.json in Resources */,
+				0642CEA720C831F6007E3B3E /* no_cocktails.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
