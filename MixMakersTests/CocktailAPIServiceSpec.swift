@@ -152,6 +152,31 @@ class CocktailServiceSpec: QuickSpec {
                     expect(loadedCocktails).to(beNil())
                 }
             }
+            
+            context("doesn't return JSON result") {
+                var expectedCocktails: [SimpleCocktail]!
+                
+                beforeEach {
+                    expectedCocktails = []
+                    stub(condition: isAbsoluteURLString("https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=\(ingredient)")) { _ in
+                        let stubPath = OHPathForFile("no_cocktails.json", type(of: self))
+                        return fixture(filePath: stubPath!, headers: ["Content-Type":"application/json"])
+                    }
+                }
+                
+                it("returns an empty arrayin the result") {
+                    var loadedCocktails: [SimpleCocktail]? = nil
+                    
+                    waitUntil { done in
+                        cocktailService.getAllCocktails(with: ingredient) { (cocktails, error) in
+                            loadedCocktails = cocktails
+                            done()
+                        }
+                    }
+                    
+                    expect(loadedCocktails).to(equal(expectedCocktails))
+                }
+            }
         }
     }
 }

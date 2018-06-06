@@ -1,7 +1,17 @@
 PODS:
   - Cards (1.3.1):
     - Player
+  - iOSSnapshotTestCase (3.0.0):
+    - iOSSnapshotTestCase/SwiftSupport (= 3.0.0)
+  - iOSSnapshotTestCase/Core (3.0.0)
+  - iOSSnapshotTestCase/SwiftSupport (3.0.0):
+    - iOSSnapshotTestCase/Core
   - Nimble (7.1.1)
+  - Nimble-Snapshots (6.7.1):
+    - Nimble-Snapshots/Core (= 6.7.1)
+  - Nimble-Snapshots/Core (6.7.1):
+    - iOSSnapshotTestCase (~> 3.0)
+    - Nimble (~> 7.0)
   - Nuke (6.1.1)
   - NVActivityIndicatorView (4.2.1):
     - NVActivityIndicatorView/Presenter (= 4.2.1)
@@ -25,7 +35,9 @@ PODS:
 
 DEPENDENCIES:
   - Cards (from `https://github.com/andyk144/Cards.git`)
+  - iOSSnapshotTestCase
   - Nimble
+  - Nimble-Snapshots
   - Nuke (~> 6.0)
   - NVActivityIndicatorView
   - OHHTTPStubs/Swift
@@ -34,7 +46,9 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - iOSSnapshotTestCase
     - Nimble
+    - Nimble-Snapshots
     - Nuke
     - NVActivityIndicatorView
     - OHHTTPStubs
@@ -53,7 +67,9 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   Cards: 3a0bc53aa35b680d0baf0ff9d21b67ba916844e5
+  iOSSnapshotTestCase: 23984ffe05289728d646cbb6a7a10b4fb1c93440
   Nimble: 391f07782af4b37914f9bd7b2ffbb952731b8202
+  Nimble-Snapshots: 7ab1d5fd4a794b983805c6f6b8091fb00d772754
   Nuke: bf5d58b2d95ff15cb170c231fe6002d706be77e1
   NVActivityIndicatorView: 8068ba3ad39cb44cbaab25d89ff2546b3f092681
   OHHTTPStubs: 1e21c7d2c084b8153fc53d48400d8919d2d432d0
@@ -61,6 +77,6 @@ SPEC CHECKSUMS:
   Quick: 03278013f71aa05fe9ecabc94fbcc6835f1ee76f
   SearchTextField: a5bb7e4c33affadb115afdbe8100d84ef10a8024
 
-PODFILE CHECKSUM: 460e9b3f28515a66da25c0f43d71b62b91c7556f
+PODFILE CHECKSUM: 794ed5e96bbe39b865970c493a25bd0dd083f305
 
 COCOAPODS: 1.5.3
