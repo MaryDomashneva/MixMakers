@@ -34,6 +34,11 @@
 		691607C220C2B7020001D6F3 /* CombineSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691607C120C2B7020001D6F3 /* CombineSearch.swift */; };
 		6921D79E20C055F500E4583B /* HomepageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6921D78620C053AD00E4583B /* HomepageUITests.swift */; };
 		8FE6F6158839D4554FA5EA56 /* Pods_MixMakersUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C38C676F997E4797A393DF5E /* Pods_MixMakersUITests.framework */; };
+		B7237C3220C71DFE0059A65B /* CocktailListViewControllerSnapshotSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7237C3120C71DFE0059A65B /* CocktailListViewControllerSnapshotSpec.swift */; };
+		B7237C3420C727AA0059A65B /* one_cocktail.json in Resources */ = {isa = PBXBuildFile; fileRef = B7237C3320C727AA0059A65B /* one_cocktail.json */; };
+		B7237C3620C7288E0059A65B /* two_cocktails.json in Resources */ = {isa = PBXBuildFile; fileRef = B7237C3520C7288E0059A65B /* two_cocktails.json */; };
+		B7237C3820C7290A0059A65B /* five_cocktails.json in Resources */ = {isa = PBXBuildFile; fileRef = B7237C3720C7290A0059A65B /* five_cocktails.json */; };
+		B7237C3A20C72F0E0059A65B /* RecipeViewControllerSnapshotSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7237C3920C72F0E0059A65B /* RecipeViewControllerSnapshotSpec.swift */; };
 		B794018120BD99860035C82D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B794018020BD99860035C82D /* AppDelegate.swift */; };
 		B794018620BD99860035C82D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B794018420BD99860035C82D /* Main.storyboard */; };
 		B794018820BD99880035C82D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B794018720BD99880035C82D /* Assets.xcassets */; };
@@ -100,6 +105,11 @@
 		691607C120C2B7020001D6F3 /* CombineSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineSearch.swift; sourceTree = "<group>"; };
 		6921D78620C053AD00E4583B /* HomepageUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomepageUITests.swift; path = ../HomepageTests/HomepageUITests.swift; sourceTree = "<group>"; };
 		6D3C654FC3FB1DB947AE7091 /* Pods-MixMakersTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MixMakersTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MixMakersTests/Pods-MixMakersTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B7237C3120C71DFE0059A65B /* CocktailListViewControllerSnapshotSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailListViewControllerSnapshotSpec.swift; sourceTree = "<group>"; };
+		B7237C3320C727AA0059A65B /* one_cocktail.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = one_cocktail.json; sourceTree = "<group>"; };
+		B7237C3520C7288E0059A65B /* two_cocktails.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = two_cocktails.json; sourceTree = "<group>"; };
+		B7237C3720C7290A0059A65B /* five_cocktails.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = five_cocktails.json; sourceTree = "<group>"; };
+		B7237C3920C72F0E0059A65B /* RecipeViewControllerSnapshotSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewControllerSnapshotSpec.swift; sourceTree = "<group>"; };
 		B794017D20BD99860035C82D /* MixMakers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MixMakers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B794018020BD99860035C82D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B794018520BD99860035C82D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -158,6 +168,9 @@
 		0637971D20BF1F4900188B68 /* Fixtures */ = {
 			isa = PBXGroup;
 			children = (
+				B7237C3720C7290A0059A65B /* five_cocktails.json */,
+				B7237C3520C7288E0059A65B /* two_cocktails.json */,
+				B7237C3320C727AA0059A65B /* one_cocktail.json */,
 				0637971E20BF1F8A00188B68 /* load_cocktails_with_gin.json */,
 				691607BF20C2A75A0001D6F3 /* chocolateCocktails.json */,
 				C9A9CE5020C6DAE8000D0FDB /* margaritaCocktail.json */,
@@ -304,6 +317,8 @@
 				0637971B20BEFF4600188B68 /* CocktailAPIServiceSpec.swift */,
 				C9A9CE4E20C6D41A000D0FDB /* RecipeAPIServiceSpec.swift */,
 				C9A9CE4C20C6C86D000D0FDB /* testfile.swift */,
+				B7237C3120C71DFE0059A65B /* CocktailListViewControllerSnapshotSpec.swift */,
+				B7237C3920C72F0E0059A65B /* RecipeViewControllerSnapshotSpec.swift */,
 			);
 			path = MixMakersTests;
 			sourceTree = "<group>";
@@ -461,9 +476,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7237C3420C727AA0059A65B /* one_cocktail.json in Resources */,
 				691607C020C2A75A0001D6F3 /* chocolateCocktails.json in Resources */,
 				0637971F20BF1F8A00188B68 /* load_cocktails_with_gin.json in Resources */,
+				B7237C3620C7288E0059A65B /* two_cocktails.json in Resources */,
 				C9A9CE5120C6DAE8000D0FDB /* margaritaCocktail.json in Resources */,
+				B7237C3820C7290A0059A65B /* five_cocktails.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -539,14 +557,18 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-MixMakersTests/Pods-MixMakersTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Nimble-Snapshots/Nimble_Snapshots.framework",
 				"${BUILT_PRODUCTS_DIR}/OHHTTPStubs/OHHTTPStubs.framework",
 				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+				"${BUILT_PRODUCTS_DIR}/iOSSnapshotTestCase/FBSnapshotTestCase.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble_Snapshots.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OHHTTPStubs.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSnapshotTestCase.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -610,8 +632,10 @@
 			files = (
 				0637971C20BEFF4600188B68 /* CocktailAPIServiceSpec.swift in Sources */,
 				C9A9CE4D20C6C86D000D0FDB /* testfile.swift in Sources */,
+				B7237C3220C71DFE0059A65B /* CocktailListViewControllerSnapshotSpec.swift in Sources */,
 				691607BE20C2A2D20001D6F3 /* CocktailListTests.swift in Sources */,
 				C9A9CE4F20C6D41A000D0FDB /* RecipeAPIServiceSpec.swift in Sources */,
+				B7237C3A20C72F0E0059A65B /* RecipeViewControllerSnapshotSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -123,7 +123,7 @@ struct CocktailRecipes:Decodable, Equatable {
     }
     
     func append(value: String?, to array: inout [String]) {
-        if let value = value, !value.isEmpty {
+        if let value = value {
             array.append(value)
         }
     }
