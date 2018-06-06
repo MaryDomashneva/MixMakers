@@ -49,10 +49,6 @@ class CocktailListViewController: UIViewController, UITableViewDelegate, UITable
             if let error = error {
                 print(error)
             } else if let loadedCocktails = loadedCocktails {
-                if loadedCocktails.isEmpty {
-                    self?.nvActivityIndicatorView.stopAnimating()
-                    self?.loadingLabel.text = "Cocktails not found"
-                } else {
                     if current != ingredients.count - 1 {
                         self?.manyCocktails.append(loadedCocktails)
                         let currentTerm = current + 1
@@ -60,7 +56,6 @@ class CocktailListViewController: UIViewController, UITableViewDelegate, UITable
                     }
                     else {
                         self?.nvActivityIndicatorView.stopAnimating()
-                        self?.loadingContainerView.isHidden = true
                         self?.manyCocktails.append(loadedCocktails)
                         self?.finalCocktails = (self?.combineSearch.combine(with: (self?.manyCocktails)!))!
                         if (self?.finalCocktails.isEmpty)! {
@@ -74,7 +69,6 @@ class CocktailListViewController: UIViewController, UITableViewDelegate, UITable
                         }
                     }
                     // recursively call this until all ingredients in search term array are satisfied. Then only update the view with the common cocktails. An error or empty result will cancel the whole search as there will be no common cocktails
-                }
             } else {
                 // Show unknown error
             }

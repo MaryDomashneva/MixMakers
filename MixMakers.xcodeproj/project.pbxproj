@@ -33,6 +33,7 @@
 		691607C020C2A75A0001D6F3 /* chocolateCocktails.json in Resources */ = {isa = PBXBuildFile; fileRef = 691607BF20C2A75A0001D6F3 /* chocolateCocktails.json */; };
 		691607C220C2B7020001D6F3 /* CombineSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691607C120C2B7020001D6F3 /* CombineSearch.swift */; };
 		6921D79E20C055F500E4583B /* HomepageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6921D78620C053AD00E4583B /* HomepageUITests.swift */; };
+		69C9975B20C8123100D7B37F /* MixMakersLogo1.png in Resources */ = {isa = PBXBuildFile; fileRef = 69C9975A20C8123100D7B37F /* MixMakersLogo1.png */; };
 		8FE6F6158839D4554FA5EA56 /* Pods_MixMakersUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C38C676F997E4797A393DF5E /* Pods_MixMakersUITests.framework */; };
 		B794018120BD99860035C82D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B794018020BD99860035C82D /* AppDelegate.swift */; };
 		B794018620BD99860035C82D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B794018420BD99860035C82D /* Main.storyboard */; };
@@ -99,6 +100,7 @@
 		691607BF20C2A75A0001D6F3 /* chocolateCocktails.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = chocolateCocktails.json; sourceTree = "<group>"; };
 		691607C120C2B7020001D6F3 /* CombineSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineSearch.swift; sourceTree = "<group>"; };
 		6921D78620C053AD00E4583B /* HomepageUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomepageUITests.swift; path = ../HomepageTests/HomepageUITests.swift; sourceTree = "<group>"; };
+		69C9975A20C8123100D7B37F /* MixMakersLogo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MixMakersLogo1.png; path = ../../Downloads/MixMakersLogo1.png; sourceTree = "<group>"; };
 		6D3C654FC3FB1DB947AE7091 /* Pods-MixMakersTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MixMakersTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MixMakersTests/Pods-MixMakersTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B794017D20BD99860035C82D /* MixMakers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MixMakers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B794018020BD99860035C82D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -291,6 +293,7 @@
 				B794018920BD99880035C82D /* LaunchScreen.storyboard */,
 				B794018C20BD99880035C82D /* Info.plist */,
 				691607BB20C1B2AF0001D6F3 /* ImportData.swift */,
+				69C9975A20C8123100D7B37F /* MixMakersLogo1.png */,
 			);
 			path = MixMakers;
 			sourceTree = "<group>";
@@ -443,6 +446,7 @@
 				0603F5F820C2B6F0002760B0 /* RecipeIngredientTableViewCell.xib in Resources */,
 				B794018820BD99880035C82D /* Assets.xcassets in Resources */,
 				B79401BC20BDFCCB0035C82D /* CocktailListView.xib in Resources */,
+				69C9975B20C8123100D7B37F /* MixMakersLogo1.png in Resources */,
 				06AAE1EA20C153A00047A484 /* vodkaRecipeJSON.json in Resources */,
 				B794018620BD99860035C82D /* Main.storyboard in Resources */,
 				0603F60020C2DF97002760B0 /* RecipeHeaderView.xib in Resources */,
