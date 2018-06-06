@@ -41,7 +41,7 @@
                                     <action selector="ingredient2Pressed:" destination="qIz-6t-7E5" eventType="touchUpInside" id="oES-u8-xdF"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="searchTerm" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="type an ingredient" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s5V-uF-sQ8" customClass="SearchTextField" customModule="SearchTextField">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="searchTerm" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="type an ingredient" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s5V-uF-sQ8" customClass="SearchTextField" customModule="SearchTextField">
                                 <rect key="frame" x="126" y="305" width="121" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration" identifier="searchTextField"/>
