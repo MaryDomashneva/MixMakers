@@ -7,9 +7,15 @@ class HomepageViewController: UIViewController {
     
     @IBOutlet weak var searchIngredientsText: SearchTextField!
     
+    @IBOutlet weak var addButton: UIButton!
     @IBOutlet weak var ingredient1: UIButton!
     @IBOutlet weak var ingredient2: UIButton!
     @IBOutlet weak var ingredient3: UIButton!
+    
+
+    @IBAction func editPressed(_ sender: Any) {
+        addButton.isHidden = false
+    }
     
     @IBAction func addPressed(_ sender: Any) {
         let buttons = [ingredient1, ingredient2, ingredient3]
@@ -30,6 +36,9 @@ class HomepageViewController: UIViewController {
                 buttons[searchTerm.count]?.isEnabled = true
                 buttons[searchTerm.count]?.isHidden = false
                 searchTerm.append(searchText)
+                if searchTerm.count == 3 {
+                    addButton.isHidden = true
+                }
             }
         }
         searchIngredientsText.text = ""
@@ -54,6 +63,7 @@ class HomepageViewController: UIViewController {
             ingredient1.setTitle("", for: .normal)
             ingredient1.isHidden = true
             ingredient1.isEnabled = false
+            addButton.isHidden = false
         }
         else {
             ingredient1.setTitle(ingredient2.title(for: .normal), for: .normal)
@@ -61,12 +71,14 @@ class HomepageViewController: UIViewController {
                 ingredient2.setTitle("", for: .normal)
                 ingredient2.isEnabled = false
                 ingredient2.isHidden = true
+                addButton.isHidden = false
             }
             else {
                 ingredient2.setTitle(ingredient3.title(for: .normal), for: .normal)
                 ingredient3.setTitle("", for: .normal)
                 ingredient3.isEnabled = false
                 ingredient3.isHidden = true
+                addButton.isHidden = false
             }
         }
     }
@@ -77,12 +89,14 @@ class HomepageViewController: UIViewController {
             ingredient2.setTitle("", for: .normal)
             ingredient2.isEnabled = false
             ingredient2.isHidden = true
+            addButton.isHidden = false
         }
         else {
             ingredient2.setTitle(ingredient3.title(for: .normal), for: .normal)
             ingredient3.setTitle("", for: .normal)
             ingredient3.isEnabled = false
             ingredient3.isHidden = true
+            addButton.isHidden = false
         }
     }
     
@@ -91,6 +105,7 @@ class HomepageViewController: UIViewController {
         ingredient3.setTitle("", for: .normal)
         ingredient3.isEnabled = false
         ingredient3.isHidden = true
+        addButton.isHidden = false
     }
     
     override func viewDidLoad() {
