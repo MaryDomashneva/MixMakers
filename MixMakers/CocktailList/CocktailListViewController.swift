@@ -55,9 +55,6 @@ class CocktailListViewController: UIViewController, UITableViewDelegate, UITable
                 strongSelf.loadingLabel.text = error.localizedCapitalized
                 strongSelf.nvActivityIndicatorView.stopAnimating()
             } else if let loadedCocktails = loadedCocktails {
-                if loadedCocktails.isEmpty {
-                    strongSelf.loadingLabel.text = "Cocktails not found"
-                } else {
                     if current != ingredients.count - 1 {
                         strongSelf.manyCocktails.append(loadedCocktails)
                         let currentTerm = current + 1
@@ -65,21 +62,18 @@ class CocktailListViewController: UIViewController, UITableViewDelegate, UITable
                     }
                     else {
                         strongSelf.nvActivityIndicatorView.stopAnimating()
-                        strongSelf.loadingContainerView.isHidden = true
                         strongSelf.manyCocktails.append(loadedCocktails)
-                        strongSelf.finalCocktails = (strongSelf.combineSearch.combine(with: strongSelf.manyCocktails))
+                        strongSelf.finalCocktails = (self?.combineSearch.combine(with: (strongSelf.manyCocktails)))!
                         if (strongSelf.finalCocktails.isEmpty) {
                             strongSelf.loadingLabel.text = "Cocktails not found"
                         }
                         else {
-                            
                             let results = strongSelf.finalCocktails
                             strongSelf.tableView.isHidden = false
                             strongSelf.update(with: results)
                         }
                     }
                     // recursively call this until all ingredients in search term array are satisfied. Then only update the view with the common cocktails. An error or empty result will cancel the whole search as there will be no common cocktails
-                }
             } else {
                 // Show unknown error
             }
