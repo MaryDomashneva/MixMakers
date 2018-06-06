@@ -8,9 +8,18 @@
 
 import XCTest
 
+extension XCTestCase {
+    func wait(forElement element: XCUIElement, timeout: TimeInterval) {
+        let predicate = NSPredicate(format: "exists == 1")
+        // This will make the test runner continously evalulate the
+        // predicate, and wait until it matches.
+        expectation(for: predicate, evaluatedWith: element)
+        waitForExpectations(timeout: timeout)
+    }
+}
+
 class HomepageUITests: XCTestCase {
     
-        
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -27,7 +36,7 @@ class HomepageUITests: XCTestCase {
         super.tearDown()
     }
     
-    func testSearch() {
+    func testSearchButtonExists() {
         let app = XCUIApplication()
         app.launch()
         let searchButton = app.buttons["Search"]
@@ -40,12 +49,11 @@ class HomepageUITests: XCTestCase {
         let searchButton = app.buttons["Search"]
         let textField = app.textFields["searchTextField"]
         let addButton = app.buttons["addButton"]
-        let loadingLabel = app.staticTexts["Cocktails not found"]
         textField.tap()
         textField.typeText("WWWWWWWW")
         addButton.tap()
         searchButton.tap()
-        XCTAssertEqual(loadingLabel.exists, true)
+        wait(forElement: app.staticTexts["Cocktails not found"], timeout: 5)
     }
     
     func testThatRedirectToNextScreen() {
@@ -70,7 +78,7 @@ class HomepageUITests: XCTestCase {
     }
     
     
-    func testOneIngredientSelected() {
+    func testIngredientOneAdded() {
         let app = XCUIApplication()
         app.launch()
         let textField = app.textFields["searchTextField"]
@@ -81,7 +89,7 @@ class HomepageUITests: XCTestCase {
         XCTAssertTrue(app.buttons["Vodka"].exists)
     }
     
-    func testTwoIngredientsSelected() {
+    func testIngredientTwoAdded() {
         let app = XCUIApplication()
         app.launch()
         let textField = app.textFields["searchTextField"]
@@ -89,14 +97,13 @@ class HomepageUITests: XCTestCase {
         textField.tap()
         textField.typeText("Vodka")
         addButton.tap()
-        textField.doubleTap()
-        app/*@START_MENU_TOKEN@*/.menuItems["Cut"]/*[[".menus.menuItems[\"Cut\"]",".menuItems[\"Cut\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        textField.tap()
         textField.typeText("Gin")
         addButton.tap()
         XCTAssertTrue(app.buttons["Gin"].exists)
     }
     
-    func testThreeIngredientsSelected() {
+    func testIngredientThreeAdded() {
         let app = XCUIApplication()
         app.launch()
         let textField = app.textFields["searchTextField"]
@@ -104,18 +111,16 @@ class HomepageUITests: XCTestCase {
         textField.tap()
         textField.typeText("Vodka")
         addButton.tap()
-        textField.doubleTap()
-        app/*@START_MENU_TOKEN@*/.menuItems["Cut"]/*[[".menus.menuItems[\"Cut\"]",".menuItems[\"Cut\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        textField.tap()
         textField.typeText("Gin")
         addButton.tap()
-        textField.doubleTap()
-        app/*@START_MENU_TOKEN@*/.menuItems["Cut"]/*[[".menus.menuItems[\"Cut\"]",".menuItems[\"Cut\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        textField.tap()
         textField.typeText("Tequila")
         addButton.tap()
         XCTAssertTrue(app.buttons["Tequila"].exists)
     }
     
-    func testIngredientOneDisappearsAfterSelected() {
+    func testIngredientOneDisappearsAfterTap() {
         let app = XCUIApplication()
         app.launch()
         let textField = app.textFields["searchTextField"]
@@ -127,7 +132,7 @@ class HomepageUITests: XCTestCase {
         XCTAssertFalse(app.buttons["Vodka"].exists)
     }
     
-    func testIngredientsTwoDisappearsAfterSelected() {
+    func testIngredientOneDisappearsAfterTapMultipleIngredients() {
         let app = XCUIApplication()
         app.launch()
         let textField = app.textFields["searchTextField"]
@@ -135,15 +140,32 @@ class HomepageUITests: XCTestCase {
         textField.tap()
         textField.typeText("Vodka")
         addButton.tap()
-        textField.doubleTap()
-        app/*@START_MENU_TOKEN@*/.menuItems["Cut"]/*[[".menus.menuItems[\"Cut\"]",".menuItems[\"Cut\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        textField.tap()
+        textField.typeText("Gin")
+        addButton.tap()
+        textField.tap()
+        textField.typeText("Tequila")
+        addButton.tap()
+        app.buttons["Vodka"].tap()
+        XCTAssertFalse(app.buttons["Vodka"].exists)
+    }
+    
+    func testIngredientTwoDisappearsAfterTap() {
+        let app = XCUIApplication()
+        app.launch()
+        let textField = app.textFields["searchTextField"]
+        let addButton = app.buttons["addButton"]
+        textField.tap()
+        textField.typeText("Vodka")
+        addButton.tap()
+        textField.tap()
         textField.typeText("Gin")
         addButton.tap()
         app.buttons["Gin"].tap()
         XCTAssertFalse(app.buttons["Gin"].exists)
     }
     
-    func testIngredientsThreeDisappearsAfterSelected() {
+    func testIngredientTwoDisappearsAfterTapMultipleIngredients() {
         let app = XCUIApplication()
         app.launch()
         let textField = app.textFields["searchTextField"]
@@ -151,36 +173,32 @@ class HomepageUITests: XCTestCase {
         textField.tap()
         textField.typeText("Vodka")
         addButton.tap()
-        textField.doubleTap()
-        app/*@START_MENU_TOKEN@*/.menuItems["Cut"]/*[[".menus.menuItems[\"Cut\"]",".menuItems[\"Cut\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        textField.tap()
         textField.typeText("Gin")
         addButton.tap()
-        textField.doubleTap()
-        app/*@START_MENU_TOKEN@*/.menuItems["Cut"]/*[[".menus.menuItems[\"Cut\"]",".menuItems[\"Cut\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        textField.tap()
+        textField.typeText("Tequila")
+        addButton.tap()
+        app.buttons["Gin"].tap()
+        XCTAssertFalse(app.buttons["Gin"].exists)
+    }
+    
+    func testIngredientTreeDisappearsAfterTapMultipleIngredients() {
+        let app = XCUIApplication()
+        app.launch()
+        let textField = app.textFields["searchTextField"]
+        let addButton = app.buttons["addButton"]
+        textField.tap()
+        textField.typeText("Vodka")
+        addButton.tap()
+        textField.tap()
+        textField.typeText("Gin")
+        addButton.tap()
+        textField.tap()
         textField.typeText("Tequila")
         addButton.tap()
         app.buttons["Tequila"].tap()
         XCTAssertFalse(app.buttons["Tequila"].exists)
-    }
-    
-    func testFirstIngredientDisappearsAfterSelected() {
-        let app = XCUIApplication()
-        app.launch()
-        let textField = app.textFields["searchTextField"]
-        let addButton = app.buttons["addButton"]
-        textField.tap()
-        textField.typeText("Vodka")
-        addButton.tap()
-        textField.doubleTap()
-        app/*@START_MENU_TOKEN@*/.menuItems["Cut"]/*[[".menus.menuItems[\"Cut\"]",".menuItems[\"Cut\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
-        textField.typeText("Gin")
-        addButton.tap()
-        textField.doubleTap()
-        app/*@START_MENU_TOKEN@*/.menuItems["Cut"]/*[[".menus.menuItems[\"Cut\"]",".menuItems[\"Cut\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
-        textField.typeText("Tequila")
-        addButton.tap()
-        app.buttons["Vodka"].tap()
-        XCTAssertFalse(app.buttons["Vodka"].exists)
     }
     
     func testNavigateBackToSearchScreenAfterSearch() {
@@ -206,8 +224,7 @@ class HomepageUITests: XCTestCase {
         textField.tap()
         textField.typeText("Vodka")
         addButton.tap()
-        textField.doubleTap()
-        app/*@START_MENU_TOKEN@*/.menuItems["Cut"]/*[[".menus.menuItems[\"Cut\"]",".menuItems[\"Cut\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        textField.tap()
         textField.typeText("Gin")
         addButton.tap()
         searchButton.tap()

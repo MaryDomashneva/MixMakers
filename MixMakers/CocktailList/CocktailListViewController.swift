@@ -33,9 +33,6 @@ class CocktailListViewController: UIViewController, UITableViewDelegate, UITable
             loadingContainerView.isHidden = false
             loadingLabel.text = "Loading cocktails..."
             nvActivityIndicatorView.startAnimating()
-        } else {
-            tableView.isHidden = false
-            loadingContainerView.isHidden = true
         }
         
         tableView.register(UINib(nibName: "CocktailListView", bundle: nil), forCellReuseIdentifier: "CocktailListTableViewCell")
