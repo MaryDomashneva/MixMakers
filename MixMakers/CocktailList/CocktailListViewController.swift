@@ -70,6 +70,7 @@ class CocktailListViewController: UIViewController, UITableViewDelegate, UITable
                         else {
                             let results = strongSelf.finalCocktails
                             strongSelf.tableView.isHidden = false
+                            strongSelf.loadingContainerView.isHidden = true
                             strongSelf.update(with: results)
                         }
                     }
