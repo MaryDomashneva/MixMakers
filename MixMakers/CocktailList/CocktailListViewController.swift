@@ -50,6 +50,7 @@ class CocktailListViewController: UIViewController, UITableViewDelegate, UITable
                 print(error)
             } else if let loadedCocktails = loadedCocktails {
                 if loadedCocktails.isEmpty {
+                    self?.nvActivityIndicatorView.stopAnimating()
                     self?.loadingLabel.text = "Cocktails not found"
                 } else {
                     if current != ingredients.count - 1 {

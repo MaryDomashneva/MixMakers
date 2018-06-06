@@ -5,7 +5,6 @@ class HomepageViewController: UIViewController {
     
     var searchTerm: [String] = []
     
-    
     @IBOutlet weak var searchIngredientsText: SearchTextField!
     
     @IBOutlet weak var ingredient1: UIButton!
@@ -14,6 +13,9 @@ class HomepageViewController: UIViewController {
     
     @IBAction func addPressed(_ sender: Any) {
         let buttons = [ingredient1, ingredient2, ingredient3]
+        
+        self.view.endEditing(true)
+        
         guard let searchText = searchIngredientsText.text else {
             searchIngredientsText.text = ""
             return
@@ -29,6 +31,7 @@ class HomepageViewController: UIViewController {
                 searchTerm.append(searchText)
             }
         }
+        searchIngredientsText.text = ""
     }
     
     @IBAction func searchPressed(_ sender: Any) {
@@ -43,7 +46,6 @@ class HomepageViewController: UIViewController {
             present(emptySearchAlert, animated: true, completion: nil)
         }
     }
-    
     
     @IBAction func ingredient1Pressed(_ sender: Any) {
         searchTerm.remove(at: searchTerm.index(of: ingredient1.title(for: .normal)!)!)
@@ -97,7 +99,6 @@ class HomepageViewController: UIViewController {
     // Called whenever screen is going to be rendered
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-
     }
     
 }
