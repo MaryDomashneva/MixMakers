@@ -20,12 +20,14 @@ class HomepageViewController: UIViewController {
     @IBAction func addPressed(_ sender: Any) {
         let buttons = [ingredient1, ingredient2, ingredient3]
         
+        searchIngredientsText.isEnabled = true
         self.view.endEditing(true)
         
         guard let searchText = searchIngredientsText.text else {
             searchIngredientsText.text = ""
             return
         }
+        
         if searchText.isEmpty {
             searchIngredientsText.text = ""
         } else {
@@ -38,6 +40,7 @@ class HomepageViewController: UIViewController {
                 searchTerm.append(searchText)
                 if searchTerm.count == 3 {
                     addButton.isHidden = true
+                    searchIngredientsText.isEnabled = false
                 }
             }
         }
@@ -49,6 +52,9 @@ class HomepageViewController: UIViewController {
             let resultView = storyboard?.instantiateViewController(withIdentifier: "Cocktails") as! CocktailListViewController
             resultView.searchTerm.append(contentsOf: searchTerm)
             navigationController?.pushViewController(resultView, animated: true)
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) { [weak self] in
+                self?.clearSelection()
+            }
         } else {
             let emptySearchAlert = UIAlertController(title: "Please, enter an ingredient!", message: nil, preferredStyle: UIAlertControllerStyle.alert)
             let okButton = UIAlertAction(title: "Ok", style: UIAlertActionStyle.cancel, handler: nil)
@@ -58,7 +64,13 @@ class HomepageViewController: UIViewController {
     }
     
     @IBAction func ingredient1Pressed(_ sender: Any) {
-        searchTerm.remove(at: searchTerm.index(of: ingredient1.title(for: .normal)!)!)
+        guard let ingredient1Title = ingredient1.title(for: .normal),
+            let index = searchTerm.index(of: ingredient1Title) else {
+                return
+        }
+        
+        searchTerm.remove(at: index)
+        searchIngredientsText.isEnabled = true
         if !ingredient2.isEnabled{
             ingredient1.setTitle("", for: .normal)
             ingredient1.isHidden = true
@@ -84,7 +96,13 @@ class HomepageViewController: UIViewController {
     }
     
     @IBAction func ingredient2Pressed(_ sender: Any) {
-        searchTerm.remove(at: searchTerm.index(of: ingredient2.title(for: .normal)!)!)
+        guard let ingredient2Title = ingredient2.title(for: .normal),
+              let index = searchTerm.index(of: ingredient2Title) else {
+                return
+        }
+        
+        searchTerm.remove(at: index)
+        searchIngredientsText.isEnabled = true
         if !ingredient3.isEnabled {
             ingredient2.setTitle("", for: .normal)
             ingredient2.isEnabled = false
@@ -101,7 +119,13 @@ class HomepageViewController: UIViewController {
     }
     
     @IBAction func ingredient3Pressed(_ sender: Any) {
-        searchTerm.remove(at: searchTerm.index(of: ingredient3.title(for: .normal)!)!)
+        guard let ingredient3Title = ingredient3.title(for: .normal),
+              let index = searchTerm.index(of: ingredient3Title) else {
+            return
+        }
+        
+        searchTerm.remove(at: index)
+        searchIngredientsText.isEnabled = true
         ingredient3.setTitle("", for: .normal)
         ingredient3.isEnabled = false
         ingredient3.isHidden = true
@@ -111,6 +135,12 @@ class HomepageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureSearchField()
+    }
+    
+    func clearSelection() {
+        ingredient3Pressed(ingredient3)
+        ingredient2Pressed(ingredient2)
+        ingredient1Pressed(ingredient1)
     }
     
     func configureSearchField() {
