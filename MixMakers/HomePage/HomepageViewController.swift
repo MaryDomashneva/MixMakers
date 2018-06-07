@@ -135,6 +135,15 @@ class HomepageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureSearchField()
+        
+        let border = CALayer()
+        let width = CGFloat(2.0)
+        border.borderColor = UIColor(hue: 0.5389, saturation: 0.25, brightness: 0.45, alpha: 1.0).cgColor
+        border.frame = CGRect(x: 0, y: searchIngredientsText.frame.size.height - width, width:  searchIngredientsText.frame.size.width, height: searchIngredientsText.frame.size.height)
+        
+        border.borderWidth = width
+        searchIngredientsText.layer.addSublayer(border)
+        searchIngredientsText.layer.masksToBounds = true
     }
     
     func clearSelection() {
