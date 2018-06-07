@@ -150,6 +150,21 @@ class HomepageUITests: XCTestCase {
         XCTAssertFalse(app.buttons["Vodka"].exists)
     }
     
+    func testIngredientOneDisappearsAfterTapTwoIngredients() {
+        let app = XCUIApplication()
+        app.launch()
+        let textField = app.textFields["searchTextField"]
+        let addButton = app.buttons["addButton"]
+        textField.tap()
+        textField.typeText("Vodka")
+        addButton.tap()
+        textField.tap()
+        textField.typeText("Gin")
+        addButton.tap()
+        app.buttons["Vodka"].tap()
+        XCTAssertFalse(app.buttons["Vodka"].exists)
+    }
+    
     func testIngredientTwoDisappearsAfterTap() {
         let app = XCUIApplication()
         app.launch()
@@ -229,5 +244,44 @@ class HomepageUITests: XCTestCase {
         addButton.tap()
         searchButton.tap()
         XCTAssertTrue(app.navigationBars["Cocktails"].exists)
+    }
+    
+    func testThatSearchFieldNotEnabledAfterThreeIngredientsSelected() {
+        let app = XCUIApplication()
+        app.launch()
+        let textField = app.textFields["searchTextField"]
+        let addButton = app.buttons["addButton"]
+        textField.tap()
+        textField.typeText("Vodka")
+        addButton.tap()
+        textField.tap()
+        textField.typeText("Gin")
+        addButton.tap()
+        textField.tap()
+        textField.typeText("Tequila")
+        addButton.tap()
+        XCTAssertFalse(textField.isEnabled)
+    }
+    
+    func testThatIngredientsCleanedAfterBackOnSearchField() {
+        let app = XCUIApplication()
+        let searchButton = app.buttons["Search"]
+        app.launch()
+        let textField = app.textFields["searchTextField"]
+        let addButton = app.buttons["addButton"]
+        textField.tap()
+        textField.typeText("Vodka")
+        addButton.tap()
+        textField.tap()
+        textField.typeText("Gin")
+        addButton.tap()
+        textField.tap()
+        textField.typeText("Tequila")
+        addButton.tap()
+        searchButton.tap()
+        app.navigationBars["Cocktails"].buttons["Search"].tap()
+        XCTAssertFalse(app.buttons["Tequila"].exists)
+        XCTAssertFalse(app.buttons["Gin"].exists)
+        XCTAssertFalse(app.buttons["Vodka"].exists)
     }
 }
