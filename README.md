@@ -103,7 +103,7 @@ Contributors:
 * Mary Domashneva [check github here](https://github.com/MaryDomashneva)
 
 ## Our team
-<img src="https://monosnap.com/image/JixYhevtTtgehlnL7AVZ4JmbM1cRwb.png">
+"<img src="https://monosnap.com/image/idmSpUWZN0KBKuhvEZ94ltcYctg6XM.png">
 
 Run project:
 -----
