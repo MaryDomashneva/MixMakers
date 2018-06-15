@@ -810,7 +810,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = M2W4XFXLYT;
+				DEVELOPMENT_TEAM = 6GL6GLH3DL;
 				INFOPLIST_FILE = MixMakers/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -829,7 +829,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = M2W4XFXLYT;
+				DEVELOPMENT_TEAM = 6GL6GLH3DL;
 				INFOPLIST_FILE = MixMakers/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

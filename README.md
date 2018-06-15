@@ -11,6 +11,10 @@ Card Wall:
 
 * [check card wall here](https://trello.com/b/p7wf6qg3/mobile-app)
 
+## App in action
+
+![mixmakers](https://thumbs.gfycat.com/DapperFlashyAnaconda-size_restricted.gif)
+
 Task:
 -------
 
@@ -137,8 +141,8 @@ We had two amazing weeks working on this project. We achieved a lot and we are r
 * Retro at 17:00 every day:
    1. Discuss worked completed,
    1. Reflect on what went well and what didn't go so well, and
-   1. Provide each other with feedback, where necessary. 
-   
+   1. Provide each other with feedback, where necessary.
+
 * Switching Project Manager every day.
 * Pair programming.
 * Working in two-day sprints.
@@ -206,7 +210,7 @@ Group work on final presentation
 * Lack of understanding how Xcode works
 
 
-#### Positives: 
+#### Positives:
 * Cocktails :)
 * Followed XP values
 * Good team working
